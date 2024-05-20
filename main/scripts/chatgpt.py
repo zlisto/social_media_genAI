@@ -1,7 +1,7 @@
 import openai
 
 
-def get_completion(prompt, instructions, client, model="gpt-3.5-turbo",
+def generate_text(prompt, instructions, client, model="gpt-4o",
                    output_type = 'text'):
   '''Get a text completion from the OpenAI API'''
   completion = client.chat.completions.create(
@@ -43,7 +43,7 @@ def generate_image_description(image_urls, instructions):
     },
   ]
   params = {
-      "model": "gpt-4-vision-preview",
+      "model": "gpt-4o",
       "messages": PROMPT_MESSAGES,
       "max_tokens": 1000,
   }
@@ -72,6 +72,47 @@ def display_image_url(image_url, width = 500, height = 500):
   display(HTML(html_code))
   return html_code
 
+
+def display_tweet(text='life is good', screen_name='zlisto'):
+    display_html = f'''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            .tweet {{
+                background-color: white;
+                color: black;
+                border: 1px solid #e1e8ed;
+                border-radius: 10px;
+                padding: 20px;
+                max-width: 500px;
+                margin: 20px auto;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            }}
+            .user strong {{
+                color: #1da1f2;
+            }}
+            .tweet-text p {{
+                margin: 0;
+                line-height: 1.5;
+            }}
+        </style>
+    </head>
+    <body>
+        <div class="tweet">
+            <div class="user">
+                <strong>@{screen_name}</strong>
+            </div>
+            <div class="tweet-text">
+                <p>{text}</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    '''
+    display(HTML(display_html))
+    return display_html
 
 def display_IG(caption, image_url, screen_name=None, profile_image_url = None):
     ''' HTML template for displaying the image, screen name, and caption in an Instagram-like format'''
