@@ -1,0 +1,145 @@
+import openai
+
+
+def get_completion(prompt, instructions, client, model="gpt-3.5-turbo",
+                   output_type = 'text'):
+  '''Get a text completion from the OpenAI API'''
+  completion = client.chat.completions.create(
+                model=model,
+                response_format={ "type": output_type},
+                messages=[
+                  {"role": "system", "content": instructions},
+                  {"role": "user", "content": prompt}
+                ]
+              )
+  response =completion.choices[0].message.content
+
+  return response
+
+def generate_image(prompt = "Draw a cute bunny", model = "dall-e-3"):
+  '''Generates an image using the OpenAI API'''
+
+  response_img = client.images.generate(
+    model= model,
+    prompt=prompt,
+    size="1024x1024",
+    quality="standard",
+    n=1,
+  )
+  time.sleep(1)
+  image_url = response_img.data[0].url
+  revised_prompt = response_img.data[0].revised_prompt
+
+  return image_url, revised_prompt
+
+def generate_image_description(image_urls, instructions):
+  '''Generates a description of a list of image_urls using the OpenAI Vision API'''
+  PROMPT_MESSAGES = [
+    {
+        "role": "user",
+        "content": [{"type": "text","text":instructions},
+            *map(lambda x: {"type":"image_url","image_url": x}, image_urls),
+        ],
+    },
+  ]
+  params = {
+      "model": "gpt-4-vision-preview",
+      "messages": PROMPT_MESSAGES,
+      "max_tokens": 1000,
+  }
+
+  response= client.chat.completions.create(**params)
+
+
+  image_description = response.choices[0].message.content
+  return image_description
+
+def encode_image(image_path):
+  '''Encodes an image to base64'''
+  with open(image_path, "rb") as image_file:
+    return base64.b64encode(image_file.read()).decode('utf-8')
+
+def display_image_url(image_url, width = 500, height = 500):
+  '''Display the image located at image_url so it remains in the notebook
+  even after the link dies '''
+  response = requests.get(image_url)
+  image_data = response.content
+  # Encoding the image data as base64
+  base64_image = base64.b64encode(image_data).decode('utf-8')
+  # Generating HTML to display the image
+  html_code = f'<img src="data:image/jpeg;base64,{base64_image}" width="{width}" height="{height}"/>'
+  # Displaying the image in the notebook
+  display(HTML(html_code))
+  return html_code
+
+
+def display_IG(caption, image_url, screen_name=None, profile_image_url = None):
+    ''' HTML template for displaying the image, screen name, and caption in an Instagram-like format'''
+
+    display_html = f"""
+    <style>
+        .instagram-post {{
+            border: 1px solid #e1e1e1;
+            border-radius: 3px;
+            width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }}
+        .instagram-header {{
+            padding: 14px;
+            border-bottom: 1px solid #e1e1e1;
+            display: flex;
+            align-items: center;
+        }}
+        .instagram-profile-pic {{
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }}
+        .instagram-screen-name {{
+            font-weight: bold;
+            color: #262626;
+            text-decoration: none;
+            font-size: 14px;
+        }}
+        .instagram-image {{
+            max-width: 600px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: auto;
+        }}
+        .instagram-caption {{
+            padding: 10px;
+            font-size: 14px;
+            color: #262626;
+        }}
+        .instagram-footer {{
+            padding: 10px;
+            border-top: 1px solid #e1e1e1;
+        }}
+        .instagram-likes {{
+            font-weight: bold;
+            margin-bottom: 8px;
+        }}
+    </style>
+    <div class="instagram-post">
+        <div class="instagram-header">
+            <img src="{profile_image_url}" alt="Profile picture" class="instagram-profile-pic">
+            <a href="#" class="instagram-screen-name">{screen_name}</a>
+        </div>
+        <img src="{image_url}" alt="Instagram image" class="instagram-image">
+        <div class="instagram-caption">
+            <a href="#" class="instagram-screen-name">{screen_name}</a> {caption}
+        </div>
+        <div class="instagram-footer">
+            <div class="instagram-likes">24 likes</div>
+            <!-- Include other footer content here -->
+        </div>
+    </div>
+    """
+    display(HTML(display_html))
+    return display_html
+
