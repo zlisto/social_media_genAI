@@ -2,7 +2,7 @@
 Repository for short course on generative AI and social media
 
 ## Notebooks
-Lecture 1 - Natural Language Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_analytics/blob/main/main/Lecture01_NaturalLanguageGeneration.ipynb)
+Lecture 1 - Natural Language Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture01_NaturalLanguageGeneration.ipynb)
 
 
 Lecture 2 - Image Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_analytics/blob/main/main/Lecture02_ImageGeneration.ipynb)
