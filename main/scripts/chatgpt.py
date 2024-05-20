@@ -1,4 +1,5 @@
 import openai
+from IPython.display import display, Image, HTML, Audio
 
 
 def generate_text(prompt, instructions, client, model="gpt-4o",
