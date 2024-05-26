@@ -3,10 +3,10 @@ Repository for short course on generative AI and social media
 
 ## Slides
 
-- [Session 1](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_01_Text_Generation.pdf)
+- Session 1 [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_01_Text_Generation.pdf)
 
 ## Notebooks
-Session 1 - Text Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_01_Text_Generation.ipynb)
+- Session 1 - Text Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_01_Text_Generation.ipynb)
 
 
 
