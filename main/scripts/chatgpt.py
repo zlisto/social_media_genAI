@@ -34,7 +34,7 @@ def generate_image(prompt, client, model = "dall-e-3"):
 
   return image_url, revised_prompt
 
-def generate_image_description(image_urls, instructions):
+def generate_image_description(image_urls, instructions, client):
   '''Generates a description of a list of image_urls using the OpenAI Vision API'''
   PROMPT_MESSAGES = [
     {
