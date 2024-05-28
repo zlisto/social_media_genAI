@@ -32,14 +32,7 @@ def generate_image(prompt, client, model = "dall-e-3"):
   image_url = response_img.data[0].url
   revised_prompt = response_img.data[0].revised_prompt
 
-  response = requests.get(image_url)
-  image_data = response.content
-  # Encoding the image data as base64
-  base64_image = base64.b64encode(image_data).decode('utf-8')
-  # Generating HTML to display the image
-  html_code = f'<img src="data:image/jpeg;base64,{base64_image}" width="{width}" height="{height}"/>'
-
-  return image_url, revised_prompt,html_code
+  return image_url, revised_prompt
 
 def generate_image_description(image_urls, instructions, client):
   '''Generates a description of a list of image_urls using the OpenAI Vision API'''
