@@ -1,6 +1,7 @@
 import openai
 from IPython.display import display, Image, HTML, Audio
-
+import base64
+import requests
 
 def generate_text(prompt, instructions, client, model="gpt-4o",
                    output_type = 'text'):
@@ -17,7 +18,7 @@ def generate_text(prompt, instructions, client, model="gpt-4o",
 
   return response
 
-def generate_image(prompt = "Draw a cute bunny", model = "dall-e-3"):
+def generate_image(prompt, client, model = "dall-e-3"):
   '''Generates an image using the OpenAI API'''
 
   response_img = client.images.generate(
