@@ -2,7 +2,7 @@ import openai
 from IPython.display import display, Image, HTML, Audio
 import base64
 import requests
-
+import time 
 def generate_text(prompt, instructions, client, model="gpt-4o",
                    output_type = 'text'):
   '''Get a text completion from the OpenAI API'''
