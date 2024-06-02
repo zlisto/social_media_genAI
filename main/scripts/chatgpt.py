@@ -40,7 +40,7 @@ def generate_image_description(image_urls, instructions, client):
     {
         "role": "user",
         "content": [{"type": "text","text":instructions},
-            *map(lambda x: {"type":"image_url","image_url": x}, image_urls),
+            *map(lambda x: {"type":"image_url","image_url": {"url":x}}, image_urls),
         ],
     },
   ]
