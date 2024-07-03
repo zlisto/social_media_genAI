@@ -17,6 +17,8 @@ Repository for short course on generative AI and social media
 
 - Session 3 - Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_03_Image_Analysis.ipynb)
 
+- Special Session - Video Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_04_Video_Analysis.ipynb)
+
 
 
 
