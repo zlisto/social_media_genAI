@@ -1,0 +1,29 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #1e90ff; /* Light blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #ffffff; /* White headings */
+    margin-bottom: 20px;
+}
+
+code {
+    background-color: #1e1e1e; /* Darker background for code blocks */
+    color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
