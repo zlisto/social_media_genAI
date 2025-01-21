@@ -3,7 +3,7 @@ Repository for course on generative AI and social media
 
 ## Slides
 
-- Introduction: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_01_Introduction.pdf)
+- Introduction: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_01_Intro_to_GENAISM.pdf)
 
 
 
