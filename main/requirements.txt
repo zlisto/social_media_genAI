@@ -1,0 +1,12 @@
+pandas
+numpy
+seaborn
+matplotlib
+networkx==3.0
+transformers
+wordcloud==1.9.3
+scikit-learn
+openai
+wandb
+requests_oauthlib
+Pillow
