@@ -189,7 +189,7 @@ class GenAI:
             audio_file= open(audio_filename, "rb")
 
             #print("\ttranscribe audio")
-            transcription = client.audio.transcriptions.create(
+            transcription = self.client.audio.transcriptions.create(
               model="whisper-1", 
               file=audio_file
             )
@@ -231,7 +231,7 @@ class GenAI:
 
     def get_embedding(self, text, model = 'text-embedding-3-small'):
         text = text.replace("\n", " ")
-        response = client.embeddings.create(
+        response = self.client.embeddings.create(
                     input=text,
                     model=model
                 )
