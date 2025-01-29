@@ -10,3 +10,14 @@ openai
 wandb
 requests_oauthlib
 Pillow
+Flask
+pymongo
+gunicorn
+requests
+opencv-python-headless  # For cv2, headless version for non-GUI environments like Heroku
+PyPDF2
+python-docx  # For `docx` module
+elevenlabs  # For ElevenLabs API usage
+python-dotenv
+fpdf
+bs4

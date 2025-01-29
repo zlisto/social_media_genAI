@@ -12,9 +12,14 @@ Repository for course on generative AI and social media
 ## Notebooks
 - Intro to Python: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_02_BasicPython.ipynb)
 
+- Sentiment Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_04_SentimentAnalysis.ipynb)
+
 ## Homework
 
 - Homework 1: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW1.ipynb)
+
+- Homework 2: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW2.ipynb)
+
 
 
 
