@@ -1,19 +1,19 @@
 ﻿tweet_id,text,language,type,bookmark_count,favorite_count,retweet_count,reply_count,view_count,created_at,client,hashtags,urls,media_type,media_urls
-'1885601623625331162',got one more o3-mini goody coming for you soon--i think we saved the best for last!,en,Tweet,432,9122,473,1257,999745,2025-02-01 03:10:34,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1885565392472481918',soon we will need another exam...,en,Tweet,716,6624,474,585,982983,2025-02-01 00:46:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885601623625331162',got one more o3-mini goody coming for you soon--i think we saved the best for last!,en,Tweet,443,9430,487,1287,1065655,2025-02-01 03:10:34,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885565392472481918',soon we will need another exam...,en,Tweet,762,6897,496,600,1048946,2025-02-01 00:46:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1885512831056986575',"o3-mini-high is really good and it's cool to hear some people say it's their favorite model ever
 
 but
 
 it reminds me of when we used to have something internally called ""the little big run""
 
-a top 2025 goal is to fix our naming problem",en,Tweet,598,10317,441,1297,1034314,2025-01-31 21:17:44,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1885512348234113243',"@yacineMTB oops i got that wrong. i thought it was going out today, but that part ships very soon!",en,Reply,61,2082,36,117,179583,2025-01-31 21:15:49,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+a top 2025 goal is to fix our naming problem",en,Tweet,616,10554,448,1311,1080659,2025-01-31 21:17:44,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885512348234113243',"@yacineMTB oops i got that wrong. i thought it was going out today, but that part ships very soon!",en,Reply,61,2125,36,118,186068,2025-01-31 21:15:49,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1885443487253848512',"check out how more details here, especially worth noting the performance of high.
 
 also, team really delivered on API pricing!
 
-https://t.co/TSPTgnzphF",en,Tweet,533,5218,547,442,834150,2025-01-31 16:42:11,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://openai.com/index/openai-o3-mini/,,
+https://t.co/TSPTgnzphF",en,Tweet,540,5279,550,447,844114,2025-01-31 16:42:11,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://openai.com/index/openai-o3-mini/,,
 '1885441031656632737',"o3-mini is out!
 
 smart, fast model.
@@ -24,25 +24,25 @@ it can search the web, and it shows its thinking.
 
 available to free-tier users! click the ""reason"" button.
 
-with ChatGPT plus, you can select ""o3-mini-high"", which thinks harder and gives better answers.",en,Tweet,2419,23685,1933,1628,2422691,2025-01-31 16:32:26,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+with ChatGPT plus, you can select ""o3-mini-high"", which thinks harder and gives better answers.",en,Tweet,2466,24046,1951,1645,2485431,2025-01-31 16:32:26,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1885441438579601456',"a lot of people prefer this to o1, and it's just the mini model.
 
-now we work on the big brother.",en,Reply,167,5910,181,428,411916,2025-01-31 16:34:03,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1885218481282388148',why not 100x?,en,Tweet,1627,5428,380,730,1144873,2025-01-31 01:48:06,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1885191346916356371',first full 8-rack GB200 NVL72 now running in azure for openai—thank you @satyanadella and jensen!,en,Tweet,619,10181,601,610,1523637,2025-01-31 00:00:16,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1885196464558653471',"@SpencerKSchiff @satyanadella yes, tomorrow! enjoy it.",en,Reply,40,1277,80,95,183828,2025-01-31 00:20:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+now we work on the big brother.",en,Reply,168,5965,181,431,417981,2025-01-31 16:34:03,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885218481282388148',why not 100x?,en,Tweet,1632,5450,382,730,1151493,2025-01-31 01:48:06,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885191346916356371',first full 8-rack GB200 NVL72 now running in azure for openai—thank you @satyanadella and jensen!,en,Tweet,621,10206,601,611,1528559,2025-01-31 00:00:16,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885196464558653471',"@SpencerKSchiff @satyanadella yes, tomorrow! enjoy it.",en,Reply,40,1278,80,95,184369,2025-01-31 00:20:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1884374900908884171',"visited @Helion_Energy today.
 
-the machine is making rapid progress (and the scale is nuts)--it feels like walking through a sci-fi movie!",en,Tweet,566,7068,442,728,1075029,2025-01-28 17:56:01,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1884319395905958235',next phase of the msft x oai partnership is gonna be much better than anyone is ready for!! https://t.co/LL6rUDDy50,en,Tweet,1522,31750,1552,3731,3800055,2025-01-28 14:15:27,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,photo,https://pbs.twimg.com/media/GiZygH4aYAExB34.jpg
+the machine is making rapid progress (and the scale is nuts)--it feels like walking through a sci-fi movie!",en,Tweet,565,7070,442,728,1076140,2025-01-28 17:56:01,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884319395905958235',next phase of the msft x oai partnership is gonna be much better than anyone is ready for!! https://t.co/LL6rUDDy50,en,Tweet,1522,31754,1553,3727,3801280,2025-01-28 14:15:27,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,photo,https://pbs.twimg.com/media/GiZygH4aYAExB34.jpg
 '1884066337103962416',"deepseek's r1 is an impressive model, particularly around what they're able to deliver for the price.
 
-we will obviously deliver much better models and also it's legit invigorating to have a new competitor! we will pull up some releases.",en,Tweet,8147,87495,6912,6968,14022632,2025-01-27 21:29:53,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+we will obviously deliver much better models and also it's legit invigorating to have a new competitor! we will pull up some releases.",en,Tweet,8146,87506,6915,6965,14025087,2025-01-27 21:29:53,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1884066338739830835',"but mostly we are excited to continue to execute on our research roadmap and believe more compute is more important now than ever before to succeed at our mission.
 
-the world is going to want to use a LOT of ai, and really be quite amazed by the next gen models coming.",en,Reply,404,11356,489,383,1643415,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1884066340509729074',look forward to bringing you all AGI and beyond.,en,Reply,363,11108,557,900,1508357,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
-'1883327652049965285',@MillionInt indeed!,en,Reply,26,869,17,97,134722,2025-01-25 20:34:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+the world is going to want to use a LOT of ai, and really be quite amazed by the next gen models coming.",en,Reply,404,11357,489,383,1644081,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884066340509729074',look forward to bringing you all AGI and beyond.,en,Reply,363,11110,557,900,1509015,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1883327652049965285',@MillionInt indeed!,en,Reply,26,869,17,97,134751,2025-01-25 20:34:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
 '1883240718170239464',"RT @klarnaseb: NOTE: Using OpenAi Operator at your bank in EU is illegal by law! Web access for assistants was banned years ago as part of “Open banking”
 
 Here is the story of why:
@@ -79,14 +79,218 @@ And surprise, surprise the open banking API of European banks, continue to be br
 
 And people ask me why open banking has not become a larger success…
 
-What do you say @donaldtusk time for a change? Jest potrzebne!",en,Retweet,1379,3535,737,237,1299861,2025-01-25 14:49:10,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
-'1883305404089901269',fun watching people react to operator. reminds me of the chatgpt launch!,en,Tweet,786,11078,403,1293,2000235,2025-01-25 19:06:13,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+What do you say @donaldtusk time for a change? Jest potrzebne!",en,Retweet,1379,3537,738,237,1300407,2025-01-25 14:49:10,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883305404089901269',fun watching people react to operator. reminds me of the chatgpt launch!,en,Tweet,786,11077,403,1293,2000605,2025-01-25 19:06:13,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
 '1883294216329281627',"ok we heard y’all.
 
 *plus tier will get 100 o3-mini queries per DAY (!)
 *we will bring operator to plus tier as soon as we can
 *our next agent will launch with availability in the plus tier
 
-enjoy 😊",en,Tweet,1650,16788,1086,2095,4408397,2025-01-25 18:21:45,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
-'1883295895405674702',@mckaywrigley no hints!,en,Reply,8,868,8,73,156659,2025-01-25 18:28:26,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
-'1883295549006434599',@StonkyOli i think you will be very very happy with o3 pro!,en,Reply,67,2109,39,134,260067,2025-01-25 18:27:03,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+enjoy 😊",en,Tweet,1649,16788,1087,2093,4409032,2025-01-25 18:21:45,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883295895405674702',@mckaywrigley no hints!,en,Reply,8,868,8,73,156685,2025-01-25 18:28:26,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883295549006434599',@StonkyOli i think you will be very very happy with o3 pro!,en,Reply,67,2109,39,134,260104,2025-01-25 18:27:03,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883295278457090218',@Jory_cambro Ok,und,Reply,26,1384,26,117,90588,2025-01-25 18:25:58,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883294216329281627',"ok we heard y’all.
+
+*plus tier will get 100 o3-mini queries per DAY (!)
+*we will bring operator to plus tier as soon as we can
+*our next agent will launch with availability in the plus tier
+
+enjoy 😊",en,Tweet,1649,16788,1087,2093,4409032,2025-01-25 18:21:45,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883290042405388591',"@TheGasStovee @kimmonismus no no, we will do hundreds per week",en,Reply,8,634,18,77,35598,2025-01-25 18:05:10,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1882968028817805495',@kimmonismus how does 100 queries per week sound?,en,Reply,140,3967,72,1050,640917,2025-01-24 20:45:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1883289827195666702',@kimmonismus ok feedback taken we will do a lot lot more!,en,Reply,32,2197,32,182,195749,2025-01-25 18:04:19,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883185690508488934',"A revolution can be neither made nor stopped. The only thing that can be done is for one of several of its children to give it a direction by dint of victories.
+
+-Napoleon",en,Tweet,1832,13144,1008,2151,2321189,2025-01-25 11:10:31,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882980524530278628',@nicdunz @micsolana kk,und,Reply,6,281,2,57,37437,2025-01-24 21:35:15,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1882952366313672753',@jaltma excuse me,en,Reply,97,4444,44,337,225161,2025-01-24 19:43:22,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882653620757504087',@Cernovich that’s a miss; we will fix fast,en,Reply,122,2921,56,489,361806,2025-01-23 23:56:15,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1882505650594611588',big. beautiful. buildings. https://t.co/8lAvUufXFm,en,Tweet,1341,15607,1032,1759,2803782,2025-01-23 14:08:17,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,video,https://video.twimg.com/ext_tw_video/1882505378564333568/pu/vid/avc1/1280x720/QF7z6YghL8MLx3LT.mp4?tag=12
+'1882505714196988271',"stargate site 1, texas, january 2025.",en,Reply,243,5221,385,504,589521,2025-01-23 14:08:32,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882488842290356462',"doing an openai livestream right now, first agent launch!
+
+https://t.co/m89GVmQ6Uo",en,Tweet,1172,5906,707,696,1385751,2025-01-23 13:01:29,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,https://m.youtube.com/watch?v=CSE77wAdDLg,,
+'1882478782059327666',"big news: the free tier of chatgpt is going to get o3-mini!
+
+(and the plus tier will get tons of o3-mini usage)",en,Tweet,1839,25818,1825,2213,8703987,2025-01-23 12:21:31,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882449180561662052',just one more mean tweet and then maybe you'll love yourself...,en,Tweet,1841,35975,1844,4735,5373264,2025-01-23 10:23:53,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882234406662000833',"watching @potus more carefully recently has really changed my perspective on him (i wish i had done more of my own thinking and definitely fell in the npc trap).
+
+i'm not going to agree with him on everything, but i think he will be incredible for the country in many ways!",en,Tweet,6250,69530,3896,13189,12402495,2025-01-22 20:10:27,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882215169855742041',@TolgaBilge_ @elonmusk both are true! i dont think he's a nice person or treating us fairly but you have to respect the guy and he pushes all of us to be more ambitious.,en,Reply,528,7762,223,630,626568,2025-01-22 18:54:01,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882106524090482701',"@elonmusk @OpenAI wrong, as you surely know.
+
+want to come visit the first site already under way?
+
+this is great for the country. i realize what is great for the country isn't always what's optimal for your companies, but in your new role i hope you'll mostly put 🇺🇸 first.",en,Reply,1918,28617,1503,2979,2558370,2025-01-22 11:42:17,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1882085883081609484',@elonmusk @OpenAI i genuinely respect your accomplishments and think you are the most inspiring entrepreneur of our time,en,Reply,1061,18183,609,2076,1647289,2025-01-22 10:20:16,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1881874789293551966',"@SmokeAwayyy absolutely not! very important and huge partnership, for a long time to come.
+
+we just need moar compute.",en,Reply,344,7242,202,454,485998,2025-01-21 20:21:27,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1881869658867016096',@BasedBeffJezos 🫡,qme,Reply,174,7096,137,295,360393,2025-01-21 20:01:04,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1881869189373411714',@thejeffdo patience jeff. it will be worth the wait.,en,Reply,21,504,12,25,41278,2025-01-21 19:59:12,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1881830103858172059',"RT @OpenAI: Announcing The Stargate Project
+
+The Stargate Project is a new company which intends to invest $500 billion over the next four years building new AI infrastructure for OpenAI in the United States. We will begin deploying $100 billion immediately. This infrastructure will secure American leadership in AI, create hundreds of thousands of American jobs, and generate massive economic benefit for the entire world. This project will not only support the re-industrialization of the United States but also provide a strategic capability to protect the national security of America and its allies.
+
+The initial equity funders in Stargate are SoftBank, OpenAI, Oracle, and MGX. SoftBank and OpenAI are the lead partners for Stargate, with SoftBank having financial responsibility and OpenAI having operational responsibility. Masayoshi Son will be the chairman.
+
+Arm, Microsoft, NVIDIA, Oracle, and OpenAI are the key initial technology partners. The buildout is currently underway, starting in Texas, and we are evaluating potential sites across the country for more campuses as we finalize definitive agreements.
+
+As part of Stargate, Oracle, NVIDIA, and OpenAI will closely collaborate to build and operate this computing system. This builds on a deep collaboration between OpenAI and NVIDIA going back to 2016 and a newer partnership between OpenAI and Oracle.
+
+This also builds on the existing OpenAI partnership with Microsoft. OpenAI will continue to increase its consumption of Azure as OpenAI continues its work with Microsoft with this additional compute to train leading models and deliver great products and services.
+
+All of us look forward to continuing to build and develop AI—and in particular AGI—for the benefit of all of humanity. We believe that this new step is critical on the path, and will enable creative people to figure out how to use AI to elevate humanity.",en,Retweet,15799,62843,11555,5869,32324807,2025-01-21 17:23:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1881851602727993711',build monuments in the desert,en,Tweet,871,15144,909,1725,2719386,2025-01-21 18:49:19,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1881777216356536693',🩵,art,Tweet,239,3055,235,250,1128017,2025-01-21 13:53:44,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1881258443669172470',"twitter hype is out of control again. 
+
+we are not gonna deploy AGI next month, nor have we built it.
+
+we have some very cool stuff for you but pls chill and cut your expectations 100x!",en,Tweet,1919,30344,1652,2458,3884163,2025-01-20 03:32:19,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1880356297985638649',"thank you to the external safety researchers who tested o3-mini.
+
+we have now finalized a version and are beginning the release process; planning to ship in ~a couple of weeks.
+
+also, we heard the feedback: will launch api and chatgpt at the same time!
+
+(it's very good.)",en,Tweet,1311,15789,1086,1034,2603807,2025-01-17 15:47:31,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880388642172203226',"@sporadicalia @TarasBob @mckaywrigley no, you'll get it for 200",en,Reply,82,1234,48,84,253782,2025-01-17 17:56:02,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880366903107154134',"@TarasBob @mckaywrigley o3 is much smarter; we are turning our attention to that now.
+
+(and o3 pro?! 🤯)",en,Reply,88,1290,68,60,114775,2025-01-17 16:29:39,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880366645333618998',@RileyRalmuto which thing?,en,Reply,13,265,6,35,93911,2025-01-17 16:28:38,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880361730985042250',@davidsatlerr real high,en,Reply,15,614,16,19,62554,2025-01-17 16:09:06,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880360141218017656',"@mckaywrigley worse than o1 pro at most things
+
+(but FAST)",en,Reply,86,1661,55,67,248997,2025-01-17 16:02:47,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880358749187240274',"@kimmonismus @flowersslop 1 and 2, figuring that out but i think you'll be happy.
+
+3, i would love for us to be able to merge the GPT series and the o series in 2025! let's see.",en,Reply,118,1544,83,59,171102,2025-01-17 15:57:15,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880358343900033112',@AsherAharonov @flowersslop yes. 872 megawatts.,en,Reply,43,520,37,45,96446,2025-01-17 15:55:39,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880357508306674126',@flowersslop what would you like to know?,en,Reply,22,634,8,96,74507,2025-01-17 15:52:19,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880357001764737495',"@knowclarified yes, of course!",en,Reply,13,655,4,21,64415,2025-01-17 15:50:19,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880324794954240374',whitney is one of the most impressive founders i know and i'm thrilled she is returning to be ceo of bumble! great news for the company.,en,Tweet,226,3845,279,261,786073,2025-01-17 13:42:20,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1880303311842341152',"funny, they never sent me one of these for contributing to democrats... https://t.co/xjpanXSb5D",en,Tweet,9791,78185,10157,4415,7779130,2025-01-17 12:16:58,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,photo,"https://pbs.twimg.com/media/GhgtvShWUAE95A-.jpg,https://pbs.twimg.com/media/Ghgtx1dW4AALWAg.png,https://pbs.twimg.com/media/Ghgt0DwXoAAXotZ.jpg"
+'1880303781537292453',it was a personal contribution as you state; i am confused about the questions given that my company did not make a decision.,en,Reply,400,19404,566,604,1061614,2025-01-17 12:18:50,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1879270529066262733',"RT @karinanguyen_: We're excited to introduce Tasks! For the first time, ChatGPT can manage tasks asynchronously on your behalf—whether it's a one-time request or an ongoing routine. Here are my favorite use cases:
+
+1/ ChatGPT checks stock price every morning! https://t.co/ce1sEodBwh",en,Retweet,10589,12811,1211,457,2432888,2025-01-14 15:53:03,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,video,https://video.twimg.com/ext_tw_video/1879270112282267648/pu/vid/avc1/986x720/TxzSX8AFmfiS18LD.mp4?tag=12
+'1877815461259235419',"prediction: the o3 arc will go something like:
+
+1. ""oh damn it's smarter than me, this changes everything ahhhh""
+
+&lt;ten minutes pass&gt;
+
+2. ""so what's for dinner, anyway?""
+
+&lt;ten minutes pass&gt;
+
+3. ""can you believe how bad o3 is? and slow? they need to hurry up and ship o4.""",en,Tweet,1447,16835,1035,1705,1505281,2025-01-10 15:31:08,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877822706835497389',@12Tillu that is going to take awhile,en,Reply,33,1304,19,75,112685,2025-01-10 15:59:56,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877822623347839026',@swagt0shi that's ok,en,Reply,15,1173,7,32,85339,2025-01-10 15:59:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877814065088663763',it's been fun watching the vibes shift on o1 (including pro) as people learn how to use it,en,Tweet,424,3883,263,322,1904945,2025-01-10 15:25:35,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877815642813858020',@EV_Trapper @remstack will be available with openai plus; still working on api pricing but not that much.,en,Reply,11,368,29,31,52278,2025-01-10 15:31:52,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877814587636006924',@remstack o3-mini first; not that long now!,en,Reply,24,749,45,47,67377,2025-01-10 15:27:40,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877814128603005151',(and i super appreciate when people change their minds with more data!),en,Reply,27,1735,92,96,349361,2025-01-10 15:25:51,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1877814462121402868',an important thing for us to do now is figure out how to make this new kind of model very easy to use!,en,Reply,46,1824,92,235,357701,2025-01-10 15:27:10,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876780763653263770',"My sister has filed a lawsuit against me. Here is a statement from my mom, brothers, and me: https://t.co/Nve0yokTSX",en,Tweet,10739,31081,1904,4814,7565086,2025-01-07 18:59:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,photo,https://pbs.twimg.com/media/Ggup3A7WMAAr5cw.png
+'1876867051215585542',"""in excess of $75,000"" is something required for this court, i believe.
+
+in case there is any doubt about the goal here, here is something annie's lawyer wrote to my lawyer:
+
+""Significantly, given our client’s tort claims involve sexual assault and sexual battery, we are allowed to seek punitive damages in this case under Missouri law. This means we will be allowed to seek discovery on Sam Altman’s net worth and present Sam Altman’s net worth to the jury for consideration on a punitive damages award. It is not often where we have a case involving childhood sexual abuse spanning many years of rape and incest where the individual Defendant has the ability to pay a nine-figure punitive damages verdict. That is a very real possibility here. Most sexual abuse cases take two years on average to litigate. I would expect based on my research that Mr. Altman’s net worth may exceed $1 Billion by the time we get to trial, if it hasn’t already.""",en,Reply,227,2294,28,205,550846,2025-01-08 00:42:30,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876104315296968813',"insane thing: we are currently losing money on openai pro subscriptions!
+
+people use it much more than we expected.",en,Tweet,2869,33143,1739,3901,6218854,2025-01-05 22:11:39,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1876105804211965993',@farbood pls chill,en,Reply,35,2773,26,79,374480,2025-01-05 22:17:34,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1876104580070813976',"@PrimalRick no, i personally chose the price and thought we would make some money",en,Reply,93,3299,32,206,348609,2025-01-05 22:12:42,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1876081442775793984',reflections: https://t.co/rHdE40AuOG,en,Tweet,3464,8441,1471,826,3102231,2025-01-05 20:40:46,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://blog.samaltman.com/reflections,,
+'1876089256369909842',"@spyflips @Lateralus_11235 @Gtwy still talk a lot and still in my top small handful of favorite people in the world, easily, but we don't work together anymore",en,Reply,2,69,3,9,10427,2025-01-05 21:11:49,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876086519745905015',@spyflips @Lateralus_11235 @Gtwy ya!,und,Reply,2,58,1,17,6404,2025-01-05 21:00:56,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876086206892765503',"@Lateralus_11235 @Gtwy damn i miss those days
+
+idkfa runs it back hard",en,Reply,3,43,1,5,6024,2025-01-05 20:59:42,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876085978231877687',@maj_or_ @ghstxbt ok fine we'll do it for you,en,Reply,8,117,5,8,9637,2025-01-05 20:58:47,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876085749885600013',@C0blivious yes i really do; i hope we can start a lot more public debate very soon about how to approach this,en,Reply,40,477,18,70,75650,2025-01-05 20:57:53,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876085620646527190',@Juggerna_ut @EdKrassen ngmi,und,Reply,8,65,5,6,8244,2025-01-05 20:57:22,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876085500840407114',@ghstxbt that feels like a great deal yeah?,en,Reply,5,113,5,9,7102,2025-01-05 20:56:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1875603249472139576',"i always wanted to write a six-word story. here it is:
+___
+
+near the singularity; unclear which side.",en,Tweet,4017,26103,2738,2903,4639228,2025-01-04 13:00:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876083858975981997',@Dan2044728 ok grok,nl,Reply,14,371,3,18,25783,2025-01-05 20:50:22,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1876083490036564371',@alexkehr remarkable,en,Reply,8,247,5,16,78884,2025-01-05 20:48:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1875605258971582745',"(it's supposed to either be about 1. the simulation hypothesis or 2. the impossibility of knowing when the critical moment in the takeoff actually happens, but i like that it works in a lot of other ways too.)",en,Reply,480,4948,405,513,805516,2025-01-04 13:08:35,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1873816979590787110',"common themes:
+
+AGI
+agents
+much better 4o upgrade
+much better memory
+longer context
+“grown up mode”
+deep research feature
+better sora
+more personalization
+
+(interestingly, many great updates we have coming were mentioned not at all or very little!)",en,Tweet,1808,11200,1121,1731,2064200,2024-12-30 14:42:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1873822265382760533',"@Presidentlin this is critical to the mission of our company, year after year",en,Reply,17,609,10,34,65627,2024-12-30 15:03:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872703565497811137',algorithmic feeds are the first at-scale misaligned AIs,en,Tweet,1053,11315,871,719,1248106,2024-12-27 12:58:17,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872703596078510471',and i'm very in favor of people trying aggressive experiments to improve them,en,Reply,92,2256,203,231,321847,2024-12-27 12:58:25,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872666383210971560',"it is hard to overstate how much alec radford has contributed to the field, and how much of everyone's current progress traces back to his work.
+
+i believe he is a genius at the level of einstein, and also he is one of my favorite people ever--hard to imagine a nicer, warmer, or more thoughtful person.
+
+he is extremely modest and isn't as well-known as he should be, though i'm certain he doesn't care.
+
+super grateful for everything he has done for openai, and so looking forward to collaborating with him as an independent researcher--i think it will fit his style really well.",en,Tweet,1718,8886,511,328,1922626,2024-12-27 10:30:32,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872664379608727589',"it is (relatively) easy to copy something that you know works.
+
+it is extremely hard to do something new, risky, and difficult when you don't know if it will work.
+
+individual researchers rightly get a lot of glory for that when they do it! it's the coolest thing in the world.",en,Tweet,2172,15825,1254,622,1810537,2024-12-27 10:22:35,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872664381806542928',"it's also extremely hard to rally a big talented research team to charge a new hill in the fog together.
+
+this is key to driving progress forward.
+
+thanks to ilya, jakub, bob, mark, and many other exceptional research leaders who got us here.",en,Reply,112,2204,135,58,303609,2024-12-27 10:22:35,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872664383933108450',"i especially want to thanks @MillionInt who relentlessly leads the strawberry team--getting to this point was one of the best displays of leadership in openai history, with much more to come.",en,Reply,68,1674,85,43,261868,2024-12-27 10:22:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1872387514960601184',"RT @OpenAI: Most of ChatGPT, the API, and Sora have been down for a couple of hours and we're sorry for the trouble this is causing.
+
+We’ve identified the issue and have started recovery. We hope to be back asap. https://t.co/YiG0F9YxNN",en,Retweet,294,5400,585,882,1407319,2024-12-26 16:02:25,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://status.openai.com/,,
+'1871730475909419115',what would you like openai to build/fix in 2025?,en,Tweet,2573,16347,814,10765,5243465,2024-12-24 20:31:35,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1871734379518767452',@edalgomezn like an 800 number?,en,Reply,13,822,6,36,60664,2024-12-24 20:47:05,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871734276427063304',@mckaywrigley 👀,qme,Reply,29,613,5,19,124967,2024-12-24 20:46:41,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871734175914684899',@MindBranches this is an interesting idea i haven’t really thought about before!,en,Reply,57,916,21,31,90350,2024-12-24 20:46:17,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871734071283634530',@ti_morse coming,en,Reply,12,377,4,4,57469,2024-12-24 20:45:52,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733965029269576',@bayeslord kk,und,Reply,21,872,8,19,85934,2024-12-24 20:45:27,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733924613026101',@Leo0shot very good list! hopefully you’ll be quite happy with us next year overall,en,Reply,34,1412,16,21,110488,2024-12-24 20:45:17,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733736632647838',"@FelipeSchieber rate limits up, context up, and costs down!",en,Reply,30,628,16,9,61802,2024-12-24 20:44:32,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733618432991629',@Uncanny_Harry lots of sora improvements coming!,en,Reply,14,441,10,12,46684,2024-12-24 20:44:04,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733508034724347',@samsheffer 🫡,qme,Reply,12,503,3,8,50286,2024-12-24 20:43:38,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733436618338323',@P4LSEC this is a good idea!,en,Reply,32,1999,11,41,129382,2024-12-24 20:43:21,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733394926883299',@davidiach happy 2025!,en,Reply,29,646,15,7,59576,2024-12-24 20:43:11,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733316568961371',@0xWUT really want to figure this one out!,en,Reply,23,1203,15,29,107060,2024-12-24 20:42:52,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733252236730520',@airesearch12 good point,en,Reply,16,1738,6,63,136265,2024-12-24 20:42:37,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733176911249457',"@alexkehr ok we will work on agi and someone else can do the sexbots, deal?",en,Reply,12,272,11,19,15177,2024-12-24 20:42:19,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871733041544175687',@elder_plinius definitely need some sort of “grown up mode”,en,Reply,144,4378,115,208,226739,2024-12-24 20:41:46,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871732843166220548',@SullyOmarr definitely,en,Reply,18,686,5,10,85600,2024-12-24 20:40:59,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871732719455244344',@FibNewtonian ok those seem about equal,en,Reply,8,269,3,10,59987,2024-12-24 20:40:30,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1871732650240876830',@iScienceLuvr hope to!,en,Reply,12,374,5,11,56019,2024-12-24 20:40:13,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1870709421111984135',"i think the wsj is the overall best us newspaper right now, but they published an article called ""The Next Great Leap in AI Is Behind Schedule and Crazy Expensive"" many hours after we announced o3?! 
+
+https://t.co/JkA83TNTfO",en,Tweet,327,1911,338,384,393171,2024-12-22 00:54:16,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://www.wsj.com/tech/ai/openai-gpt5-orion-delays-639e7693,,
+'1870602244103766258',"RT @rhythmrg: also: the model we used for all of our o3 evals is fully general; a subset of the arc-agi public training set was a tiny fraction of the broader o3 train distribution, and we didn’t do any additional domain-specific fine-tuning on the final checkpoint",en,Retweet,182,1024,198,50,500634,2024-12-21 17:48:23,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1870541247049580570',@airkatakana excuse me,en,Reply,709,15782,442,346,638710,2024-12-21 13:46:00,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1870534121975652846',@npew AGI-1,und,Reply,159,3816,182,295,239084,2024-12-21 13:17:42,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1870527558783218106',you can just do things,en,Tweet,2442,26390,3234,1655,2678389,2024-12-21 12:51:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1870524745302839559',"day 13 of shipmas: special sora bonus🎄✨
+
+our GPUs get a little less busy during late december as people take a break from work, so we are giving all plus users unlimited sora access via the relaxed queue over the holidays!
+
+enjoy creating!",en,Tweet,859,11451,652,571,1237109,2024-12-21 12:40:26,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1870524820192133290',the featured feed is soooo good now,en,Reply,53,1734,80,73,249357,2024-12-21 12:40:44,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
