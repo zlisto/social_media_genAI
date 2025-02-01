@@ -1,0 +1,92 @@
+﻿tweet_id,text,language,type,bookmark_count,favorite_count,retweet_count,reply_count,view_count,created_at,client,hashtags,urls,media_type,media_urls
+'1885601623625331162',got one more o3-mini goody coming for you soon--i think we saved the best for last!,en,Tweet,432,9122,473,1257,999745,2025-02-01 03:10:34,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885565392472481918',soon we will need another exam...,en,Tweet,716,6624,474,585,982983,2025-02-01 00:46:36,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885512831056986575',"o3-mini-high is really good and it's cool to hear some people say it's their favorite model ever
+
+but
+
+it reminds me of when we used to have something internally called ""the little big run""
+
+a top 2025 goal is to fix our naming problem",en,Tweet,598,10317,441,1297,1034314,2025-01-31 21:17:44,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885512348234113243',"@yacineMTB oops i got that wrong. i thought it was going out today, but that part ships very soon!",en,Reply,61,2082,36,117,179583,2025-01-31 21:15:49,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885443487253848512',"check out how more details here, especially worth noting the performance of high.
+
+also, team really delivered on API pricing!
+
+https://t.co/TSPTgnzphF",en,Tweet,533,5218,547,442,834150,2025-01-31 16:42:11,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,https://openai.com/index/openai-o3-mini/,,
+'1885441031656632737',"o3-mini is out!
+
+smart, fast model.
+
+available in ChatGPT and API.
+
+it can search the web, and it shows its thinking.
+
+available to free-tier users! click the ""reason"" button.
+
+with ChatGPT plus, you can select ""o3-mini-high"", which thinks harder and gives better answers.",en,Tweet,2419,23685,1933,1628,2422691,2025-01-31 16:32:26,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885441438579601456',"a lot of people prefer this to o1, and it's just the mini model.
+
+now we work on the big brother.",en,Reply,167,5910,181,428,411916,2025-01-31 16:34:03,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885218481282388148',why not 100x?,en,Tweet,1627,5428,380,730,1144873,2025-01-31 01:48:06,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885191346916356371',first full 8-rack GB200 NVL72 now running in azure for openai—thank you @satyanadella and jensen!,en,Tweet,619,10181,601,610,1523637,2025-01-31 00:00:16,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1885196464558653471',"@SpencerKSchiff @satyanadella yes, tomorrow! enjoy it.",en,Reply,40,1277,80,95,183828,2025-01-31 00:20:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884374900908884171',"visited @Helion_Energy today.
+
+the machine is making rapid progress (and the scale is nuts)--it feels like walking through a sci-fi movie!",en,Tweet,566,7068,442,728,1075029,2025-01-28 17:56:01,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884319395905958235',next phase of the msft x oai partnership is gonna be much better than anyone is ready for!! https://t.co/LL6rUDDy50,en,Tweet,1522,31750,1552,3731,3800055,2025-01-28 14:15:27,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,photo,https://pbs.twimg.com/media/GiZygH4aYAExB34.jpg
+'1884066337103962416',"deepseek's r1 is an impressive model, particularly around what they're able to deliver for the price.
+
+we will obviously deliver much better models and also it's legit invigorating to have a new competitor! we will pull up some releases.",en,Tweet,8147,87495,6912,6968,14022632,2025-01-27 21:29:53,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884066338739830835',"but mostly we are excited to continue to execute on our research roadmap and believe more compute is more important now than ever before to succeed at our mission.
+
+the world is going to want to use a LOT of ai, and really be quite amazed by the next gen models coming.",en,Reply,404,11356,489,383,1643415,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1884066340509729074',look forward to bringing you all AGI and beyond.,en,Reply,363,11108,557,900,1508357,2025-01-27 21:29:54,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1883327652049965285',@MillionInt indeed!,en,Reply,26,869,17,97,134722,2025-01-25 20:34:37,"<a href=""https://mobile.twitter.com"" rel=""nofollow"">Twitter Web App</a>",,,,
+'1883240718170239464',"RT @klarnaseb: NOTE: Using OpenAi Operator at your bank in EU is illegal by law! Web access for assistants was banned years ago as part of “Open banking”
+
+Here is the story of why:
+
+15 years ago I stumbled into Sofort in Germany. A company with the idea to build a digital assistant that would interact with your banks poor UI, so you as a user could avoid it. Just like operator. Back then it was script based, not AI but it worked. 
+
+I was so impressed Klarna bought the company. It has since then processed billions of dollars. 
+
+But of course banks got scared! What happens if people use the digital assistant only, instead of their bank. And what if the assistant says, stop paying those fees to your bank and let me help you switch?
+
+So German banks sued. They claimed privacy concerns. It went to Brussels and a long lobbying and legal fight pursued. This was the beginning of what we today call open banking!
+
+I and others spent years fighting over consumers right to use digital assistants, when accessing their banks. We knew this was critical to create real competition, in an industry that has been plagued by excess profits for years. 
+
+At first Jonathan Hill from UK was responsible and very supportive. But then he left and a German guy came onboard. He was 100% aligned with incumbent banks and we thought the case was lost. However he did a mistake and let some Russian oligarchs take him for a ride on their private jet. And so he was out. 
+
+Finally @VDombrovskis stepped in. He was smart and supportive but pressure from banks was intense. There was rumors that they were funding privacy groups in Germany, to have them use privacy concerns to kill Open Banking. What if the digital assistant accessed some of your private data?
+
+We were about to loose the vote, when the competitive authorities of EU started getting interested. They suspected the banks were lobbying and pursuing this matter for profit reasons to reduce competition(really…). A few weeks before the vote in parliament they raided the offices of some Dutch and Polish banks. Everyone got super nervous and the Open Banking regulation was passed!
+
+Almost…
+
+A small technical detail was left to EBA (European banking authorities). Should your digital assistant use an API for access to your bank account or the standard web UI you use yourself for accessing your bank?
+
+We pushed as hard as we could. We highlighted and said, if your assistant is mandated to use the API that your bank supplies. What if the API don’t support all the same features. Or the API is broken?
+
+Don’t worry said regulators. You can complain with authorities 😂 
+
+We said at least let the digital assistant, as fall back, use the web UI. Then banks cant cheat, as they will know we can always use the same UI as their human customers. It’s called self regulation. But EBA ignored us. 
+
+Today web UI access for digital assistants as ChatGPT Operator is illegal by law. 
+
+And surprise, surprise the open banking API of European banks, continue to be broken, lack functionality and banks add as much friction as they can. We report and see thousands of issues with these APIs every year. 
+
+And people ask me why open banking has not become a larger success…
+
+What do you say @donaldtusk time for a change? Jest potrzebne!",en,Retweet,1379,3535,737,237,1299861,2025-01-25 14:49:10,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883305404089901269',fun watching people react to operator. reminds me of the chatgpt launch!,en,Tweet,786,11078,403,1293,2000235,2025-01-25 19:06:13,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883294216329281627',"ok we heard y’all.
+
+*plus tier will get 100 o3-mini queries per DAY (!)
+*we will bring operator to plus tier as soon as we can
+*our next agent will launch with availability in the plus tier
+
+enjoy 😊",en,Tweet,1650,16788,1086,2095,4408397,2025-01-25 18:21:45,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883295895405674702',@mckaywrigley no hints!,en,Reply,8,868,8,73,156659,2025-01-25 18:28:26,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
+'1883295549006434599',@StonkyOli i think you will be very very happy with o3 pro!,en,Reply,67,2109,39,134,260067,2025-01-25 18:27:03,"<a href=""http://twitter.com/download/iphone"" rel=""nofollow"">Twitter for iPhone</a>",,,,
