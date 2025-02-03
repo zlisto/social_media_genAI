@@ -242,112 +242,112 @@ class GenAI:
         return url_pattern.sub(r'', text)
 
     def display_tweet(self,text='life is good', screen_name='zlisto'):
-    display_html = f'''
-    <!DOCTYPE html>
-    <html>
-    <head>
+        display_html = f'''
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                .tweet {{
+                    background-color: white;
+                    color: black;
+                    border: 1px solid #e1e8ed;
+                    border-radius: 10px;
+                    padding: 20px;
+                    max-width: 500px;
+                    margin: 20px auto;
+                    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+                }}
+                .user strong {{
+                    color: #1da1f2;
+                }}
+                .tweet-text p {{
+                    margin: 0;
+                    line-height: 1.5;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="tweet">
+                <div class="user">
+                    <strong>@{screen_name}</strong>
+                </div>
+                <div class="tweet-text">
+                    <p>{text}</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        '''
+        display(HTML(display_html))
+        return display_html
+
+    def display_IG(self,caption, image_url, screen_name=None, profile_image_url = None):
+        ''' HTML template for displaying the image, screen name, and caption in an Instagram-like format'''
+
+        display_html = f"""
         <style>
-            .tweet {{
-                background-color: white;
-                color: black;
-                border: 1px solid #e1e8ed;
-                border-radius: 10px;
-                padding: 20px;
-                max-width: 500px;
+            .instagram-post {{
+                border: 1px solid #e1e1e1;
+                border-radius: 3px;
+                width: 600px;
                 margin: 20px auto;
+                background-color: white;
                 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
             }}
-            .user strong {{
-                color: #1da1f2;
+            .instagram-header {{
+                padding: 14px;
+                border-bottom: 1px solid #e1e1e1;
+                display: flex;
+                align-items: center;
             }}
-            .tweet-text p {{
-                margin: 0;
-                line-height: 1.5;
+            .instagram-profile-pic {{
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+            }}
+            .instagram-screen-name {{
+                font-weight: bold;
+                color: #262626;
+                text-decoration: none;
+                font-size: 14px;
+            }}
+            .instagram-image {{
+                max-width: 600px;
+                width: auto;
+                height: auto;
+                display: block;
+                margin: auto;
+            }}
+            .instagram-caption {{
+                padding: 10px;
+                font-size: 14px;
+                color: #262626;
+            }}
+            .instagram-footer {{
+                padding: 10px;
+                border-top: 1px solid #e1e1e1;
+            }}
+            .instagram-likes {{
+                font-weight: bold;
+                margin-bottom: 8px;
             }}
         </style>
-    </head>
-    <body>
-        <div class="tweet">
-            <div class="user">
-                <strong>@{screen_name}</strong>
+        <div class="instagram-post">
+            <div class="instagram-header">
+                <img src="{profile_image_url}" alt="Profile picture" class="instagram-profile-pic">
+                <a href="#" class="instagram-screen-name">{screen_name}</a>
             </div>
-            <div class="tweet-text">
-                <p>{text}</p>
+            <img src="{image_url}" alt="Instagram image" class="instagram-image">
+            <div class="instagram-caption">
+                <a href="#" class="instagram-screen-name">{screen_name}</a> {caption}
+            </div>
+            <div class="instagram-footer">
+                <div class="instagram-likes">24 likes</div>
+                <!-- Include other footer content here -->
             </div>
         </div>
-    </body>
-    </html>
-    '''
-    display(HTML(display_html))
-    return display_html
-
-def display_IG(self,caption, image_url, screen_name=None, profile_image_url = None):
-    ''' HTML template for displaying the image, screen name, and caption in an Instagram-like format'''
-
-    display_html = f"""
-    <style>
-        .instagram-post {{
-            border: 1px solid #e1e1e1;
-            border-radius: 3px;
-            width: 600px;
-            margin: 20px auto;
-            background-color: white;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }}
-        .instagram-header {{
-            padding: 14px;
-            border-bottom: 1px solid #e1e1e1;
-            display: flex;
-            align-items: center;
-        }}
-        .instagram-profile-pic {{
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            margin-right: 10px;
-        }}
-        .instagram-screen-name {{
-            font-weight: bold;
-            color: #262626;
-            text-decoration: none;
-            font-size: 14px;
-        }}
-        .instagram-image {{
-            max-width: 600px;
-            width: auto;
-            height: auto;
-            display: block;
-            margin: auto;
-        }}
-        .instagram-caption {{
-            padding: 10px;
-            font-size: 14px;
-            color: #262626;
-        }}
-        .instagram-footer {{
-            padding: 10px;
-            border-top: 1px solid #e1e1e1;
-        }}
-        .instagram-likes {{
-            font-weight: bold;
-            margin-bottom: 8px;
-        }}
-    </style>
-    <div class="instagram-post">
-        <div class="instagram-header">
-            <img src="{profile_image_url}" alt="Profile picture" class="instagram-profile-pic">
-            <a href="#" class="instagram-screen-name">{screen_name}</a>
-        </div>
-        <img src="{image_url}" alt="Instagram image" class="instagram-image">
-        <div class="instagram-caption">
-            <a href="#" class="instagram-screen-name">{screen_name}</a> {caption}
-        </div>
-        <div class="instagram-footer">
-            <div class="instagram-likes">24 likes</div>
-            <!-- Include other footer content here -->
-        </div>
-    </div>
-    """
-    display(HTML(display_html))
-    return display_html
+        """
+        display(HTML(display_html))
+        return display_html
