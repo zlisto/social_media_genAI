@@ -10,6 +10,7 @@ import PyPDF2
 from docx import Document
 import re
 import openai
+from IPython.display import display, Image, HTML, Audio
 
 
 
