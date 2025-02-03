@@ -125,7 +125,7 @@ class GenAI:
         return bot_response
 
 
-    def generate_image(prompt, client, model = "dall-e-3"):
+    def generate_image(self, prompt, client, model = "dall-e-3"):
         """
         Generates an image from a text prompt using the OpenAI DALL-E API.
 
