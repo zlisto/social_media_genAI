@@ -15,39 +15,92 @@ from IPython.display import display, Image, HTML, Audio
 
 
 class GenAI:
+    """
+    A class for interacting with the OpenAI API to generate text, images, video descriptions,
+    perform speech recognition, and handle basic document processing tasks.
+
+    Attributes:
+    ----------
+    client : openai.Client
+        An instance of the OpenAI client initialized with the API key.
+    """
     def __init__(self, openai_api_key):
+        """
+        Initializes the GenAI class with the provided OpenAI API key.
+
+        Parameters:
+        ----------
+        openai_api_key : str
+            The API key for accessing OpenAI's services.
+        """
         self.client = openai.Client(api_key=openai_api_key)
         self.openai_api_key = openai_api_key
 
-    def generate_text(self, prompt, instructions='You are helpul AI named Jarvis', model="gpt-4o-mini",
-                       output_type = 'text'):
-      '''Get a text completion from the OpenAI API'''
-      completion = self.client.chat.completions.create(
-                    model=model,
-                    response_format={ "type": output_type},
-                    messages=[
-                      {"role": "system", "content": instructions},
-                      {"role": "user", "content": prompt}
-                    ]
-                  )
-      response =completion.choices[0].message.content
+    def generate_text(self, prompt, instructions='You are a helpful AI named Jarvis', model="gpt-4o-mini", output_type='text'):
+        """
+        Generates a text completion using the OpenAI API.
 
-      return response
+        This function sends a prompt to the OpenAI API with optional instructions to guide the AI's behavior. 
+        It supports specifying the model and output format, and returns the generated text response.
+
+        Parameters:
+        ----------
+        prompt : str
+            The user input or query that you want the AI to respond to.
+        
+        instructions : str, optional (default='You are a helpful AI named Jarvis')
+            System-level instructions to define the AI's behavior, tone, or style in the response.
+        
+        model : str, optional (default='gpt-4o-mini')
+            The OpenAI model to use for generating the response. You can specify different models like 'gpt-4', 'gpt-3.5-turbo', etc.
+        
+        output_type : str, optional (default='text')
+            The format of the output. Typically 'text', but can be customized for models that support different response formats.
+
+        Returns:
+        -------
+        str
+            The AI-generated response as a string based on the provided prompt and instructions.
+
+        Example:
+        -------
+        >>> response = generate_text("What's the weather like today?")
+        >>> print(response)
+        "The weather today is sunny with a high of 75°F."
+        """
+        completion = self.client.chat.completions.create(
+            model=model,
+            response_format={"type": output_type},
+            messages=[
+                {"role": "system", "content": instructions},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        response = completion.choices[0].message.content
+        return response
+
 
     def generate_chat_response(self, chat_history, user_message, instructions, model="gpt-4o-mini", output_type='text'):
         """
-        Generate a chatbot response using the OpenAI API.
+        Generates a chatbot-like response based on the conversation history.
 
-        Args:
-            chat_history (list): The list of messages in the chat so far.
-                                Each message is a dict with "role" and "content".
-            user_message (str): The latest user message.
-            instructions (str): The "system" instructions defining the chatbot's behavior.
-            model (str): The OpenAI model to use. Default is "gpt-4o-mini".
-            output_type (str): The format of the output. Default is 'text'.
+        Parameters:
+        ----------
+        chat_history : list
+            List of previous messages, each as a dict with "role" and "content".
+        user_message : str
+            The latest message from the user.
+        instructions : str
+            System instructions defining the chatbot's behavior.
+        model : str, optional
+            The OpenAI model to use (default is 'gpt-4o-mini').
+        output_type : str, optional
+            The format of the output (default is 'text').
 
         Returns:
-            str: The chatbot's response.
+        -------
+        str
+            The chatbot's response.
         """
         # Add the latest user message to the chat history
         chat_history.append({"role": "user", "content": user_message})
@@ -72,29 +125,70 @@ class GenAI:
 
 
     def generate_image(prompt, client, model = "dall-e-3"):
-      '''Generates an image using the OpenAI API'''
+        """
+        Generates an image from a text prompt using the OpenAI DALL-E API.
 
-      response_img = self.client.images.generate(
+        Parameters:
+        ----------
+        prompt : str
+            The description of the image to generate.
+        model : str, optional
+            The OpenAI model to use (default is 'dall-e-3').
+
+        Returns:
+        -------
+        tuple
+            A tuple containing the image URL and the revised prompt.
+        """
+
+        response_img = self.client.images.generate(
         model= model,
         prompt=prompt,
         size="1024x1024",
         quality="standard",
         n=1,
-      )
-      time.sleep(1)
-      image_url = response_img.data[0].url
-      revised_prompt = response_img.data[0].revised_prompt
+        )
+        time.sleep(1)
+        image_url = response_img.data[0].url
+        revised_prompt = response_img.data[0].revised_prompt
 
-      return image_url, revised_prompt
+        return image_url, revised_prompt
 
     def encode_image(self,image_path):
-      '''Encodes an image to base64'''
-      with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode('utf-8')
+        """
+        Encodes an image file into a base64 string.
+
+        Parameters:
+        ----------
+        image_path : str
+            The path to the image file.
+
+        Returns:
+        -------
+        str
+            Base64-encoded image string.
+        """
+        with open(image_path, "rb") as image_file:
+            return base64.b64encode(image_file.read()).decode('utf-8')
 
     def generate_image_description(self, image_paths, instructions, model = 'gpt-4o-mini'):
-        #print(f"instructions: {instructions}")
-        '''Generates a description of a list of image_urls using the OpenAI Vision API'''
+        """
+        Generates a description for one or more images using OpenAI's vision capabilities.
+
+        Parameters:
+        ----------
+        image_paths : str or list
+            Path(s) to the image file(s).
+        instructions : str
+            Instructions for the description.
+        model : str, optional
+            The OpenAI model to use (default is 'gpt-4o-mini').
+
+        Returns:
+        -------
+        str
+            A textual description of the image(s).
+        """
         if isinstance(image_paths, str):
             image_paths = [image_paths]
 
@@ -119,7 +213,22 @@ class GenAI:
         return image_description
 
     def extract_frames(self, fname_video):
-        '''Extract frames from a video file.'''
+        """
+        Extracts frames from a video file at regular intervals.
+
+        Parameters:
+        ----------
+        video_path : str
+            Path to the video file.
+
+        Returns:
+        -------
+        tuple
+            A tuple containing:
+            - A list of base64-encoded image frames
+            - Total number of frames in the video
+            - Frames per second (FPS) of the video
+        """
         if not os.path.exists(fname_video):
             
             return [], 0, 0
@@ -154,7 +263,23 @@ class GenAI:
         return base64Frames, nframes, fps
 
     def generate_video_description(self,fname_video, instructions, model = 'gpt-4o-mini'):
-        '''Get narration from a video file'''
+        """
+        Generates a description for a video by analyzing sampled frames.
+
+        Parameters:
+        ----------
+        video_path : str
+            Path to the video file.
+        instructions : str
+            Instructions for the description.
+        model : str, optional
+            The OpenAI model to use (default is 'gpt-4o-mini').
+
+        Returns:
+        -------
+        str
+            A textual description of the video content.
+        """
         #print('Sample video frames ...')
         base64Frames_samples, nframes, fps = self.extract_frames(fname_video)
         wps = 200 / 60  # words per second in normal speech
