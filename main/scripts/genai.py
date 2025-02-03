@@ -36,7 +36,7 @@ class GenAI:
         self.client = openai.Client(api_key=openai_api_key)
         self.openai_api_key = openai_api_key
 
-    def generate_text(self, prompt, instructions='You are a helpful AI named Jarvis', model="gpt-4o-mini", output_type='text'):
+    def generate_text(self, prompt, instructions='You are a helpful AI named Jarvis', model="gpt-4o-mini", output_type='text', temperature =1):
         """
         Generates a text completion using the OpenAI API.
 
@@ -70,6 +70,7 @@ class GenAI:
         """
         completion = self.client.chat.completions.create(
             model=model,
+            temperature=temperature,
             response_format={"type": output_type},
             messages=[
                 {"role": "system", "content": instructions},
