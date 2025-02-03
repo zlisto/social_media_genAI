@@ -14,6 +14,9 @@ Repository for course on generative AI and social media
 
 - Sentiment Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_04_SentimentAnalysis.ipynb)
 
+- Text Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_05_TextGeneration.ipynb)
+
+
 ## Homework
 
 - Homework 1: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW1.ipynb)
