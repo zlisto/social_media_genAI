@@ -168,7 +168,7 @@ class GenAI:
 
         return image_url, revised_prompt
 
-    def display_image_url(self,image_url, width=500, height=500):
+    def display_image_url(self,image_url, width=256, height=256):
         """
         Creates a static, embeddable HTML representation of an image from a given URL,
         ensuring the image remains viewable even if the original link becomes inactive.
