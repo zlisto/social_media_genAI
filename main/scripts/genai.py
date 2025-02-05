@@ -125,35 +125,87 @@ class GenAI:
         return bot_response
 
 
-    def generate_image(self, prompt, client, model = "dall-e-3"):
+    def generate_image(self, prompt, model="dall-e-3", size="1024x1024", quality="standard", n=1):
         """
         Generates an image from a text prompt using the OpenAI DALL-E API.
 
         Parameters:
         ----------
         prompt : str
-            The description of the image to generate.
+            The description of the image to generate. This text guides the AI to create an image
+            based on the provided details.
         model : str, optional
-            The OpenAI model to use (default is 'dall-e-3').
+            The OpenAI model to use for image generation. Defaults to 'dall-e-3'.
+        size : str, optional
+            The desired dimensions of the generated image. Defaults to '1024x1024'.
+            Supported sizes may vary depending on the model.
+        quality : str, optional
+            The quality of the generated image, such as 'standard' or 'high'. Defaults to 'standard'.
+        n : int, optional
+            The number of images to generate. Defaults to 1.
 
         Returns:
         -------
         tuple
-            A tuple containing the image URL and the revised prompt.
-        """
+            A tuple containing:
+            - image_url (str): The URL of the generated image.
+            - revised_prompt (str): The prompt as modified by the model, if applicable.
 
+        Notes:
+        -----
+        This function introduces a short delay (`time.sleep(1)`) to ensure proper API response handling.
+        """
         response_img = self.client.images.generate(
-        model= model,
-        prompt=prompt,
-        size="1024x1024",
-        quality="standard",
-        n=1,
+            model=model,
+            prompt=prompt,
+            size=size,
+            quality=quality,
+            n=n,
         )
         time.sleep(1)
         image_url = response_img.data[0].url
         revised_prompt = response_img.data[0].revised_prompt
 
         return image_url, revised_prompt
+
+    def display_image_url(self,image_url, width=500, height=500):
+        """
+        Creates a static, embeddable HTML representation of an image from a given URL,
+        ensuring the image remains viewable even if the original link becomes inactive.
+
+        Parameters:
+        ----------
+        image_url : str
+            The URL of the image to be displayed.
+        width : int, optional
+            The width (in pixels) to display the image. Defaults to 500.
+        height : int, optional
+            The height (in pixels) to display the image. Defaults to 500.
+
+        Returns:
+        -------
+        str
+            An HTML string containing the base64-encoded image, which can be embedded
+            directly into a notebook or web page.
+
+        Notes:
+        -----
+        - The function downloads the image from the provided URL and encodes it in base64,
+        ensuring it remains static even if the original URL is no longer accessible.
+        - This approach is useful for displaying images in environments like Jupyter Notebooks,
+        where image persistence is desired.
+        """# Validate that image_url is a proper string and has a valid URL scheme
+        if not isinstance(image_url, str) or not image_url.startswith(('http://', 'https://')):
+            raise ValueError(f"Invalid image URL provided: {image_url}")
+
+        response = requests.get(image_url)
+        image_data = response.content
+        # Encoding the image data as base64
+        base64_image = base64.b64encode(image_data).decode('utf-8')
+        # Generating HTML to display the image
+        html_code = f'<img src="data:image/jpeg;base64,{base64_image}" width="{width}" height="{height}"/>'
+        
+        return html_code
 
     def encode_image(self,image_path):
         """
@@ -309,7 +361,7 @@ class GenAI:
 
 
 
-    def recognize_speech(self,audio_filename):
+    def recognize_speech(self,audio_filename, model = 'whisper-1'):
         try:
             
             #print("Load audio file")
@@ -356,13 +408,35 @@ class GenAI:
         return '\n'.join(full_text)
 
 
-    def get_embedding(self, text, model = 'text-embedding-3-small'):
+    def get_embedding(self, text, model='text-embedding-3-small'):
+        """
+        Generates an embedding vector for a given text using the OpenAI embedding model.
+
+        Parameters:
+        ----------
+        text : str
+            The input text to be converted into an embedding. Newline characters (`\n`) 
+            are replaced with spaces to ensure proper processing.
+        model : str, optional
+            The OpenAI embedding model to use. Defaults to 'text-embedding-3-small'.
+
+        Returns:
+        -------
+        list
+            A list of floating-point numbers representing the embedding vector of the input text.
+
+        Notes:
+        -----
+        - Embeddings are useful for tasks such as semantic search, clustering, and classification.
+        - The function replaces newline characters in the input text with spaces before processing.
+        """
         text = text.replace("\n", " ")
         response = self.client.embeddings.create(
-                    input=text,
-                    model=model
-                )
+            input=text,
+            model=model
+        )
         return response.data[0].embedding
+
 
     def remove_urls(self, text):
         url_pattern = re.compile(r'https?://\S+|www\.\S+')
