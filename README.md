@@ -7,6 +7,7 @@ Repository for course on generative AI and social media
 - Transformers and Sentiment Analysis: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_03_Transformers.pdf)
 - Text Generation: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_05_Text_Generation.pdf)
 - Image Generation: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_06_Image_Generation.pdf)
+- Image Analysis: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_07_Image_Analysis.pdf)
 
 
 
@@ -20,6 +21,7 @@ Repository for course on generative AI and social media
 
 - Image Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_06_ImageGeneration.ipynb)
 
+- Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_08_ImageAnalysis.ipynb)
 
 ## Homework
 
@@ -28,6 +30,7 @@ Repository for course on generative AI and social media
 - Homework 2: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW2.ipynb)
 
 - Homework 3: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW3.ipynb)
+
 
 
 
