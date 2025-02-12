@@ -78,6 +78,8 @@ class GenAI:
             ]
         )
         response = completion.choices[0].message.content
+        response = response.replace("```html", "")
+        response = response.replace("```", "")
         return response
 
 
@@ -261,11 +263,13 @@ class GenAI:
             "max_tokens": 1000,
         }
 
-        response = self.client.chat.completions.create(**params)
-        image_description = response.choices[0].message.content
-        return image_description
+        completion = self.client.chat.completions.create(**params)
+        response = completion.choices[0].message.content
+        response = response.replace("```html", "")
+        response = response.replace("```", "")
+        return response
 
-    def extract_frames(self, fname_video):
+    def extract_frames(self, fname_video, max_samples = 15):
         """
         Extracts frames from a video file at regular intervals.
 
@@ -298,7 +302,7 @@ class GenAI:
         #logger.debug(f"{fps} frames per second")
 
         base64Frames = []
-        max_samples = 15
+        
         frame_interval = max(1, int(nframes // max_samples))  # Calculate the interval at which to sample frames
 
         current_frame = 0
@@ -315,48 +319,101 @@ class GenAI:
 
         return base64Frames, nframes, fps
 
-    def generate_video_description(self,fname_video, instructions, model = 'gpt-4o-mini'):
+    def generate_video_description(self, fname_video, instructions, max_samples=15, model='gpt-4o-mini'):
         """
-        Generates a description for a video by analyzing sampled frames.
+        Generates a textual description of a video by analyzing sampled frames.
 
-        Parameters:
+        Parameters
         ----------
-        video_path : str
+        fname_video : str
             Path to the video file.
         instructions : str
-            Instructions for the description.
+            Guidelines for generating the description.
+        max_samples : int, optional
+            Maximum number of frames to sample from the video (default is 15).
         model : str, optional
-            The OpenAI model to use (default is 'gpt-4o-mini').
+            OpenAI model used for generating the description (default is 'gpt-4o-mini').
 
-        Returns:
+        Returns
         -------
         str
-            A textual description of the video content.
+            A descriptive summary of the video content.
         """
-        #print('Sample video frames ...')
-        base64Frames_samples, nframes, fps = self.extract_frames(fname_video)
-        wps = 200 / 60  # words per second in normal speech
-        nwords_max = round(nframes / fps * wps)  # max number of words in the voice over
+        # Extract sampled frames and video metadata
+        base64Frames_samples, nframes, fps = self.extract_frames(fname_video, max_samples)
+
+        # Estimate the maximum number of words based on speech rate
+        words_per_second = 200 / 60  # Typical speech rate
+        max_words = round(nframes / fps * words_per_second)
+
+        # Convert frames to base64 image URLs
         image_urls = [f"data:image/jpeg;base64,{base64_image}" for base64_image in base64Frames_samples]
-        
-        PROMPT_MESSAGES = [
+
+        # Prepare API prompt messages
+        prompt_messages = [
             {
                 "role": "user",
-                "content": [{"type": "text", "text": instructions},
-                            *map(lambda x: {"type": "image_url", "image_url": {"url": x}}, image_urls),
-                            ],
+                "content": [{"type": "text", "text": instructions}] +
+                        [{"type": "image_url", "image_url": {"url": url}} for url in image_urls],
             },
         ]
+
+        # API request parameters
         params = {
             "model": model,
-            "messages": PROMPT_MESSAGES,
+            "messages": prompt_messages,
             "max_tokens": 1000,
         }
 
-        response = self.client.chat.completions.create(**params)
-        image_description = response.choices[0].message.content
+        # Generate completion using OpenAI's API
+        completion = self.client.chat.completions.create(**params)
+        response = completion.choices[0].message.content
 
-        return image_description
+        # Clean up response formatting
+        return response.replace("```html", "").replace("```", "")
+
+    def generate_audio(self, text, file_path, model='tts-1', voice='nova', speed=1.0):
+        """
+        Generates an audio file from the given text using OpenAI's text-to-speech (TTS) model.
+
+        Parameters
+        ----------
+        text : str
+            The input text to be converted into speech.
+        file_path : str
+            The output file path where the generated audio will be saved.
+        model : str, optional
+            The OpenAI TTS model to use (default is 'tts-1').
+        voice : str, optional
+            The voice to use for synthesis. Available voices:
+            - 'nova' (default)
+            - 'alloy'
+            - 'echo'
+            - 'fable'
+            - 'onyx'
+            - 'shimmer'
+        speed : float, optional
+            The speech speed multiplier (default is 1.0).
+
+        Returns
+        -------
+        bool
+            Returns True if the audio file is successfully generated and saved.
+        """
+
+        # Generate speech using OpenAI's API
+        response = self.client.audio.speech.create(
+            model=model,
+            voice=voice,
+            input=text,
+            speed=speed  # Include speed parameter
+        )
+
+        # Save the generated audio to the specified file path
+        response.stream_to_file(file_path)
+
+        return True
+
 
 
 
