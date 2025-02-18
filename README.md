@@ -4,10 +4,17 @@ Repository for course on generative AI and social media
 ## Slides
 
 - Introduction: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_01_Intro_to_GENAISM.pdf)
+
 - Transformers and Sentiment Analysis: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_03_Transformers.pdf)
+
 - Text Generation: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_05_Text_Generation.pdf)
+
 - Image Generation: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_06_Image_Generation.pdf)
+
 - Image Analysis: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_07_Image_Analysis.pdf)
+
+- Clustering: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_09_Clustering.pdf)
+
 
 
 
@@ -22,6 +29,8 @@ Repository for course on generative AI and social media
 - Image Generation: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_06_ImageGeneration.ipynb)
 
 - Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_08_ImageAnalysis.ipynb)
+
+- Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_09_Clustering.ipynb)
 
 ## Homework
 
