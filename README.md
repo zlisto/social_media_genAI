@@ -30,7 +30,7 @@ Repository for course on generative AI and social media
 
 - Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_08_ImageAnalysis.ipynb)
 
-- Image Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_09_Clustering.ipynb)
+- Clustering: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_09_Clustering.ipynb)
 
 ## Homework
 
