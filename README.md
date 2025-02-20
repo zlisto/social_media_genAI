@@ -15,6 +15,8 @@ Repository for course on generative AI and social media
 
 - Clustering: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_09_Clustering.pdf)
 
+- Persuasion: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_10_Persuasion.pdf)
+
 
 
 
@@ -32,6 +34,8 @@ Repository for course on generative AI and social media
 
 - Clustering: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_09_Clustering.ipynb)
 
+- Persuasion: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_10_Persuasion.ipynb)
+
 ## Homework
 
 - Homework 1: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW1.ipynb)
@@ -41,6 +45,8 @@ Repository for course on generative AI and social media
 - Homework 3: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW3.ipynb)
 
 - Homework 4: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW4.ipynb)
+
+- Homework 5: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/HW5.ipynb)
 
 
 
