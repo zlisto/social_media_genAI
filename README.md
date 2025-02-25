@@ -17,6 +17,9 @@ Repository for course on generative AI and social media
 
 - Persuasion: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_10_Persuasion.pdf)
 
+- A/B Testing: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_11_AB_Testing.pdf)
+
+
 
 
 
@@ -35,6 +38,12 @@ Repository for course on generative AI and social media
 - Clustering: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_09_Clustering.ipynb)
 
 - Persuasion: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_10_Persuasion.ipynb)
+
+
+- A/B Testing: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_11_ABTesting.ipynb)
+
+
+
 
 ## Homework
 
