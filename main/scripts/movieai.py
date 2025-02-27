@@ -105,7 +105,7 @@ class MovieAI(GenAI):
 
 
 
-    def generate_clip_descriptions(self, clip_paths, instructions_base="", model = 'gpt-4o-mini'):
+    def generate_clip_descriptions(self, clip_paths, instructions_base="", model = 'gpt-4o-mini', verbose = False):
         """
         Generates a detailed description of each movie clip in `clip_paths`.
 
@@ -117,6 +117,8 @@ class MovieAI(GenAI):
             Additional context or instructions to be added to the prompt.
         model : str, optional
             LLM model to use for generating descriptions (default: 'gpt-4o-mini').
+        verbose : bool, optional
+            Whether to display the descriptions as they are generated (default: False).
 
         Returns:
         -------
@@ -143,6 +145,8 @@ class MovieAI(GenAI):
                     max_samples=10, 
                     model=model
                 )
+                if verbose:
+                    print(f"📝 Description for {clip_path}: {description}")
 
                 dict_list.append({"clip_path": clip_path, "description": description})
 
