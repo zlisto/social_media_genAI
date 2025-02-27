@@ -21,3 +21,7 @@ elevenlabs  # For ElevenLabs API usage
 python-dotenv
 fpdf
 bs4
+youtube-transcript-api
+tqdm
+ffmpeg-python
+
