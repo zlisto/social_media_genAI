@@ -360,7 +360,8 @@ class MovieAI(GenAI):
         # Write processed clips to concatenation list
         with open(concat_list_path, "w") as f:
             for clip in processed_clips:
-                f.write(f"file '{clip.replace('\\', '/')}'\n")  # Ensure correct formatting for FFmpeg
+                f.write(f"file '{clip.replace(os.sep, '/')}'\n")  # ✅ Works everywhere
+
 
         # FFmpeg command to concatenate processed clips into final video
         concat_command = [
