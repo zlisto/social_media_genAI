@@ -206,13 +206,13 @@ class ElevenLabsAPI:
         formatted_time = datetime.fromtimestamp(conversation.metadata.start_time_unix_secs).strftime("%B %d, %Y, %I:%M %p")
         call_duration_secs  = conversation.metadata.call_duration_secs
         agent_name = self.get_agent(agent_id).name
-        speaker_name = conversation.analysis.data_collection_results['SPEAKER'].value
-        conversation_transcript  = f"Most recent conversation between {agent_name} and {speaker_name}\nTIME: {formatted_time}\nCONVERSATION\n"
+        #speaker_name = conversation.analysis.data_collection_results['SPEAKER'].value
+        conversation_transcript  = f"Most recent conversation of {agent_name}\nTIME: {formatted_time}\nCONVERSATION\n"
         for msg in conversation.transcript:
             if msg.role == "agent":
                 role = agent_name
             else:
-                role = speaker_name
+                role = msg.role
             if msg.message != None:
                 conversation_transcript += f"{role}: {msg.message}\n"
         return conversation_transcript
