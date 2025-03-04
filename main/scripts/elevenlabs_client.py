@@ -239,8 +239,8 @@ class ElevenLabsAPI:
         for c in conversations:
             tstart = datetime.fromtimestamp(c.start_time_unix_secs)
             conversation = self.get_conversation(c.conversation_id)
-            speaker = conversation.analysis.data_collection_results['SPEAKER'].value
-            summaries += "\n{" + f"\nTIME: {tstart},\nSPEAKER: {speaker},\nDURATION: {c.call_duration_secs} seconds,\nSUMMARY:{conversation.analysis.transcript_summary}" + "},"
+            #speaker = conversation.analysis.data_collection_results['SPEAKER'].value
+            summaries += "\n{" + f"\nTIME: {tstart},\nDURATION: {c.call_duration_secs} seconds,\nSUMMARY:{conversation.analysis.transcript_summary}" + "},"
         summaries += "]"
         return summaries
 

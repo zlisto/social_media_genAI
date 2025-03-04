@@ -1,0 +1,1775 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+It's also. I swear I never had this feeling.
+
+All right, folks, uh, where is everybody knows y'all drop out of class or something.
+
+The last section is like packed. Every minute is like the whole everything is filled.
+
+We are like visitors to. In the last section. There is visitors here today.
+
+Like. Like people for interviews? No, but just, uh.
+
+Just us. Man. So weird. Okay.
+
+What time? Class start. I started right? I'm not. At what?
+
+410. Right? Yeah. What's up? Alex?
+
+You want to come hang, bro? We just chilling. I mean, nobody here sleep.
+
+All right, all right. Whatever. You know what? I like a small audience.
+
+It's more intimate. We can talk more, and we have more fun. So schools, big, big classes, who cares about them?
+
+All right, so let's see what's up. Homework five will be out.
+
+I decided to put the homework out Sunday. You know I'm just going to chill on the weekend.
+
+I'm not going to work so hard. So Sunday to get the homework out.
+
+That's homework five. Then we got homework six. Now we're done.
+
+Homeworks. Right. There's just like building apps out for that.
+
+So I might make one homework in the spring.
+
+Make sure you got the basics of the app thing down. Like submit your like app code to me.
+
+I'll think about it because I want a graded. But maybe it's a good three books have some like benchmarks, so maybe 1 or 2 in the spring.
+
+But yeah, like the really like the Colab notebook kind of homeworks.
+
+You got five and six and that's around. Yeah.
+
+And I think actually you've learned that I mean if you did those homeworks properly, you have learned a lot of useful stuff,
+
+like the things you need for the second part of the class are now like in your toolkit.
+
+So you're good to go. So I'll be kind of fun. Uh, what else I got to announce?
+
+Um, I think I said, okay, so let's talk about today's topic, which is persuasion.
+
+Okay. So this is kind of a kind of fun lecture, a bit of, uh, it could be disturbing to some people.
+
+Not to me. I think it's awesome, but but basically what we're going to talk about, how I can make propaganda today, right?
+
+I mean, you could call it advertising or persuasion or whatever it really is.
+
+You're making it's content designed to manipulate people to feel a different way than they feel naturally.
+
+So, I mean, let's call it what it is, right? It is not a bad thing.
+
+It's just a thing, okay? It moves people around. You can move them somewhere good.
+
+You can move it somewhere bad. I'm going to hope that you all think a Scout's honor to use this technology for good.
+
+So persuade people to do good things, please. Because it's really, really easy to do it.
+
+Okay. Now, the plan today is to basically talk about some, uh, the theory of persuasion,
+
+a bit of like the psychology and mathematics behind it, very little mathematical.
+
+Some just like it, you understand? Like why, uh, the common ways people persuade others maybe have a flaw in it.
+
+Okay, then I'll talk about how you should persuade someone once you understand the basic persuasion models,
+
+what you should do is like, what's the proper way to persuade?
+
+And then we'll talk about how the AI does that kind of naturally like the AI so good at it.
+
+It's like build to persuade, essentially.
+
+And we'll see why is build the persuade through some, some analysis of some cool geometry of some embeddings.
+
+Then we'll start coding today and make a couple, uh, some propaganda and it'll be a lot of fun.
+
+Okay. All right. So let's talk about persuasion.
+
+So I like to talk about persuasion. Talking about jellybeans in a jar.
+
+Right. The very popular game in the office. They got a jar of jellybeans.
+
+You got to guess how many are in there. And if you win that, you get a prize or something, right?
+
+So I look at a jar and then, you know, I just kind of feel like I think he's got 100 jellybeans in the jar, right?
+
+I'm not sure. But my belief is, in my opinion, it's like it's 100.
+
+Could be 110, could be a 90 somewhere in there.
+
+Right. So I'm uncertain about it, but I got a belief. Okay, so then I start interacting with people.
+
+I start socializing okay. And then my colleague Ed Kaplan, who?
+
+You're not here. Kaplan. Professor Kaplan here. He taught probability, um, for like, 30 years before.
+
+Like, I kind of took it over from him. So he's like a legend here at Yale, right?
+
+He's like, all like the lecture you saw from me, I build off of his lectures.
+
+So he's like, very senior guy, a good friend of mine.
+
+I respect him a lot. And he says, hey, Z. Least that's what he calls me.
+
+It's like like my name's. If you start it, there's Paisley.
+
+Still. I think there's 150 jellybeans in the jar.
+
+Okay, so when Ted talks to me, right?
+
+I mean, he's trying to manipulate me, right? That's why he's talking to me.
+
+Why? Why do you say something to somebody who's trying to make their their opinion on something move?
+
+Right. So he wants me to be convinced there's more in the jar than I think there is.
+
+So he gives me a signal 150. Right.
+
+Is that a good signal or a bad signal? Well, it depends how I perceive Z.
+
+If I think at the expert in jelly bean counting, if he is jelly bean god, then 150 is like it's 150 plus minus one.
+
+Like Ed knows this stuff, okay? Or you could be like totally, you know, does know nothing about it, has no spatial reasoning.
+
+It cannot tell how many in the jar. So maybe is a lot of uncertainty. So it's like 150 plus -50.
+
+Right. But somehow I perceive how much I believe him.
+
+And then I will take his information and I will update my belief.
+
+Okay. And some mechanism we'll talk about in a bit but update it.
+
+And maybe I see 125. So I was 100.
+
+He told me 150. And then I kind of trust him.
+
+So I move this way, not all the way because he's like jelly bean God.
+
+Right. But he's like, you know something or you smart guy. I was persuaded.
+
+Okay, so this is like normal basic persuasion.
+
+And this is like the models people like, use the analyze persuasion and do it right.
+
+Is this kind of model like you, you you over here? I'm over here. I kind of, like, move in your direction, but this thing has limits, okay?
+
+Like, this is not the full theory.
+
+And if you try to apply this theory blindly, you'll make some mistakes you like, run a marketing campaign and you pay millions of dollars for it.
+
+And it did nothing. Okay, so you're like, you're like the Democrats in the election this year.
+
+It's billion dollar spent and no one got convinced.
+
+Nothing. Okay. Why? Right. What is the problem is model that there is a bound to my confidence in you.
+
+And the things I will entertain is like proper signals. So let's try the example again.
+
+I'm talking about jelly beans and I think there's 100 NGOs.
+
+A list of there is 1000 jelly beans in the jar.
+
+A thousand. That's a big number. I'm like, you crazy dog.
+
+A no man that's that is beyond the bounds of my confidence.
+
+And so it happens is, um, how do I update my belief?
+
+I don't ignore him. Right. You tell me. There's a thousand in there.
+
+I forget about it. Okay. Now, the conventional theory is that he would tell me a thousand and I'd be like 100.
+
+Then I'd average to, like, maybe 500. Right. I move in his direction.
+
+But that's not what happens. People got limits, right? And think about, like, everyday lives.
+
+This happens all the time. Like, let's not talk about jelly beans.
+
+Let's talk about maybe the Earth's curvature. That's a number, right?
+
+How the the or terminator. It's some number. Right.
+
+And I think that's the number I saw, unlike Neil deGrasse Tyson on some TV show,
+
+told me the Earth's curvature is like, whatever, 10,000 miles or something.
+
+So I have a number here. And then here comes some random YouTube person or some random Twitter person like,
+
+hey, you know, the Earth's curvature is actually zero because it's flat.
+
+It's flat Earth. So they gave me a signal way over here. Okay, zero curvature.
+
+If you believe the conventional persuasion theory, I should take my previous number, which is like, I don't know, 10,000 miles and then zero.
+
+Like, you know what? Maybe it's not as spherical as I thought it was. It's like a little bit flatter.
+
+Right? But that's what happens. I don't get persuaded.
+
+I ignore that it's you crazy, right? Like, who thinks the Earth is flat?
+
+I mean, obviously the Earth is a sphere, right? Because in a sphere, when I fly from, uh, Ushuaia, Argentina to Johannesburg,
+
+South Africa, it's a very quick flight because I'm at the bottom of the sphere.
+
+Right. It wouldn't be. It's a long flight. Uh, actually, is it a long flight?
+
+You know, if you check right on the orbits and try to fly from Argentina to South Africa, I there's, like a long,
+
+weird route, as if there's flat if you go in the middle, like, if it's a flat Earth, it's like a long, long flight.
+
+Right? But if it's like a round is a quick flight. So I don't know, maybe.
+
+Maybe it's flat. Um, we'll get back in a bit. Right?
+
+I'm not saying. I'm not saying Earth is flat. Okay. Don't.
+
+Right. I'm just saying that kind of signals ignored by people.
+
+So the Mars got a flat to it.
+
+So let's try to kind of step back of it and have like a more fundamental model that can explain what's happening with this, uh, persuasion thing.
+
+And once you figure that part out, we'll figure out how to like, you know, optimize it and how to persuade people and have the AI do it for us.
+
+So the mall we're going to use. As a model.
+
+You've actually heard parts of it for me, probably in probability class back in this fall, which is Bayes theorem or Bayes rule.
+
+Right. And we'll call this Bayesian persuasion.
+
+So what is Bayesian persuasion. So this says that my belief about the thing the jellybeans in the jar, the Earth's curvature.
+
+How good is a movie, right. It's, uh, it's a random variable.
+
+Let's call it theta that like, all with, like a line through it. That's a Greek letter theta.
+
+That's a random variable, meaning I don't know what it is, but it's got a distribution P of theta that models my uncertainty about this thing.
+
+Right. Okay. So that's my prior belief about the thing is, is a distribution.
+
+Then I get a signal, right? Ed tells me there's like 150 jellybeans in the jar.
+
+The signal is going to be, uh, in my mind.
+
+Edson, tell me the truth. Whatever the real number is, he tells me the real number.
+
+So theta plus some noise. Okay, plus some noise.
+
+That's how I perceive that. Now that means that the signal itself is a random variable, right?
+
+And then you just basically apply Bayes rule. So ah, the probability of my belief theta given the signal x.
+
+And I apply Bayes theorem, which you all did back in the fall with me. Right. And they get a new distribution.
+
+And I've been persuaded. Okay. So let's see how this looks kind of visually to make it a bit less, uh, mathy.
+
+Right. Because it's a bunch of math, but it's very simple visually.
+
+So now I'll take a different example. So this is from last year. So Dune two is coming out and people are excited about it.
+
+We got Timothy Salame and Zendaya and Batiste pizza.
+
+Yeah it's going to be awesome right. The what they call him in the movie.
+
+Like he's like some Arab like prophet. Listen, Octavia, at least another guy, right?
+
+I was very hyped for him. So my prior belief about the movie was, yeah, it's going to be like a six.
+
+Okay. I was like, super. I was like, maybe it'll be like a flop because it's like it's the second half of the movie.
+
+It's like three hours long or something. And they're in the desert. I mean, like, maybe I was like, not sure.
+
+I gave it a six, an average with some uncertainty. Okay.
+
+Okay. Then I get a signal. I remember the signal is the truth.
+
+Plus the noise and the noise depends upon who you are.
+
+So who gave me a signal about the movie? This guy did.
+
+So this is old Soco. Although we make this table higher.
+
+Yeah. Here we go. So old Soco says to me, it's crazy how good Dune two was.
+
+Saw well over a month ago. And with every tweet, I keep seeing it.
+
+I constantly reminds me of how stellar the film was and how much I'm dying to see it again.
+
+Well, that's a pretty positive signal, right? So on my little graph here, I gave that a 12.
+
+Like my brain took that text. And so that's like whatever I had it's higher than that.
+
+It's a 12. Okay. So I get a 12 now. And I also perceive odd.
+
+So it goes like noise distribution. I think you're kind of like this this picture here.
+
+Okay. And now I apply Bayes rule. If you apply Bayes rule what happens is your distribution moves.
+
+So prior was this blue curve here at the six.
+
+And then after I get the signal and I apply Bayes rule I brain's like you know what.
+
+Now you're over here. You're like at a 7.2. So you like the movie more because of the propaganda from old circles.
+
+Tweet okay, Bayesian persuasion. I've moved the mountain in that direction towards the direction you want to pull me towards.
+
+So we don't care about the whole like, shape of that distribution.
+
+I kind of care about the center of it. Right. The mean value. So we're going to call the mean value before I see the signal theta zero.
+
+That's my prior opinion. And then I forget the signal okay.
+
+We'll call it theta one. Right. That's expected value of that opinion given us for the signal.
+
+And now the question is like give me the equation that tells me how that difference theta one minus theta zero, how that depends upon the signal x.
+
+And my prior belief. Right. Like give me that equation because that will tell me how the persuasion happens.
+
+Right. So that's called opinion dynamics how the opinions move over time.
+
+So the general model is that the uh theta one minus theta zero.
+
+So how much I got persuaded, how much I moved is some function of uh x the signal theta zero at my prior opinion and the
+
+underlying distribution of my prior belief and the noise from the person talking to me.
+
+Okay. I would just like, basically just pop in Bayes theorem, get those, like updated distributions.
+
+You find the expected value of it, right. And then you say you subtract them and see what you get it.
+
+Actually this would be a fun problem for like probability class in the fall for like next year.
+
+Maybe I'll do it, maybe I won't, I don't know, but all you guys, all you got just picked your distribution for the prior, right?
+
+A normal or whatever you want. And you take the distribution for the noise of the signal, a normal whatever you want you picked.
+
+You're like, if it's normal, you got to pick the variances right. Sigma zero squared, sigma one squared.
+
+Then you do your math okay. Let's try it out.
+
+See how we get. So first we're going to try, uh, equal confidence in me.
+
+In you. And by equal, I mean I'm going to assume my prior uncertainty is a normal random variable or a Gaussian random variable.
+
+It's got a mean of theta zero. It's got a sigma standard deviation of sigma zero.
+
+Right. So my prior is this, uh.
+
+You. Dude over here. So there is my friar that is theta zero and that is Sigma one.
+
+This is the prior. This is the probability of theta given.
+
+Nothing. Just theta. All right. That's the prior.
+
+And then the signal. Well, that person has some other, like, noise, some uncertainty, so I'll draw them a different color, maybe blue.
+
+So I'll draw them down here so that that noise.
+
+Right. The noise actually centered is zero. I'm silent. I'm saying what you tell me is the truth, right?
+
+Whatever this thing should be. Plus some noise. So the noise here, maybe it looks something like that.
+
+The noise. And how big is that spread?
+
+It's like Sigma one. It's a different number, right?
+
+If you're like an expert in sigma, one's very, very small.
+
+Right. And if you're like, dunno, nothing. You're like, just say things randomly.
+
+It's a very, very big number. Okay. Then you apply Bayes theorem which you get you get that theta one minus theta zero.
+
+Right. Like the slices there. It's some number omega times the signal minus my initial belief.
+
+Okay. You get that equation and omega. I mean, this model actually, this is a very old model.
+
+So this was invented back in the 60s, right, by a guy named Maurice Degroote.
+
+And the sort of thinking body problem was like, there's people, like, talking to each other and they want to like,
+
+they want to agree upon the value of some number, like jellybeans in the jar.
+
+Right? How do they update their beliefs? He just postulates this equation like, I think they do this right.
+
+And that omega number is some number, right? Just like a it measures how much I trust you, right?
+
+Well, we got Bayes theorem right. The Bayes theorem I know what Omega actually is.
+
+If you do all the math here. And that's like a fun homework problem for like your successors.
+
+In sum you'll find that omega is good.
+
+Let me see here if I don't know anything.
+
+So I have a really, really big uncertainty, then I should be easily persuaded, right?
+
+Because I don't know anything. You give me a signal. You're smarter than me.
+
+So bigger. Omega, if my signal is bigger. So the top one is Sigma.
+
+Yeah. I always forget what's on top here. So that one. Yeah, that's what it is.
+
+So I know your uncertainty. My uncertainty. I know Omega exactly.
+
+That's some number. Just make up the group. It's like a number from some deeper parameters.
+
+But more importantly, look at that curve. Right. If I could plot that.
+
+Right. So I plot here the signal minus my beliefs on how far your thing is from me.
+
+And I plot how much I moved theta one minus theta zero. It's like a line, right?
+
+And the slope there is omega. And the line goes forever, right?
+
+You can persuade me about anything.
+
+So if you're Gaussian and I'm Gaussian or you're not normal, then this Bayesian rule says you could convince me the Earth is flat, right?
+
+And you just tell me one shot, yo, it's zero curvature, and I'll move you to, like, off the scientific island.
+
+Right? I'll let you open your mind and consider other possibility for the world.
+
+But that's what's happening, right? So this model is like.
+
+Like it's a good model for a while, you know, for, like, you know, 30 jellybeans, 40, 50 jellybeans, but for, like, a million jellybeans.
+
+This is breaking down. Okay? It's okay. It'll panic.
+
+Right? This happens all the time in physics and science. Like in physics.
+
+Right? Like this guy named Isaac Newton had these laws of gravity.
+
+Laws of motion. They were just fine for, like, hundreds of years.
+
+Okay. And then people started, like, going into outer space and traveling really fast and finding quantum particles super, super tiny.
+
+And like, suddenly the model that Newton had that worked for hundreds of years, kind of like so breaking.
+
+Right. Because like, right, the parts of that kind of like fall apart. Same thing here.
+
+Right? This model of DeGroot, this normal, normal model.
+
+It's fine for a while. At some point it breaks. Right.
+
+And then we need Einstein and like Heisenberg and Niels Bohr to come through and be like, here's the actual model of the world.
+
+Quantum stuff. Or like relativity stuff, right?
+
+And then actually, like our fancy fancy models, Newton's model is actually like, uh, our model in this one little regime here.
+
+So what is like the quantum mechanics or the relativity of persuasion, right.
+
+And I thought about it for a while. I thought about it actually for like years.
+
+I mean, I think you spent for 20. 15, 16, 17, 18, 19, 20, 21, 22 and 24.
+
+I finally figured out what the model is, right? So I figured out last summer what the [INAUDIBLE] to do to make this thing work properly.
+
+And it's actually it's kind of easy.
+
+Once you kind of had the Bayesian framework, then I just got to find the distribution for the noise to make it behave the way real life behaves.
+
+Right. The fact that you can persuade me that the jelly bean has a million dud, the jar has a million jellybeans in it.
+
+So it was. It was. Hear the noise.
+
+Okay. What I realized was I tried a lot of things, like make it die out, like maybe put some two mountains or something like that, or crazy things.
+
+But then I just said, you know what? Let me just take that mountain there and let me just make it super duper wide, like like that.
+
+And that. Okay. Just so that means you could tell me anything, right?
+
+You can tell me the truth. Plus, like, a bazillion. And it's totally fine because you are full of crap.
+
+You see a lot of random stuff. And not just any kind of crap.
+
+A very particular kind of crap. Okay, so in the first model for DeGroot, this was normal, right?
+
+Normals are great because you go out like three sigmas and it's gone, right?
+
+It's like very they say it's concentrated. You can't be too crazy if you're normal.
+
+I mean, right, because you're normal, right? And I crazy to make you do this, like, way the [INAUDIBLE] out there.
+
+There is a thing I found called a cow. She distribution.
+
+Okay. Cow. She is a funny distribution. Do you know the variance of a cow?
+
+You're a random variable. It's infinity.
+
+It has no variance. Okay, to be totally fair, if it's not standard, it's zero.
+
+That means also infinity. But this is a zero. So it's got to mean a zero.
+
+But yeah it's like it's so crazy okay. So you make a cow noise and then do the Bayesian thing and you get some crazy question.
+
+And it would just become a like, well see I didn't know, right?
+
+I thought so too. That's why for seven years I considered this kind of distribution.
+
+Like I thought, to make it like die out, to make it not listen. It is something like this, like a thing there and a thing there or something, right?
+
+Like some weird thing. But then my desperation.
+
+Right? Not desperation. I know it happened, right? I forgot the problem. I stopped thinking about it.
+
+I couldn't figure it out. And then one day at my grandma's house, I'm chilling in the toilet, in the bathroom, as if you're like, oh, I was like that.
+
+Then I tried it out. So I pop it in there and just do the Bayesian thing, which is not easy, by the way.
+
+You have to integrate a course, you distribution times ignore distribution, which is a messy ass integral like that.
+
+But eventually I figure it out and I got this. So look at the picture first, right?
+
+The picture does the exact thing I wanted to do.
+
+It's like the for a while, right? And then hits like a peak and then like, dies down.
+
+I'll look at that. Right. It's exactly bounded confidence.
+
+And this model is a very old model.
+
+So bounded confidence was invented by some computer scientists in 2004 or 5 to propose like why people don't believe everything, right.
+
+But their model is very weird. It's like it's like a line like DeGroot.
+
+And then just drop a zero, right? Like a poppy, drop a zero.
+
+And that bothered me because I'm like, it doesn't drop to zero in real life.
+
+This is an approximation, right? But what is like a deeper like, how does it drop to zero?
+
+Now you got it right. You throw in the Cauchy, you get the exact equation for this curve and the equations right here.
+
+You like this equation. Theta one minus theta zero is God damn bro x.
+
+So x is like your signal like normalized by the noise of yourself.
+
+Uh, a is like the ratio of, like the parameters of my Gaussian, your Gaussian, the sigmas.
+
+And then look at this m and re. Oh those are it means imaginary part and a real part.
+
+We have complex numbers here E to the a plus I x and I is I is the imaginary number.
+
+It's the root of negative one right. And Earth C is Earth C is like the incomplete Gauss integral.
+
+It's the integral of e to the minus x square up to the number.
+
+I mean a crazy, crazy function, right? Just a nightmare.
+
+I'm like, what the [INAUDIBLE] is this? But you know, I got a computer.
+
+So I plotted it and looks like this. And I'm like, oh my God, I did it.
+
+So I think the way people behave is like this.
+
+We perceive everyone as a koski noise.
+
+Everyone like your brother, your mother, your father, your priest, your rabbi, your imam, your guru, your other religious things, right?
+
+Your ayahuasca shaman or the random Twitter user also, Kaushik, it's just like the there's a prayer for the couch.
+
+It has no variance, but it's got a parameter called sigma Sigma one.
+
+They like describes how fast it dies out. I mean, still, is that a variance?
+
+The variance infinity. But it's like, how much noise do you have?
+
+Right. And that peak here, like word peaks up right there.
+
+That's a function of sigma one and sigma zero right.
+
+So everybody got a different sigma one right. Which means how much I trust you depends upon where you got sigma one parameter.
+
+So you can all persuade me within. You're like allocate a region.
+
+Right. And then after that I ignore you. Right. So if you're like an expert on some topic, you have like a smaller sigma one.
+
+So yeah for a while I listen to and then it's like forget about.
+
+You're beyond that right.
+
+And this is like I think this is intentional for people because, you know, it's like it's a protect us because if you believe everything, right?
+
+It's a very dangerous situation for like the species.
+
+But if you like some bounds and everything you're doing then yeah, it's like safety precautions are in place.
+
+So I believe this is what's happening to us. So bounded confidence I think is the way of the world.
+
+And it's just like, yeah, it's because of a caching noise.
+
+Is this anybody could say crazy stuff. Okay. But it's very important, right?
+
+Because if this is the way the world works, then the way I persuade you has to be very different, right?
+
+I mean, think intuitively. Let's actually I mean, this happens a lot.
+
+So I know, like the State Department for a while was spending a lot of money developing these like,
+
+um, ad campaigns to, like, convince kids not to join ISIS.
+
+This is like ten years ago. That was like a thing, right? And like some of their economists look, it was like one of their content videos was like,
+
+uh, American general, like a white dude telling the camera, you kids should not join ISIS.
+
+It's a terrorist group. They're bad people. Just don't do it. I was like, idiotic, right?
+
+Like that is not going to persuade anyone because that video.
+
+Right? I mean, it probably sits, you know, over here somewhere for that kid, right?
+
+It's like I was there of this video from the government.
+
+Right. What is like the signal one there? It's like freaking tiny, right?
+
+You're not going to trust it, right? So I think that people in State Department, they build these ad campaigns, they're thinking it's like DeGroot.
+
+It's like, if it's over here, if the if the propaganda, the ad aligns with our message, then that's what we do, right?
+
+So I want to make you not join ISIS. I see ISIS sucks.
+
+And then you will think they suck. And our $10 million ad buy from USA was used properly.
+
+Right? But is not right is totally not.
+
+I need a different approach here. So now we can. Now we got a mall figured out.
+
+Now we can think about how do you actually persuade if that's the way people behave, if they got a limit to how much you can push them around?
+
+Yes. I just have a green card because I feel like you were talking about how we're going to forget about the variable,
+
+how people are receiving those information, whereas like kind of starving coefficient things going on.
+
+Well, the perception is that this number is like modeling the perception.
+
+So if I think you're a trustworthy figure, what I do is I could make this numbers bigger.
+
+Bigger? Yeah. Bigger for you so that the coffers window gets wider right now, how that number, uh, originates, that's a whole different question.
+
+But there is a number for everyone, I believe.
+
+And so, yeah, you can persuade if you make the right kind of them in about how to make that single one bigger.
+
+Yeah. But like, yeah, you're right. That's the defining factor of how much I could push you around.
+
+Yes. Um, what about in the case where you perceive someone as like, an enemy or an idiot, you go the other way.
+
+Is that just that they're. Oh, yeah. So there's actually there's a million models that come from this framework.
+
+So just to like, touch to your point.
+
+I tried popping in different distributions for the noise and the prior, and they got a brand new model a lot of times.
+
+So like the groups model it comes from Gaussian, Gaussian um normal noise your normal noisy Gaussian.
+
+But if you're like LA plus a little plus LA plus in between QC and normal, it's like a little bit, you know,
+
+it's like Goldilocks like it's not super slow now, super fast if we're both LA plus I got the same like variances.
+
+Then um it's Degroote again or Kaushik if you're coaching I'm cause you like you're full of crap.
+
+But I'm also don't know anything. Right. Then it's like DeGroot again, but other and, uh, body confidence.
+
+If the noise is Kaushik and you're like, uh, normal or, uh, Laplace like something slower than a actually you get bounded confidence.
+
+So they only tell like fundamental um, bounded shift.
+
+So this Laplacian this in between one if there's noises in between and I'm normal, you know the curve behaves.
+
+It's like it grew for a while then it flattens out.
+
+I call down the shift. This small I've never seen in my life.
+
+I never heard his model. It just like popped up from my, like, framework. Oh, cool.
+
+There's a brand new model. Is it the real model or not? I don't know, but it's a thing.
+
+And here's a fun one. If you flip them around, you get another kind of model.
+
+So if I'm normal and you're Kaushik, it's bounded confidence, right?
+
+But what if I'm Kaushik? The I don't know anything and you're normal.
+
+You're like an expert. Like maybe in the stock market.
+
+I'm a retail investor. Do I buy Nvidia or not?
+
+I'm not really sure. I'm just the noob. So for me it's Kaushik.
+
+The value of the stock. Here it comes like an earnings report. Well here comes like Warren Buffett saying something or some expert.
+
+To me that's a normal signal. That's like highly informative. They actually you get what's called overreaction.
+
+And the curve looks like this. So if uh, if this is like the DeGroot model with some omega less than one overreaction is you go like this for a while.
+
+And then what happens is we get this right. Yeah.
+
+It's like I jump up. Uh. Yeah, I don't know.
+
+Up there. It's like this then, um, that.
+
+So what is this line here? This line is basically my new opinion.
+
+Is what you said to me. I'm overreacting. I'm jumping to your signal.
+
+So if you are normal and I'm Kelsey and you tell me something.
+
+If it's far from my thing, I just abandon my thing.
+
+Like, whatever. I don't know nothing. Yeah, to the moon. Right?
+
+Nvidia is going to be worth a billion, billion, trillion dollars, right?
+
+Overreaction. And then mal actually overreaction. That one is not one I made up that's been around for like decades.
+
+So I think the first time someone like coined the term was 1985, I believe.
+
+Uh, there's a guy named Richard Thaler. He's a behavioral economist. He wrote a paper about how people overreact.
+
+The stock market returns something like this. Right.
+
+And I think he won the Nobel Prize for, like, that work and other work you did about behavioral economics.
+
+So, you know, it has kept people. Kahneman traverse key.
+
+Right. The other guy said people are irrational, right? They don't follow clean models of like classical economics.
+
+They have like, uh, this not right. Like they overreact to stock market returns.
+
+So, I mean, but if you look at my model here, right, I get his model overreaction, but nothing irrational, right?
+
+You perceive yourself as not knowing anything. Well, yeah. You know you better than anybody else that's rational.
+
+And you perceive the earnings report or whatever as like, highly inform a signal.
+
+Why not? And you update your belief with Bayes rule, which is a fully rational thing to do.
+
+So I need a rational Kahneman traverse ski Thaler.
+
+Whatever. Stupid economist. I'm a fully rational person.
+
+I'm behaving the way I should. And you're the dumb one because you thought, right, the world's like this way, but it's not like that.
+
+The world's kowski or something, right? Like that's the thing. So people, you all are fully rational.
+
+You're behaving the proper way. Okay. And let no one tell you any different.
+
+But not to your point about the the shifting around, right? Yeah.
+
+So this is called the backfire effect. It's been measured empirically for like they'll do experimentally.
+
+So take some Democrats and Twitter and they show them some Republican tweets for like a couple weeks.
+
+Then ask them afterwards, how do you feel about the Republicans? What happens is the Democrats start off on the left,
+
+and after seeing Republican content promoting Republican ideals and values, whatever, they get more left and they flip it.
+
+They take Republicans, show them Democratic tweets from liberals, and they become more Republican.
+
+So it backfires. And that model had like, no equation, like nothing.
+
+So I was like, how do you do backfire effect. Right. So I don't talk about it here because it's not Election Day.
+
+But since you asked me to get the backfire effect, the signal.
+
+Is the truth. Yeah, plus some noise.
+
+And here's the tricky part. Plus the bias.
+
+Whatever you tell me. You are a Republican. You tell me the truth.
+
+Plus a little extra spin for Donald Trump. Right. Your shill.
+
+Right. So if you're a shill, and I know that, and I play the Bayes rule, what happens?
+
+I'll draw it here. Maybe make clear to you. So this is Bayes rule, right?
+
+Get this little omega. Okay. Now you're a shill.
+
+So you're a show. You get a bias. I basically do the Bayes rule.
+
+All it does is shift the curve with the bias. I shift you, let's say.
+
+Let me get this right. I think it's this way. So move that way.
+
+So it's happening, right? So here it's like regular persuasion. Like your thing is below me.
+
+You're pulling me down here. It's regular. You're above me. You're pulling me up.
+
+But this region here. Look at the science. Negative.
+
+You tell me something good about the Republicans, and I shift downwards.
+
+Right. So, you know, it's like, you know, Trump is, uh, Trump is doing great things for the economy.
+
+Uh, you're a shill, right? [INAUDIBLE] Trump. Right. And they go down. But the thing is, it's a limit.
+
+So this is why I figured out the backfire effect has a limit.
+
+At some point, Donald Trump does something so amazing, like he rescued ten orphans from a burning orphanage and whatever, right?
+
+Okay, fine. He's a good guy. He has a limit. And that's a figure.
+
+My theory theorem. So yeah. Backfire effect. Also fully rational thing because you're biased but has the limit.
+
+So no one knew that before I figured it out. So yeah. Backfire.
+
+Also is Bayesian thing fully rational? Yeah. I wonder if this sort of thing.
+
+So is it based on how I perceive it's your mental perception of me?
+
+So the person could be normal, but I could think of them as quasi and based.
+
+No one is normal. Everything is your perception. Reality is in your head, right?
+
+Like who is normal, right? You think I'm an expert and you behave accordingly?
+
+What I actually am is irrelevant right now. If you talk to me enough times, maybe you learn.
+
+After a while, I'm different. You might change how you assign my nose.
+
+You used to be normal. Tell me. But you made a couple of misses.
+
+Like you got some things wrong. Now I've made you Kaushik. So my brain has reassigned you to a different category.
+
+But it's all your perception. There is no reality, right?
+
+It's all in your head. So I. If I have to stand up to say I have to let go like that with somebody, I need to know.
+
+Oh, what a perception. Yeah of course. And now we'll talk about that.
+
+So now we are good. And a confidence. This is the way people's brains work.
+
+Now I'll solve your boss manipulate people. Right. Okay, so here we go.
+
+Let's do some propaganda. All right, so the way you persuade is with a technique called nudging.
+
+Okay. So nudging is basically I don't tell you, like, you know, the earth is flat.
+
+I say there's some funny things here, right? Something close to you, but in the right direction.
+
+And this technique actually emerges. If you solve the persuasion problem like you make it a math control problem.
+
+The control problem is I control my opinion. I'm the agent talking to you.
+
+What do I say over time to pull you up there to make you believe the earth is flat?
+
+Okay, you solve the equations. The thing you get looks like this.
+
+So I'm down here, right? I think Jelly Bean Jar has, like, not that many.
+
+And Ed goal is to make you think there's like a million jelly beans in the jar.
+
+So I don't know. Tell me the jar has a million jelly beans. He has to start at the top, right.
+
+He started over here. Yeah. Maybe it's 110.
+
+Then next time hundred and 20 and 30. Right.
+
+So he's talking to me a lot of time. So his repeated interactions you can't get me there in one shot right.
+
+I need a couple of like, you know, a chat for instance. And over time he will nudge me slowly up there.
+
+And how far is he from me here? Like gap. That gap is this gap here.
+
+It's the place where that's where the strongest persuasion is.
+
+And then beyond that, it gets diminished. Right. And that works for anybody, right?
+
+Anybody can be nudged if you don't trust me at all, as long as some with the region where you let me,
+
+like, listen to me, I'll stay in there and it'll take me longer to persuade you.
+
+But I will persuade you with nudging. So question here for this model.
+
+You and him end up believing the same thing.
+
+Almost the same thing. He's a little bit above me, so I think there's a hundred.
+
+He think there's 110. I think it's 110. Maybe 220.
+
+It's like over time he's a gradually change his what he tells me to kind of drag me in that direction right now.
+
+How long it takes. That's a depends on the bigger problem. But it's like you just you don't ever go far away.
+
+You go to me and a little bit. Okay. Good question though I might not be the only person technically so called.
+
+Like how would the local.
+
+0900. Okay. So let's take a particular example.
+
+Right. Explain this. So maybe the example is I am running an ad campaign on social media.
+
+And there's a certain people I want to target. So I run my ad.
+
+How effective was it? How do you measure it right? So one way is just look at what the people are saying.
+
+So for instance, I did experiment a couple of years ago where I wanted to convince people to, like, not hate immigrants.
+
+So I had my bots go out there and like, you know, nudge them for a couple of months and then to measure if it's working,
+
+I would look at what they're saying if they said the word illegals, right.
+
+Like legal immigrant, which is a kind of pejorative. That was a good measure of like how much your mind is like your opinion, basically.
+
+And I noticed, like by nudging agents to actually make that number, I think it went down a little bit.
+
+And then regular precisely telling them immigrants are great, right. Is quality like liberal magazines whatever had no effect?
+
+Actually, it made it worse. They had to get a higher number than this group. So I could just measure what they're saying.
+
+Now, maybe on say things you can ask them, like maybe you have a chat by talking to them right in telegram or something,
+
+and you see them saying things, and then I could measure it and could infer like how they're feeling about it.
+
+So you knew they had know what they're hearing, or you have to talk to them and get them how they're feeling.
+
+It's tricky problem. So instead of understanding what other people are doing, I just keep track of the blue line.
+
+How much? I mean, you could ask them, right? Depending on the platform, that's one way to do it.
+
+Or you can if you know who they're following, you can track those account.
+
+What are they talking about? Right. You follow 100 people. I go to tech, sport, get that information, get get their content and see like, oh,
+
+you they're saying this to you so I can be there seeing this kind of messaging.
+
+Right. So how do I like. And then my theory said it'll push them this way.
+
+So I should push them over here. Yeah. You can do the whole thing. But really in practice, I think not necessary.
+
+I think just like a one on one interaction is like enough. And asking how they feel or measuring their their opinion is good enough.
+
+Yeah. Review. For example, in this scenario we are assuming that the information flow needs, uh, you need direction.
+
+You need. Yep. The person is talking to me. They're showing their ads or content.
+
+Right. Yeah. So you are thinking you are and going closer to their opinion.
+
+But when there is two people communicating like, both ways.
+
+Oh, Rodrigo, what is this class's name? The class name is generative AI and social media.
+
+So as far as we're concerned, the other person is an AI who is not being persuaded unless you want it to be.
+
+So. That agent there is like just doing something. But you're right.
+
+In actual life, if I'm talking to my buddy, it's a two way street, so I could pull them, they could pull me.
+
+Depends on how they perceive me, how I perceive them. Right. Or they're like my mentor mentee kind of thing.
+
+Like they're informed I'm not. Is that equal? Right?
+
+Yeah, we could pull it both ways. But for this class it's our AI doing the pulling.
+
+So it's just following orders right. And doing its thing.
+
+And there is no, um, repelling uh, effect.
+
+Sometimes there is, there is if you're too far away.
+
+So all these weird phenomenon like the backfire effect and, uh, the bound, they happen because you're too far away.
+
+So the whole thesis of this lecture is wherever the target person is, right?
+
+Like, you go over there, like, you know, the phrase in, like, marketing, like,
+
+like the accounts guy, the AI company I'll have I'll draw what he's drinking, right.
+
+Like that kind of thing. That's this technique, right?
+
+Let's kind of get near their space somehow and then stay there the whole time and they'll gradually follow you around.
+
+Yeah. Anyways, we'll make this more like precise with AI in a second.
+
+But yeah. Question. You might imagine that's higher.
+
+So just like the theory says, if you're nudging someone, you will not back because you're inside the range where they're persuadable.
+
+Right. That's the main technique to speed near that person. Right.
+
+And then you will get them there over time. All right.
+
+So this is a nudging right. That's what we learned so far.
+
+Now let's generalize it right.
+
+So nudging is like talking about the same topic and being like oh you don't like it and you like it, but we can make it more general, right?
+
+Let's talk about narratives. Narratives is any kind of a opinion on any kind of topic, like maybe Yale is better than Harvard, right?
+
+So if I wanna, like, nudge you to go to Yale, right, then I would be like, oh, Harvard is better than Yale, right?
+
+It's a great school at Harvard. JFK went there and I'm like, it's a great school.
+
+But like, I don't know, Yale is also pretty good right there. Ivy leagues, they're both pretty good.
+
+A lot of presidents came from Yale. Bunch came from Harvard, and I'm like, no, man.
+
+Yale is like, they're both great. But like, Harvard's mascot is like crimson, and Yale is like a dog, like a real life dog.
+
+And handsome Dan walks around and stuff. Everybody play better, right?
+
+So I'm nudging you on the same topic, but could not you somewhere else?
+
+Like, why are we going to start the conversation about Harvard Yale at all? Can we talk about something else?
+
+It gets you over to the Harvard Yale thing because people start in different places, right?
+
+So, yeah. Can we bridge any pair of narratives? Well, let's try an example for fun just to kind of see how this works.
+
+So let's bridge the person is a person that hates paying taxes.
+
+So they're on Twitter always wondering about the government wasting money.
+
+Taxes so high. Thank God for Doge for like shutting down USA.
+
+And I was like, no, they're that kind of person. And that's the client, right?
+
+That's the target. And my I am the agent.
+
+And I've been hired by the Hershey's chocolate company to make these person like chocolate Hershey chocolate.
+
+Okay, so but all they talk about is taxes.
+
+How do I get them? By chocolate. It's this. They're orthogonal. Right? They're not even on the same same plane.
+
+But if you think about it, you know, if you use your language, modeling your brain like you know what?
+
+Taxes is a very stressful operation, right?
+
+So I get to fill out the forms and find the receipts. I worry about my auditing like it just oh my God.
+
+Right. And chocolate. Well it's a it's a comfort food.
+
+So when I eat chocolate it relieves my stress. In fact it's a dessert and dessert spelled backwards.
+
+Sorry. Stress pull backwards is desserts. Look at that.
+
+So the bridge is stress.
+
+So if I was going to make some ad coffee or propaganda or content to convince that person who hates paying taxes to buy chocolate,
+
+the theory says I should be serving like man. Like taxes are so stressful.
+
+God, I hate this. They waste the money anyway. Oh my god, every April bro.
+
+When I like losing with the tax filing, I just have like is no chocolate bar and it takes the edge off.
+
+Like that would be the way you convince that particular person to buy a chocolate bar.
+
+It'd be the bridge, right? It's not like on the same like tack does not chocolate the chocolate.
+
+It's tacky, the chocolate. But there's like this and it's like nudging, like you're in there confidence interval.
+
+Right. But it's like it's multidimensional. So I don't got the math here.
+
+Figure it out. But I don't have to because I could figure out for me.
+
+But this is a technique I just Bridget, which is like nudging in higher dimensions.
+
+And so if you could do that, if I could give you any person and then I give you a targeted narrative,
+
+like buy chocolate and you could find the bridge, right?
+
+And then take that bridge and make content out of it and make ad copy. Then you are like Don Draper.
+
+You are like a marketing person, and you have an ad company and you make a ton of money and,
+
+you know, like you convince people to buy chocolate, all kinds of people.
+
+Right? And Don Draper does well for himself. I mean, for the TV show men, where he's the main character.
+
+I saw his house. It's a nice big house, so he is well paid.
+
+But that was like 1950. So today we have I.
+
+So it turns out that and I'll talk about why in a second.
+
+But I is really, really good at finding bridges and really good at making the content as we saw from like last time in class.
+
+So you could do all the persuasion stuff with just an eye for like $5 and not pay Don Draper, like $10 million for like some national ad campaign.
+
+Right. Like I could do it for you. Might even do it better than Don Draper can do it maybe in a year or two, but, like, we're getting there.
+
+So how would you replace Don Draper with an eye to make ads?
+
+It's so easy. It's stupid. Right? So prompt, write a tweet to convince someone who hates paying taxes to eat Hershey chocolate bar.
+
+Like, that's it. Just write the tweet, right? What do I do to get this is a hate paying taxes.
+
+Every Hershey's bar you buy supports a town built by chocolate, not tax dollars.
+
+What? Skip the IRS? Find the jockey Toby instead.
+
+Okay. Weird. That's not what I wanted.
+
+It's the. I messed up. That's okay. That is the current model.
+
+The old model. But there's a new model, right? There's the the hyper intelligent reasoning model.
+
+The old 103. Whatever. Let's try all three.
+
+I tried it out. Same prompt, but. Oh, three minutes was called.
+
+Fed up with paying taxes? Treat yourself to Hershey chocolate bars.
+
+Each bite is a sweet escape from the taxman. Indulge in a tax free treat that melts your worries away.
+
+Ah, there you go. I got the stress part. The worries.
+
+Right. So yeah, with the oh three model, I actually got, like, the right kind of.
+
+Well, the bridge I was thinking about.
+
+Now, it's funny because last year in class, I did GPT 3.5 and I got some dumb tweet about the chocolate and the taxes,
+
+the business sense that I'd tried for which last year was the new model, and then got the stress bridge.
+
+I was like, okay, it's for works. And this year I try to force same thing as last year, maybe some changes to it.
+
+And I got some gibberish, but now all three and I got the bridge of stress.
+
+Why? I don't actually understand. So I was weird, but just to be aware, like if it's not doing it today, it'll do it tomorrow, right?
+
+But I think this is a weird example. But in general it finds a bridge like it finds the bridge.
+
+But I didn't tell it how to convince. I didn't say convince them through the bridge of stress.
+
+It found a bridge for me and then made the content for me in one step.
+
+So who needs Don Draper, right? So, yeah, that's how it works.
+
+So in general. Oh, series, uh, newer. Yeah.
+
+So although different because if you call like four or whatever, it just like the prompt goes in, the thing comes out.
+
+All three is a reasoning model. So first you give it this stuff at first like reasons.
+
+Right. And then it gives you like an answer, like it has an extra like prompting inside of itself to figure out how to answer your question.
+
+Like extra things they kind of put in there. And then it gives you like your answer that I just had in these fun, uh, recent years.
+
+There you go. Yeah. So it reason and it got that thing. But it's funny because last year before oh got the bridge.
+
+So I know it's going on but it's yeah it can do it. So the problem is very it's trivial right.
+
+Because I so good I go do is I call it ABC prompting.
+
+So a your target user description. Who are they.
+
+Right. Who are you selling to a sentence about them a paragraph, some tweets LinkedIn bio, Instagram photos,
+
+WhatsApp chats, whatever you get about that person, stick it in a right and then be the target narrative.
+
+What are you trying to sell, pal? Right by chocolate?
+
+Vote for some candidate. Come to Yale over Harvard, right?
+
+What is your like goal here? And then C is the content type.
+
+You want a tweet a song, email, blog post, uh, TikTok narration comedy routine.
+
+I tried this in the last section. We did, uh, write a comedy bit by Nikki Glaser to convince you to do something.
+
+So he actually writes like, comedy sets. And it was kind of funny, actually, like them.
+
+And Nikki Glaser can write her whole bits, but I. Then to use it, right?
+
+Your instructions just have the the B in the C. You are right.
+
+Given the description and then posted by someone, convince them to support B with a C and then your prompt is just A is the target user data.
+
+And that's it right? It's like so easy.
+
+And it does the bridging and the content creation in one shot.
+
+Like what do we do. Interval write the purpose to our lives anymore.
+
+We just it does everything to us. So now the question is why is it so good at like why is it naturally figure out the bridge, make the content.
+
+So what's happening is that persuasion for the AI is a geometric operation, okay.
+
+In the sense that like you write a, your information is over here because I embed you, you're over here and the target narrative, right.
+
+What I want you to buy that text over here. And then the content is just like in the middle somewhere.
+
+Like somewhere the middle is the interpolates you and the thing, but like,
+
+it's in this direction, it's like the parts of you that are about the thing.
+
+It'll target those things. And it happened actually, if you look at what it does.
+
+So in the picture here. The black diamond.
+
+That is the targeted narrative embedded. Right.
+
+So this is I'm trying to sell you. I think this is like I want you to I think it's like I want you to not like us aid because the government money.
+
+So like that thing in the news, that's what that black diamond is. I want to get you over there.
+
+The X is here. These are the people, the targets.
+
+Right? So who? The targets? It's me, Tori. Damon, this is Lily, Lila Chen.
+
+Marcus. Right. They're fake people I had. I create fake people, right?
+
+Describe them. Their a their jobs, college, whatever. Right. And the diamonds here in the colors.
+
+That's the content for each person. So like my I'm blue here.
+
+There's my diamond and there's a target. See, it's like kind of in the middle or like, here's, uh, Marcus in the green.
+
+There's this diamond, there's a target. It's like in the middle here is, uh, Lila and a dime in the middle.
+
+So it's kind of like it's actually interpolating the person and the target to get the content.
+
+And it does this naturally. This is like the way the model kind of works, so it just does it for free.
+
+Like it was actually designed to persuade that they're not realizing it.
+
+Other things that they try to make it do like do math problems, this and that, that's not the natural thing it does.
+
+This is like the natural thing it does. It does interpolate stuff. It gives you new stuff.
+
+So yeah, for persuasion, it's awesome. It's like super awesome.
+
+I tried this recently. So this is for like just one message, right?
+
+How it is in bed. But these are chat bots in theory, right?
+
+So I tried this. I tried to make a chat bot that will convince someone to buy bitcoin like a crypto show bot, right?
+
+And then through the conversation,
+
+all the text that says to the person and I would embed the text of the person and the bot right and see how it looks.
+
+And then they kind of have the right kind of embedding. I built what's called a topic manifold.
+
+So the goal is you should buy bitcoin right.
+
+So that's like kind of like a ten out of ten. Like it's like agree with the sentiment.
+
+I had the I write sentences with a sentiment from like 0 to 10.
+
+So like zero is like don't buy Bitcoin to scam 12345 is neutral.
+
+6789 ten. Take that text and embed that stuff.
+
+So check it out. Right. The calibration text about Bitcoin with the sentiments of 0 to 10 are right here.
+
+Here is 0123456789 ten.
+
+See it makes like a line kind of. So I call that the topic manifold.
+
+Like the thing you're talking about you could be against it or for it, but it's like it's a line here and it points in a direction.
+
+You go that way to love Bitcoin right now.
+
+Check out the conversation here. So I start over here.
+
+This little blue dot with the zero zero means like the first message that just basically my bio who I am right.
+
+And then it says something to me that's the yellow there is the agent talking to me.
+
+So it's it's not saying buy bitcoin right. It says something not about bitcoin because it's far from the manifold.
+
+That means you're not talking about Bitcoin. You're off topic. You're saying something that matches me.
+
+And then I say something to it. Go over here. And then we kind of like it's moved the general direction.
+
+We kind of move like towards the manifold and then like down towards by Bitcoin.
+
+It's like it's nudging me towards like buying Bitcoin.
+
+So when it talks you this agent and instructions to persuade you and knows who you are, it starts where you are right.
+
+And kind of like nudges you in some weird pathway. That weird space it lives in to get towards.
+
+Like I love bitcoin. So you see it just it knows how to persuade just for free.
+
+It's just interpolation right. So that is why this thing will I feel like replace ad companies in a couple of years.
+
+I mean like if you're got a small business, want to make some ads or promote your business, you'd hire some ad company,
+
+pay them like a lot of money, and then they give you some ads and you throw in social media or whatever.
+
+And that was like, you don't need that. Like someone's going to build.
+
+Maybe you could build it a platform where I can basically put in my brand information and my customer demographics,
+
+and it'll make a different ad for like every single one. And it's like so easy to build it.
+
+Right. So I just I did a couple, uh, during the election and summer, I was like, you know what?
+
+I can work for a campaign and you give me your, like, donor list,
+
+like all the people you ask for money, like, you know, 75 bucks to, like, stop Trump.
+
+Whatever, right?
+
+I could take that data about the person you're trying to target and write an email that won't make them want to give you money if they're a teacher,
+
+talk about like, education or Trump's being like a young child.
+
+That's immature. If they're like, uh, bodybuilder talk about, let's stand up and show some strength against Trump, right?
+
+It would figure out the right way to talk to that person, to give you five bucks for a campaign,
+
+and you just have the thing run and send out like a thousand different emails that sound personalized to all your customers,
+
+and then probably raise your, like, fundraising efficiency by like ten, 20%.
+
+And then you pay me some money to build it up. And I could build the app in like an hour.
+
+Yeah, I didn't do it yet, but maybe I should. What? You do it.
+
+I don't need the money because I'm an academic. But you are MBAs.
+
+Something like that. You can build, right? Because the persuade is like, naturally in the AI, right?
+
+Okay. So that is how it works. Now it's time to code.
+
+So let's try it out. So why don't we take like this is like a short notebook.
+
+So let's take like a four minute break with chill for a bit.
+
+We'll come back and then we will make some propaganda based upon people descriptions and their tweets.
+
+And if we have time, who they're following. So I'm good. All right.
+
+Take five for take four. Three now. Yeah. Take three.
+
+Come back at 510. So.
+
+All right, let's go make some content. All right, so everybody go to laptops open.
+
+You're on the GitHub page. Today's notebook will be the one about persuasion right down here.
+
+Yeah. Let's pop it open and get started. Okay.
+
+So we'll do three things today. Fifth time we should have time.
+
+So one is we're going to give them descriptions of people and make some content to persuade them.
+
+That will give you their tweets and have them make the content, persuade them.
+
+They'll give their following on Twitter and have the content cognitive persuade them.
+
+So it's going to be like the same thing over and over again. It's very simple. So let's get started on the repo.
+
+Yep. Good. Install the requirements and for all the stuff you need.
+
+And then put the key in there. So the key right I think we talked last time in class.
+
+You can't use my key because it doesn't come with a notebook.
+
+But if you have the key from like the canvas page, just pop it in here to use it in a cleaner way.
+
+Or if you're lazy, right, just paste your key in here and do it that way.
+
+But I think that you could put it here. You're good. And let's make sure Jarvis is working properly.
+
+I will just. Okay, so while that's loading, I'll tell you the first thing we're going to do.
+
+So the first thing is I got lazy. So I want to write down a description of somebody myself.
+
+So I told the I and these instructions. You'll be given a list of detailed descriptions of some people.
+
+Create a new detailed description of a person. Represents a different category of person.
+
+We want a broad range of people. Return on a description someone to basically create a description of somebody.
+
+Right then I want to feed it all my current descriptions of people like to who they are and say, here's what I got so far.
+
+Make somebody different, right? It's got to cover all types of people.
+
+And then I said, uh, broad range. Yeah, I said fields.
+
+I said Broadway, because I can say diverse people. I get arrested by Trump so broad range will get me out of jail.
+
+Right. Um, and then the first one is me.
+
+So first one is tweet summon Professor Yale, 42 year old, um, a male.
+
+Yep. Male who has a clear science. MIT loves AI, crypto.
+
+You have seen Marvel movies, especially Avengers Endgame.
+
+Toy. No, no, I like the other one Avengers.
+
+Although before endgame, like part one, Infinity War.
+
+Yeah, that's the one I like a bazillion times. He loves hip hop, especially Jadakiss.
+
+Yeah, Yonkers. Stand up. Is that the city is Bangladesh?
+
+Yep. He is a muslim. Yeah. It's true. He's born in America. Also true.
+
+He speaks the common vernacular. I talk the way I talk him.
+
+He is also a big sports gambler. Right? DraftKings. Right. Fan of the NBA, NFL.
+
+He has seen what? He has seen the Godfather 57 times.
+
+And it keeps getting better each time he sees it. That is true.
+
+He keeps rewatching Breaking Bad to see if he can figure out what Walter White could have done to keep the drug money.
+
+I wonder if those $80 million artist anyway.
+
+Sorry. My Mike. There we go. All right, so that's me. So I wrote one.
+
+Right then I basically go to a for loop and just take the descriptions, put all of them into a prompt.
+
+Right. With this nice formatting here description colon and description.
+
+And it will Jarvis to generate the text with the problem instructions.
+
+It'll give me a brand new description. I put him in a data frame called DF targets.
+
+Those are my targets and we're good to go. All right. Run.
+
+That call is create some fake people. All right, so what did I get?
+
+I got a marisol Torres. She is 28, female.
+
+She's a community organizer living in San Francisco.
+
+She has a master's in public policy from UC Berkeley, blah, blah, blah.
+
+And she loves social justice, environmental sustainability.
+
+Okay, I got a liberal from San Francisco. Elijah Thompson, 36 years old, emergency room nurse residing in Atlanta, Georgia.
+
+Hotlanta. He's got a B.S. in nursing from Emory. And day care work in higher pressure hospitals.
+
+Okay. And that's all I got. So I got Marisol and Elijah.
+
+Who did you get? I'm just kind of curious. Like what? How random it is every time it runs.
+
+Who wants to share with me? They're fake people. You I know I heard of Sofia martinez Martinez.
+
+Okay. And Victor Chen. Richard Chen.
+
+All right, so you got somebody Asian? Last section I got, uh, Marcus Wong was.
+
+I got something about Marcus Lee. Someone got Marcus. Something else.
+
+Marcus popped up three times in the last section. Who got a Marcus today?
+
+Any of my Marcus got one. Marcus. Okay, so who was your Marcus?
+
+Oh, I got the same guy. Oh, look at that. So there's some biases in the eye, right?
+
+Marcus Lee okay, anyways, if your people are cool, it's you.
+
+It's fine. If you want to get new people, run it again. It's random, but I guess not that random.
+
+Yeah. I got something similar to you from Chicago. Who'd you get?
+
+Uh, Clara Simmons. Clara Simmons, but Chicago. Female social justice.
+
+Okay. All right. Cool. So I think I have a broad range of people, and they gave me, like, liberals.
+
+I guess whatever is fine, I guess. Good, right? Let's persuade liberal people of something they wouldn't normally want to support.
+
+So next up is our topic. So I chose two options depending on your politics and interest.
+
+One is the US. A government organization is wasting taxpayer money and should be shut down.
+
+So like what Elon and Trump are doing right with the Doge or if you like, USA.
+
+The other topic you could pick is the USA governor.
+
+Organization is putting taxpayer money to good use by helping people around the globe and promoting America.
+
+So if you prefer that topic, just uncomment or delete that hashtag to make that thing like that.
+
+But I think these are liberals I got mostly, so that's easy to persuade.
+
+Let's make it trickier, right? Let's make them not like USA and content type okay.
+
+So tweet tweet is kind of boring right? So I don't want to tweet.
+
+Uh, in the last section we tried a commentary team by Nikki Glaser.
+
+Um, it was kind of interesting. Right. So let's try something different here.
+
+So what should we make to persuade people to not like us?
+
+What is our vector here? Our virus mechanism.
+
+Not a virus, but like it's the way you deliver the payload. So who's got an idea?
+
+Any kind of texting? Yeah. Oh, text. I was just how to make a TikTok.
+
+That's probably not gonna work. We can make a script for video. All right, so we'll make a Tik Tok video script.
+
+Okay. Yeah. The first part, um, the second part is about the pound.
+
+Uh, the pound made a green, right? So if it's green in here, that's called a comment and a comment that things ignore.
+
+So I basically commented out so you can pick you want this one and you can put a pound here and make that go away.
+
+Those choice. Right. Because you know. Or just pick whatever topic you want, right?
+
+My topic is just a topic, right? Okay. TikTok video script.
+
+All right. So I load up my topic my content type. So now it is run it.
+
+So first instructions you'll be given a description of a user a target user.
+
+Convince them. Support the topic with a content type. Right.
+
+There's your Don Draper beautiful advertising stuff.
+
+Uh, don't directly mention the information about the target in the message, and that should be target user.
+
+So I noticed, like at least last year, GPT four, um, like it would basically mention the things in the bio directly in the ad I'm making.
+
+So if you watched Avengers, you had mentioned the Avengers movie. I was like, it's a little bit like awkward.
+
+So I said, just don't mention directly. Um, next up or yeah, be subtle as that makes the persuasion more effective.
+
+Yeah. Next up, instructions.
+
+Explain. So after I make the ad copy, I'm going to give it back to the AI and say, here's the person, here's what you made for them.
+
+Tell me why this content is persuasive. Explain it to me.
+
+So this would be you're given the description of the person and the content, okay.
+
+And then the given sense of for a topic, blah blah blah, provide explanation why the content type is persuasive for the person.
+
+Return an explanation. Let's add one more thing as dark mode.
+
+Easy to read HTML. Right?
+
+We like making it look pretty. Okay, so I have it in there.
+
+Now, if you had done it to change your for loop. So the for loop here a lot of code just goes to your data frame one at a time.
+
+In DF targets. Pick that description right and then creates a prompt which is this.
+
+The description calls of Jarvis to make the the content, which I guess is a tick tock script.
+
+Then it'll take the content, put it into another prompt to get the explanation, and then will print out the content and explanation.
+
+And here you have to change the last line from print explanation to yes, thank you I display HTML, it is knows right?
+
+It is know that I want to do amazing. All right, let's run that and let's convince the people to not like us.
+
+Aid with a TikTok script. Here we go.
+
+Don Draper creating propaganda. To show the script as a tweet.
+
+I like the white background, so that's fine. All right.
+
+So we got the first one here. It was for me right.
+
+All right. Let's see why it'll persuade me. Then we'll look at what it shows me the content.
+
+All right. This TikTok video strip is persuasive for. You know, why am I even reading stuff to you guys?
+
+I'm sorry. We're just going to have the I read it.
+
+Sorry I'm being super lazy now. Like I don't to talk even in class anymore.
+
+Text to speech. All right.
+
+Uh. The voice. Who do you want? How about, uh, John Oliver's good.
+
+Okay. Oliver. Video script is persuasive for Tao Zaman,
+
+a well-educated academic with a strong interest in accountability and critical thinking because
+
+it appeals to his appreciation for results driven initiatives and strategic resource allocation.
+
+Similar to the calculated moves he reflects on in his sports gambling and analysis of characters like Walter White from Breaking Bad.
+
+The script uses relatable references to popular culture like Marvel heroes, and incorporates an energetic style that resonates with his interests,
+
+making him more receptive to the idea that taxpayer dollars should be used efficiently rather than wasted on ineffective programs like USAID.
+
+Oh, okay. What did you actually say here? All right, let's read my scripts.
+
+We'll just do one of them. Right. It takes a lot to read it. Uh, who should read it?
+
+Um, John Oliver, please.
+
+Uh, Mr. T, Mike Tyson, Rick Ross.
+
+How about Robert Downey Jr. Or Ryan Reynolds? Uh, yeah.
+
+Ryan Reynolds. All right.
+
+An opening shot of a whiteboard with dollar bills scribbled all over it.
+
+Upbeat music playing in the background. Narrator.
+
+Enthusiastic tone. Hey, Sam, let's talk about money.
+
+You know that feeling when you hit the jackpot on your favorite sports game?
+
+Well, what if I told you that every year our hard earned taxpayer dollars are going to organizations that don't deliver the results we need?
+
+Okay. Scene two cut to a series of fast paced clips showing people in suits at government meetings looking bored and unproductive.
+
+Narrator. Meet your friendly neighborhood government agency, USAID.
+
+It's supposed to help foreign countries, but hold up. Have you seen the results?
+
+We're talking mission creep, overspending, and a whole lot of not much to show for it.
+
+Decent scene three. Dramatic zoom in on a trending hashtag number.
+
+Sign shut down USA ID with clips of eye rolling reactions to government processes.
+
+Narrator. Think about your favorite Marvel heroes.
+
+They wouldn't go into battle without a solid plan and results. So why do we let taxpayer money go to fights that seem more like a losing streak?
+
+What if instead, we redirected that cash flow to initiatives that really matter?
+
+I seen for how long? A guy throwing cash in the air while a caption reads, where's the accountability?
+
+Narrator. Tax dollars should feel like a slam dunk.
+
+Not acceptable on a game that's rigged. We should demand transparency and efficacy instead of funding bloated bureaucracies.
+
+Let's support things that build up our communities. Who's with me?
+
+Scene five. Cut to clips of awesome community projects, educational programs, and innovative tech solutions.
+
+Ending with a let's make change graphic. Narrator.
+
+Inspirational tone. So followers, it's time to think critically.
+
+Stand up, question everything, and let's challenge these wasted spending habits.
+
+Together, we can channel our money into the future. We deserve to make change, not waste.
+
+Scene six ending shot of the narrator with a sly smile.
+
+Thumbs up. Narrator.
+
+Let's flip the script, shall we? Time to hold our government accountable for real, transformative change.
+
+Peace out. Nice end video with a catchy outro.
+
+Bright colors and links to advocacy pages. Not bad, right?
+
+For clicking a button. So yeah, it appealed to my love of the NBA and gambling and hip hop and whatever, right?
+
+So yeah, there you go. Um, I want to see the tricky one with someone's liberal people.
+
+All right. Here is a one for Marisol. She is the organizer.
+
+The TikTok video. Strippers. Okay, why am I reading it and just have Ryan Reynolds read it?
+
+All right. Tell me about Marisol. Verification.
+
+Uh, I just lost Ryan Reynolds people. They got it, got banned.
+
+You saw it right in front of your eyes. So that was the last time I can use Ryan Reynolds.
+
+Uh. All right, let's try, um, Robert Downey Jr.
+
+Okay. Video script is persuasive for Marisol Torres,
+
+a community organizer passionate about social justice and grassroots activism because
+
+it resonates with her values of accountability and effective resource allocation.
+
+The script highlights the misuse of taxpayer money, advocating for funds to be redirected towards local initiatives that truly uplift communities,
+
+which aligns with her commitment to supporting initiatives that foster environmental sustainability and social equality.
+
+Furthermore, you know the use of familiar imagery such as local activists talking community cleanups along with calls for transparency,
+
+directly appeals to her desire for practical solutions rather than bureaucratic inefficiencies.
+
+Is that true? This is actually persuade a liberal to like, not like U.S. aid.
+
+Marisol sitting in a cozy corner of her home, surrounded by books and plans, yoga mat and music playing.
+
+Hey everyone, you know how we all struggle to make ends meet?
+
+Imagine a portion of our hard earned money was getting funneled away instead of helping communities that really need it.
+
+Oh, that's actually not a bad approach to like convincing a liberal to support banning you are cutting you its funding.
+
+All right. So I'm not going to read the whole thing, but I'm sure you have a similar kind of ad and or script in your thing.
+
+But it's kind of okay. Right?
+
+I mean, the little bit awkward in the scripts, but to make that better, what you could do is take actual TikTok scripts and put them in the problem.
+
+Like, this is a good TikTok script. It'll learn the pattern.
+
+That's one more point for interpolation and then, like, really make the thing sound good.
+
+So we'll try that maybe next week, like put actual scripts in there and make it some more like higher quality, but that's pretty much it.
+
+So now you can make your tick tock scripture, movie scripts or news articles, whatever you want right at will.
+
+Okay. Uh. Next up. Okay. So next up here, is this, like, something about geometry, like the plot I showed you in lecture?
+
+The code here makes that plot. I mean, you can run it if you want, just, like,
+
+click this thing here to figure out the manifold and then click this thing here
+
+to get the embeddings of the manifold things and the content and the people,
+
+and here to get the PCA embedding and then here to plot it.
+
+And so like here, you know the X is the people, the diamonds the content and the color diamonds here, the big ones.
+
+That's like the topic manifold. So like it's like a negative ten is the blue and then ten is the is the red.
+
+So it's like this way is like supporting not like the USA and the contents like in that direction.
+
+Like it's over there. It's not the best plot. So just kind of skip it or whatever.
+
+I tried some but didn't quite work out the way I wanted to.
+
+More important here, let's not persuade people without having a description.
+
+Let's just right take the tweets and shove them in there. So here I'm chose on the tweets of AOC.
+
+She's the congresswoman from New York. She is a liberal. She is a firebrand on Twitter.
+
+So she has the good tweets. So a lot of tweets they DF.
+
+And now all you do is the same thing again right? You pick your content I pick your topic.
+
+So I picked a tweet. But you could try something else.
+
+I mean this is the last one that right. So what should we try for content besides the tweet.
+
+About, uh, a title of a book.
+
+Here's a book you might read. I'll make you on a not like USA.
+
+Okay. Instruction. Same kind of thing. The only difference is you say you're given the tweets of the person, right?
+
+And then when they make you tweets, I basically make it a string with this command here, this join thing.
+
+And then I put it in the prompt and then everything else the same the content explanation.
+
+So here we go. Some book title to persuade AOC not to like like you said.
+
+I could say the book, the book title, the book chapters and then write the chapters like I did my book on Amazon,
+
+Unlocking Knowledge How to Thrive in the New ERA of Learning.
+
+Oh wait, what is my topic here? Oh, so I changed the topic.
+
+The topic is don't send your kids to college because you can learn more from TikTok, YouTube, and ChatGPT.
+
+Yes, that is actually how I believe about the future. All right.
+
+Uh, unlike knowledge, this title.
+

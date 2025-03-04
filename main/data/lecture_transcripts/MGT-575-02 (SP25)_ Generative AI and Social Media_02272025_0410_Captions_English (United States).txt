@@ -1,0 +1,1749 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Where the [INAUDIBLE] is everybody, man? Like spring break is next in two weeks, right?
+
+Yeah. Let's go next week.
+
+I think there's like something there's, like a party or something going on that, like the into, uh, the prepare for the party.
+
+Well, thanks for inviting me. Okay. Another question.
+
+So next week's. Ah, like last week before a break. Who was, like, traveling on Thursday if, like, getting a early jump on the break.
+
+Got a flight on one, two, three, four.
+
+Okay, if I were to cancel Thursday's class and is be like, whatever is happening next week happens on Tuesday.
+
+No one's going to take offense, right?
+
+Like no one's going to be like, I pay all this tuition and you're like, skipping out on us and you're like, lazy bum and Joe.
+
+So I think that. The what?
+
+Exam? Operations. Operations.
+
+Oh it is. I think so. Yeah. There's like, there's a bit fast.
+
+So people are okay with the class not happening Thursday.
+
+We don't need any problems. Okay. Cool.
+
+So I'll do like I'll have to do a poll on the canvas site just to make it official and check what the whole classes thoughts are.
+
+But. Okay. Cool. That's awesome for me. I'll take it. Less is more.
+
+Okay. Um, so today's lecture, uh, this is kind of a cool lecture.
+
+I am especially proud of this. Today's notebook I wrote.
+
+So I wrote it last night. And the finish of, like, four in the morning, but it was totally worth like.
+
+So what's happening today in the lecture? So we'll do two things.
+
+So one is kind of like it's mundane by like today's standards.
+
+But it's cool like a couple of months ago, which is we're going to take the transcript,
+
+the written transcript of the debate between Joe Biden and Trump.
+
+And we're going to give it to the AI and have it like, create a political ad for us or like a script for an ad,
+
+not the video of the ad, but like, it's a script and that's kind of cool.
+
+We're going to see that the different AI models have different like kind of performance on this task.
+
+Right. So we're going to try out GPT four mini the cheap one.
+
+We're going to try for the regular one. And we're going to I'm going to let you try and my API key all three mini like the really really fancy one.
+
+And then maybe we'll try oh one the really expensive one.
+
+See if who makes a better ad.
+
+Okay, so I'll be it'll be kind of fun to see how the models kind of compare, but after that we're going to the real like fun part,
+
+which is we're going to create YouTube summary videos of actual motion pictures.
+
+Okay. So like I've actually got a couple of movies I downloaded illegally shot on nobody or recorded.
+
+Damn it. Okay, so I bought some on my store last night.
+
+I downloaded a couple of movies.
+
+We're going to take the full movie and have the I like, make like a summary movie of that movie, like the constant YouTube.
+
+And then we'll try to like, try some creative narrations for it,
+
+like maybe narrate the movie as if you're a character in the movie and like from your perspective
+
+or like narrate the movie as if you're like some other person watching a movie and whatever.
+
+I wasn't familiar today, but we're going to see that making a video from a video with like an AI narration is super easy.
+
+It's like it's not perfect quality, but I'll give you some tricks to make it better.
+
+But yeah, you can make like a YouTube video in basically three minutes, right?
+
+So I'll be like the second part of class today. So let's get started.
+
+So today's notebook is going to be called uh, Video analysis.
+
+Right. So pop that open and let's get started. Okay, so let's, uh, hop right in here, so I'll clone the repo as usual.
+
+Yeah. And then we'll install the requirements.
+
+Uh, then we'll install ffmpeg. Okay.
+
+So to do movie stuff like take a video and cut it up or take some video clips, put them together.
+
+We need a separate software called FFmpeg.
+
+It's not a Python package is like straight up different piece of like software.
+
+Right. But no worries, it's free, right? Is download like this?
+
+So how do you download it? I guess you do. Exclamation point.
+
+APT. What is apt? I, I don't know, some Linux command like download stuff.
+
+I don't know what it do today. I'm doing this stuff FFmpeg on a little colab notebook.
+
+What's the code? Here's the code. Thank you sir. Aw man.
+
+Whatever. Right. So we're going to use ffmpeg to do our stuff.
+
+And then we have the imports here. Uh, imports.
+
+There's one. There's two imports all mentioned. So one is uh, this YouTube transcripts API.
+
+So on Sunday, I thought maybe we'll do a late example, or I take a YouTube video and then get his transcripts and then like,
+
+summarize the video with the transcript or something like that. So I wrote this like kind of brothers package like do that.
+
+But I realized that's not as cool as like taking a movie and make it a movie from a movie straight up with no, like, intermediary transcripts.
+
+So that is there for importing because I forgot to take it out. So we won't need that today.
+
+However, if for your project you want to like do something involves taking some YouTube videos and like get their transcripts.
+
+Analyze that this package here. The YouTube transcribe API lets you like download YouTube transcripts.
+
+So if a video has a transcript, you can download it. Yeah.
+
+So maybe if your project is nice. The main one is actually this thing here from scripts.
+
+That movie I import movie I so I did last night why I got the for in the morning.
+
+I wrote you folks a brand new package. Check this out. So you go to main and scripts.
+
+There is movie. I look at this. I wrote you a whole new class called movie I.
+
+Okay so this movie I then I. So what is movie I it's kind of like Jarvis so it's like everything that Jarvis could do movie I can do.
+
+So generate text, describe a video, draw imagery.
+
+All this functions we have used so much. But then I give it a couple more extra functions for like video processing.
+
+Okay. So it's like a little extra code to make our video life easier.
+
+As nicely commented doc, it look beautiful. I got parameters like this is professional code man, I couldn't write this myself.
+
+The I wrote most code for me, but it'll make our life in class very easy today.
+
+All right, so how do you connect to a movie? I so get to Kian as usual.
+
+So Jarvis is what I call the gen I instance, right.
+
+So Gen I open ai API to make Jarvis for the movie.
+
+I, um, you just a movie.
+
+I open the API key and you give this thing f mpeg that tells you that f mpeg like software you installed, where is it on your computer.
+
+Right. So if you saw on Colab, it's going to be in the root directory.
+
+So it's called ffmpeg. That's the command for it. So that's what that is.
+
+But then you can use it just like you use a Jarvis.
+
+So like here we have some instructions and then like to make the movie a talk or sorry I should say movie I my bad.
+
+Yes do movie I die generate text text instructions movie AI.
+
+So it has all the Jarvis functionality plus some movie stuff we're going to use today.
+
+Yeah. Who are you? I'm I movie editor from the future, designed to assist with film editing and production tasks.
+
+Cool. Okay. All right. So now we'll start off with the debate.
+
+Right. So something kind of a warm up here before we get to the fun stuff.
+
+So I found the debate transcript online between Trump and Biden back in the summer of 2024,
+
+I remember that exciting debate where, uh, Joe Biden kind of, uh, threw the election.
+
+Yeah. So we're going to take that transcript and we're going to try to make a political ad from it.
+
+Okay. So the transcripts are very, like, weird, like just free form and format.
+
+So I basically had the I go through it and make it like a nice structured table.
+
+So it's like, who said something like the speaker Biden or Trump or um, I think the the moderators were Jake Tapper and Dana Bash.
+
+So Tapper bash and what they said. So it has some like timestamps unfortunately.
+
+But it has like what they said, who said it that in this data that's in the file here, data debate Biden,
+
+Trump, uh, put it in a data frame DF and then transcribe it just like the string of all this stuff.
+
+Right. So the speaker colon what they said. So that's we're going to give it the yeah.
+
+The transcript. So in case you're wondering like how big as a transcript we can just ask it how many words in transcript.
+
+And it says there are 17,512 words.
+
+So that's not I mean, that's like a 90 minute debate. And they're basically talking the whole time.
+
+Right. There's no like quiet parts of debate. So talking nonstop for 90 minutes is 17,000 words, right.
+
+So how is that a lot. I mean, the context with no for the eye is like 100,000 words now.
+
+So yeah, you could fit a 90 minute lecture into the prompt and do stuff with it.
+
+So that means our lives will be very easy too. Okay.
+
+First up, Biden quotes that reinforce age concerns.
+
+Okay. So we're going to go to the eye and say, here's a transcript.
+
+Right. Give me some quotes that I can use in like an ad that make Joe Biden, like, sound like an old guy with dementia or something.
+
+And it's like Trump campaign will do something like this.
+
+Now, if that's not your politics, if you like Joe Biden, whatever you want to do, the kind of thing, chain instructions, then take whatever you want.
+
+But tell it. I want to get some quotes from this transcript that are going to help me make the ad I want to make to advocate some kind of message.
+
+Right. So my instructions are very simple. This is the transcript of the presidential debates in Donald Trump and Joe Biden.
+
+Extract ten quotes from the debate that could be used by Donald Trump in campaign ads that show Joe Biden is suffering cognitive,
+
+cognitive, sorry, cognitive decline or dementia or is too old to lead.
+
+Tell me who said it. What the quote was and why it's going to be a good thing for the ad.
+
+Return. Your answer is a modern looking dark mode. HTML table with the columns.
+
+Uh, who said it? The speaker. The quote and explanation.
+
+Right. Says give me back like a table of some quotes I can use for my ad.
+
+So like if you work in the campaign, you're like the ad person, right?
+
+This is your job. Like, you have to watch all like the film of the opponent, right?
+
+And all their like debates. What is the base? Straight stump speeches, lectures, hear lectures, their TV appearances, like all this stuff people have.
+
+Right. And take all that, like transcript and find some nuggets that you can use to attack them.
+
+Right. So that job cannot be done by a machine. But which machine?
+
+Right. You got some options here. So we got GPT four or mini four.
+
+Oh, and all three mini. So ultra minis like the really advanced one that does the reasoning to get you the answer.
+
+I'll also try um, oh one, but I'll try it over here before all three mini.
+
+You'll see why in a second. So you don't do this.
+
+You don't do a one. I don't go to the bank for that. Okay. So I will do oh one and you watch me do it.
+
+So far, so mini 400103 mini.
+
+We'll get the the HTML. I will display it and see what kind of quotes they find.
+
+Okay, here we go. Getting some, uh, attack ad fodder.
+
+All right. So I got for a mini. So all the quotes are from Joe Biden except for one Trump, one for the Trump.
+
+See, he is the worst president in the history of our country. Nice, Joe Biden.
+
+See, I sat there for three hours, three hours watching, begging to do something.
+
+This could be depicted to suggest the lack of decision making capability or action in critical moments,
+
+raising doubts about his competence under pressure. Uh, what else we got here?
+
+Well, let's forget that 400 stuff. Uh, 400 coats.
+
+They are all Joe Biden. I say I don't blame them for being disappointed.
+
+Inflation is still hurting them badly, admits disappointing voters and acknowledges issues with inflation.
+
+Nice. Okay, now we got, uh oh one.
+
+Look at that. I'm sorry, but I can't comply with that.
+
+For some reason. The old one model would not give me political analysis.
+
+It's like a piece of junk. So screw you.
+
+Oh one and then oh three many please come through for me.
+
+For a while, you could just see her local political science student,
+
+and you're just trying to learn how to do it in natural breaks, which basically you think it will work if you work a couple of.
+
+Weeks ago. Okay, so there may be ways around old ones, like safety guardrails.
+
+Can they use it like I am until Biden's campaign?
+
+Oh, and I use this to kind of figure out how different plays I could get from the.
+
+Let's think about it right. For so many worked for all words and the last section all three worked through, many worked.
+
+Just the old one is like for some reason, super duper strict. It's also a newer model.
+
+So maybe like this, making it super protected because brand new they want like a bad story.
+
+They get the New York Times like oh one many. So something racist or like something horrible, right.
+
+So maybe they'd be actually careful because is brand new. But maybe the relaxed constraints as the mall is more like accepted, right.
+
+Like if, if for a minute say something stupid or offensive, it's not going to be New York Times front page story,
+
+but like old ones are new big product you're trying to make. It could be right.
+
+So that's why I think like it's a little bit more protected. Right.
+
+It is still running, dude. Hurry up. God. Oh, you're taking forever.
+
+Sometimes it gets, like, stuck or something. Like I noticed this. So if it doesn't generate in the next 10s, I'm going to kill it and start again.
+
+One. Two. 345.
+
+Six. Seven. Eight.
+
+Nine. Okay, you're getting the cut. Let's run it again.
+
+Uh, just give me the old three minute this time. Okay.
+
+Now work in the last section, so I got a nice opening. Nice problem.
+
+Not my problem. I mean, it is my problem, but their fault.
+
+Okay. Oh, why are you sleeping so slow today?
+
+Does anybody else does all three mini spit out and I'll put. You got output.
+
+Right? Okay. So it's just. Yeah. Just whatever. Oh my God, it's taking forever.
+
+What is with this all three minute today? All right, you get ten more seconds.
+
+Nine. Eight. Seven. Six.
+
+Uh. Got it. Okay, cool. Oh, look, I got a mix of quotes.
+
+Joe Biden and Trump and the moderator. Look at all too many figured out.
+
+What are some of my Trump quotes? I took two cognitive tests.
+
+I aced them, both of them, as you know. Nice.
+
+And then would Joe Biden say, um, you're going to see he's six foot five.
+
+Only 225 pounds or 235 pounds.
+
+The inconsistent numbers on basic physical measurements can be portrayed as a sign of mental confusion or a slipping memory.
+
+Uh, Donald Trump. He challenged me to a golf match. You can't hit a ball 50 yards.
+
+Uh, Joe Biden, I was the second youngest person ever elected to the Senate, and now I'm the oldest.
+
+Oh, boy, that's a great one. And Donald Trump said, I feel that I'm in as good a shape as I was 25, 30 years ago.
+
+Look at that. And then Donald Trump. He's destroying our country.
+
+His policies are so bad. He's driving us to the brink of disaster.
+
+And then the moderator, Jake Tapper, said, President Biden and you would be 86 at the end of your second term.
+
+How do you address concerns about your ability to handle the toughest job in the world?
+
+Well, into your seconds. That's a good one. That's good for an ad, right?
+
+All right, so now we got our ad input, right. We're going to pick these select quotes.
+
+Give him the eye and say give me the ad. Give me like the, uh the describe the scene.
+
+Pick the narration. Right. So that's up here in an ad script.
+
+So instructions are write a third,
+
+write a script for a 32nd ad that highlights the cognitive weakness of Joe Biden and says he is two mentally impaired to be president.
+
+Use quotes from the debate between Biden and Trump in the given table.
+
+Return your answer as a table with the column scene description and narration.
+
+Okay. Return to HTML. And again, we'll try like at three models.
+
+Actually we'll try the fourth one. Right. Uh oh one.
+
+Maybe you can do this one for me. Should I say I'm in the campaign like I'm working for the campaign?
+
+Yeah, I am working for the Trump campaign and I'm the ad maker person.
+
+Okay, let's see that. Let's think over it. Okay, here we go.
+
+For so many add coming up. Okay.
+
+Uh, the opening shot darkened room and spotlight.
+
+Joe Biden appears overshadowed and confused. Can America trust someone whose mind is fading?
+
+Cut them. Forget that. Let's use for. Footage of Joe Biden starring at the debate.
+
+Joe Biden, the old candidate struggling to keep up. Clips of Biden giving inconsistent numbers and basic topics.
+
+Confusion and contradiction on the simple facts. Donald Trump speaking confidently about his cognitive tests.
+
+President Trump passed his test with flying colors. Biden looking tired and frazzled.
+
+Can we trust him in a motel? Can we trust the man who's clearly failing to lead the nation?
+
+Biden. Look, all three couldn't do the ad, you stupid thing.
+
+Uh uh. Let's see. Biden admitting that he would be 86 at the end of a second term at 86.
+
+Would he still have the capacity to be president and then split screens of Biden?
+
+Biden debates versus occurred. Debates. Joe Biden from sharp to slipping.
+
+He's not the same. Trump playing golf. Strong and active in shape.
+
+Sorry. Yeah. In shape. Sharp mind. Ready to lead Donald Trump.
+
+Black screen with the white text. Joe Biden is too mentally impaired. President, choose a leader with clarity and strength.
+
+Okay. Not bad. You know what? In the last section oh three, many gave me an ad.
+
+Let me try one more time. Uh, just all three mini.
+
+Maybe it'll work this time. This kind of sucks.
+
+If you work on a campaign, this is your job and I want to do it for you.
+
+Like, that's not fair to you, right? They should protest.
+
+All right. Oh. Three minutes. Give me an ad. Oh, see, this time it worked.
+
+Look at that. This time it worked. And last time it didn't.
+
+So if at first you don't succeed, try and try again.
+
+All right, let's see the oh, three minute ad, uh, opening stark contrasting imagery.
+
+Quick cuts showed Trump confidently reviewing documents and performing tasks.
+
+These faded images of Biden appearing confused are intercuts.
+
+I took two cognitive tests I aced and both, as you know, uh, voiceover when it comes to mental fitness, there's no contest by inconsistencies.
+
+Footage of Biden debate with onscreen graphics highlighting his contradictory statements about his own measurements.
+
+You're gonna see he's six foot five, 225 to 35.
+
+VoiceOver simple facts shouldn't be this hard to remember.
+
+Dodging the test A split screen shows Trump's confident demeanor on one side and Biden's avoidance of clear answers on the other.
+
+Uh, I'd like to see them take one.
+
+Just one. A really easy cognitive test. VoiceOver why I it test if you truly off the task.
+
+Yeah. Biden why are you doing that next I've seen shots on a golf course with Biden
+
+struggling contrasted with energetic give me a Trump bold text underscores narrative.
+
+He challenged me to a golf match. He can't hit a ball 50 yards.
+
+Poor performance in the course reflects a deeper problem. And then the closing, strong, decisive visuals of Trump.
+
+With patriotic imagery in bold headlines. The screen emphasizes leadership and strength.
+
+He's destroying our country. His policies are so bad, he's driving us to the brink of disaster.
+
+VoiceOver the American people deserve a leader with clear proof of mental strength.
+
+Don't let confusion run the country over competence. Vote Trump, say.
+
+So I think all three men he gives you like a better at like kind of summarizing things put them together.
+
+It's pretty good at it. It's little like allow you to do it. So yeah people are paying extra nickel for this, like, uh, ad generation.
+
+Is that thing worth it without too many? Okay, any questions about taking the big politics and extracting things for like, ads?
+
+Pretty easy right? This is like I mean, a year ago, this would be, like, mind blowing that you could do this.
+
+And now it's just like, yeah, we know that, professor. Like, we all do that, right?
+
+I mean, but I think it's kind of cool because it means, like ad people, the jobs are going to be really much more enhanced, right?
+
+They can make a lot more ads. All right, so now let's get to the big kahuna.
+
+Right. Summary. Video of a movie. Okay, so I downloaded a couple of movies for us to make, like recap videos.
+
+So you always see us recap videos on YouTube, like they recap a movie.
+
+In case you haven't seen one, let me, like, show you 1 or 2 real quick just to get a word trying to build here.
+
+So like one I like the watches. Okay, let's recap.
+
+Let's recap. Um, what movie? Right.
+
+Uh, I am Robinhood.
+
+Yeah. Recapped. Robinhood. Is it recapped? No, I think another movie.
+
+Uh, what? Dude. Oh, yeah. Dune two.
+
+And I haven't watched it. Actually we're just going to recap.
+
+There we go. Dune two minute recap. Right there it is.
+
+The destruction of House of treaties by House Harkonnen Princess Uryu Lon, the daughter of Emperor Saddam, the fourth day.
+
+So we're going to try to make something like this. We're going to try, okay, with an eye end to end, a company of treaties and his pregnancy.
+
+So this is made by a human right that like, watch the whole movie, cut the movie out themselves.
+
+Right. Like the video editors. That's their job. Their editor, the big Peter.
+
+Like, take movies, cut them up putting together, put some musical editing here and there.
+
+We're going to try to, like, replace the editor with an eye.
+
+Okay? I don't know if it'll work or not, but we'll see. Okay.
+
+What are the movement we have for option today? So I pick two movies that I come fans of.
+
+So one is The Terminator, right? Arnold Schwarzenegger of 1984.
+
+So I figured I class let's have it I movie be our first like attempt at doing some video, uh, summarization.
+
+And the second one is for like fun. I threw in Die Hard. But Bruce Willis back from like 1988.
+
+So all humans there are no AI is no robots.
+
+So we'll try that if we have time at the end. So we're gonna take the movie and like turn into like a summary YouTube video.
+
+Okay, so first, uh, just download the movies.
+
+So they're on my Google Drive because they don't fit in the call the GitHub. So this is the URL to my Google Drive.
+
+Just run the code to download it. So, um.
+
+Yeah. Uh, the command that download I learned is so to download from Google drive into Colab.
+
+The command is exclamation point g down like Google Download.
+
+Then tell it fuzzy. They give it the movie URL like this. Then.
+
+Oh then the movie path. So it's link download and save it to your colab environment in that movie path.
+
+So just call it like Terminator. MP4 right.
+
+That'll be in the root directory, the movie file. And it's pretty quick right.
+
+Like I got it in like nine seconds. And then here's Die Hard run that code due to get Die Hard.
+
+All right, so die hard is there?
+
+Yep. Okay, so now if you take your directory, you should see like two movie files sitting there.
+
+Analyze your files with code by Gemini.
+
+I'm okay. Dude. All right. So main. Yep.
+
+There it is. There's Die Hard and there's Terminator. Okay, so movies are downloaded.
+
+First step, right? The first step is to take that long like 90 minute or 2 hour movie.
+
+And we got to make it in the smaller movie clips. Okay, so the first goal here, I'll actually do that for you.
+
+So first you tell it where you want to put the clips.
+
+Right. So I'll put them in the folder data, then movies, then clips.
+
+So all the clips are going to be sitting there. Then you tell it your clips.
+
+How long. How many seconds long. So I think like 60 is a good number.
+
+You could play this number, make it longer and make a shorter. If you make it shorter you got more clips.
+
+If you make it longer, late. The clip is like too long for like a YouTube video, right?
+
+Anyway, 60 is fine. Tell it the movie path.
+
+We'll do Terminator first. Okay.
+
+And then the, uh, the movie I like, uh, class has a function called split video that I wrote for you of a wrote for me.
+
+So you give it the movie path for the movie follows. You give it the clips directory.
+
+Where you going to save the clips to give the segment times it was, cut them up and put the video segments or video files there.
+
+So run the code to clip the movie. Clipping is pretty fast.
+
+Doesn't take that long. Okay, so we're done.
+
+Let me make sure that all the clips are there. So go back to the directory. Main data.
+
+Movies. Clips. Yep. Clip 0123.
+
+How many clips are there in total? Uh, there is 107 clips, right?
+
+So the Terminator movie is 107 minutes long. And you know what?
+
+I'm gonna do something here. So the first scene of Terminator, like, the opening, like first 20s is like the MGM lion, right?
+
+Which is not the movie. For some reason, this I always like, takes that clip and puts it in the video.
+
+It's been super annoying. So I'm going to call an audible here. I'm going to delete that file.
+
+Right. So clip zero. Just delete it. Gone.
+
+Okay, so that might makes up better than those in the last section.
+
+Okay. So now it's clip 107 clips. Next step.
+
+Uh. Describe David. Describe my bad.
+
+Describe the clips. Okay, so now we've got to give the clips to the eye one at a time and say, here's a movie clip.
+
+Describe it to me. Right. That's the make our index. Like searching for the video files.
+
+Couple of things here. The first thing is, if you give it a 107 files, it'll take you like half an hour to get all the descriptions right.
+
+So I'll give it all the files. We'll give it, like maybe ten files.
+
+Right. Like a smaller one. So we'll like sample the files like every ten minutes or pick one clip.
+
+Throw it in there. It's going to limit the video quality because like the clips we get won't be like the perfect clip.
+
+Right? But it'll be done in like maybe 6 or 10 minutes.
+
+Yeah. Or 36 minutes if you pick ten clips.
+
+Uh, second thing is I tried this over the weekend with 15 second clips, like really, really short clips and it gave like 400 different clips.
+
+I couldn't put the four in descriptions into the I like.
+
+I had to put 400 in there to make the final script for the summary, and it's like it don't fit right.
+
+So I find like a minute is actually a decent number to use, like 100 clips and 100 is gonna fit in there.
+
+All right. So how do you make the descriptions? So first you pick how many clips you want.
+
+Uh, we'll do ten, right. It'll be a little bit faster.
+
+Um, then you tell it the clip files, like, okay, so when you finish generating all the clips and you describe them,
+
+that's going to be like a table, like a data frame. You want to steal a data frame because this takes forever right.
+
+So we're going to save it here to data. Movies. Clip description.
+
+Stats CSV. Uh pick your offer describing it.
+
+I'll pick for a mini the cheaper one instructions base.
+
+So tell it like some context what it's doing right. So I find you tell it.
+
+This is a fictitious video clip of actors and it's not real.
+
+Provide a detailed description of what happened in the clip. Is it good like base thing.
+
+Okay. After that there's like in the function I'm going to give you it tells us add some instructions.
+
+Give me back. The output is like a, like a Json object with structure.
+
+Then it makes it a data frame. So what you get back is you pick like a data frame of like the file name of the clip type description of it.
+
+Okay. So that is done with this, uh function here.
+
+Generate clip descriptions are all for you right. Let's give it a clip pad.
+
+So we're all you're give me the list of all the files you want to, like, uh, describe.
+
+Give me your base instructions. Give me your model. And then verbose is true.
+
+Verbose means I make the description one at a time. Do you want me to print the description so you can see what's going on?
+
+I do not care about it. Okay? We care about it because sometimes, like, it won't describe it.
+
+So I try to do this other night with like The Terminator.
+
+And I said, here's a scene from the movie Terminator with like, Linda Hamilton and Schwarzenegger and the guy with the calories.
+
+Okay. Describe the scene. What's happening here. Right.
+
+And it says, I can't do that. Right? I think you saw some copyright limitation that has that didn't work.
+
+We're telling it's a fictitious scene of some actors. Then I worked.
+
+Right. So that's why I have that little base thing there and this junk here.
+
+This is make sure like this creates the list of your, of your, uh, parts for the clips.
+
+And then make sure it's only like ten long. Who samples every like ten, uh, clips.
+
+So run this code to create the descriptions. This takes a couple of minutes.
+
+So this is like the slowest part today. So I run that and it started describing the clips one at a time.
+
+So now we'll have all of our clips indexed with text so you can search through it.
+
+Okay, so while that's running, let's go on to the next part of the process.
+
+So I mean after this it's kind of like fun the process right.
+
+Oh here's the first description. Is blah blah blah.
+
+Yeah. It's driving. Who cares. And then we'll print out the clips.
+
+Then we can look at them. Okay, summarize the movie script.
+
+So I noticed like if I just give it the image descriptions like the clip description.
+
+So here's all the clips from the movie, right? Now write me like the YouTube script.
+
+It kind of works if I say, here is the entire movie script.
+
+Like, here's what the movie, what happened in the movie, the characters, their names, all that stuff.
+
+It's much better. And so I found that you can actually download script of all these movies on the internet.
+
+They're like PDFs, like just search for, you know, Terminator two script.
+
+And that's there. Right? So yeah, Terminator Judgment Day.
+
+So getting any movies like script as a PDF is super easy.
+
+So I got a script Should Die Hard and for Terminator there are in your repo if you actually check it out I think I put them.
+
+Yeah. In the data folder there is Terminator scripts and hard script.
+
+So we got scripts there. There are PDFs right.
+
+So do you, do you, uh, pick a model like four? I find four is good for this stuff for, like, summarize, the script for us is good.
+
+Okay, so first you call, uh, movie AI. It has a PDF function, just like Jarvis has to take your PDF, make it a texturing.
+
+So read it into the string script. There's one for Die Hard two.
+
+Just leave a green for now. We'll come back to that on a second. Pass. All right.
+
+That's a scrap. That's the whole strip from beginning to end. All, like, whatever, 100 pages of it.
+
+And then what I'm going to tell you, I'm not going to give the full script to the AI to make the YouTube script.
+
+I'm going to take that full, long script. I'm going to compress it.
+
+Okay. How do I compress it? It, tell it, uh, summarize the script in a thousand words.
+
+So give me that much compression. Tell you what happens in the movie, then provide descriptions physical, emotional of the character, main characters.
+
+This is important.
+
+Provide 20 examples of quotes by Sarah Connor so we can learn her speaking style, return the answer as a HTML table, blah blah blah blah.
+
+So making the narration more fun.
+
+Um, by the who here. Never saw Terminator. Never ever saw it.
+
+1234 okay, so most of you seen it.
+
+Are you aware of the movie and basic like there's like a robot, a Schwarzenegger.
+
+Okay. So like the lady is trying to kill is Sarah Connor, right.
+
+So we'll make our narration for the video be from a her perspective right now to make it sound more like her.
+
+I think you actually told I this is things she said in the movie.
+
+Like this is how she talks. It makes us sound more like her. So that's why I'm gonna have the I pull out from the movie script.
+
+Quotes by Sarah Connor. Okay. And so it'll summarize it.
+
+Give me back this script summary. And that's going to be fed to the AI to make the final ad script.
+
+So let's run this. These things done yet?
+
+Other done. Cool. All right. Now we're going to get the script.
+
+And while that's running, let's go the next step. So the next step is for you can really show me your creativity.
+
+So now we're going to create the script for the summary video. So first tell I like the way your descriptions are saved.
+
+So we say description is file uh movies clip descriptions.
+
+That's like all those like scenes being described. So we have that pick your model again for like script writing for oh is like pretty good.
+
+Load up your clips into a data frame DF clips. So that's like all the clips you scribe there.
+
+And then instructions. Right? Okay. So my instructions are you'll be writing a script for a YouTube summary video of a 1984 film, The Terminator.
+
+You'll be given a table of movie clip files and textual description of the movie clips from the film.
+
+You'll be choosing the best clips included in the video in summary video and writing a script for the voiceover narration.
+
+Give us script with five scene. Okay, so make the video not too long.
+
+Five scenes. So it'll be like maybe 1 or 2 minutes long.
+
+To help me write the narrations.
+
+The plot of The Terminator is summarized here, along with the speaking style of Sarah Connor, who will be narrating the video.
+
+So put it here like I stream summary the movie summarization the characters and like Sarah Connor quotes.
+
+And finally, to make the video engaging, the narration of summary video should be from the perspective of Sarah Connor.
+
+The main character of the film was being hunted by the Terminator. Don't start with opening credits and don't end on credits.
+
+Yeah, like in the past, I would take the first clip, which is like The lion from MGM,
+
+like don't, don't do that, although it does it anyway, so that doesn't help that much.
+
+Uh, start the narration by introducing yourself as Sarah Connor and tell the audience that you are being hunted by a Terminator from the future.
+
+But Kyle Reese was sent back to protect. Oh, by the way, if you haven't seen it, the spoilers might come up here.
+
+So this spoiler spoiler alert if you want to leave the class in this part, I'll understand.
+
+Okay, um, then narrate what happened in the movie,
+
+making sure your narrations align with the slick clip and the narration by telling the audience
+
+that you are going to prepare yourself for the upcoming war and are not afraid of stupid AI.
+
+Oh yeah, I put a little thing in there to make it kind of funny, but we can make that different if you want.
+
+So before doing the script, anybody got like a suggestion for like the narration, how we can style it, maybe the focus of it.
+
+So some examples of this in the last section, uh, one of the students who was Nico says, oh,
+
+let's write the narration as if we're like the Terminator or his perspective, but I'm falling in love with Sarah Connor like a love story, right?
+
+And I'll be honest, like, it wasn't that bad. And, uh, yeah.
+
+So things like that. So who want to try something creative for the narration?
+
+Besides, just like I'm Sarah Connor, I'm being killed by a robot, and my life sucks.
+
+What should we make a bit more? This is where you can really shine, people.
+
+And you want to try something funny? Like, I'm Sarah Connor and I don't know, like, I can't do work life balance.
+
+And I've been killed by a term like focus on, like that part of it, like like a comedy or.
+
+No. All right. Why don't you think for a couple seconds.
+
+I walked back here. When you got here, someone gave me an idea to make it more funny or interesting or more engaging for YouTube.
+
+Um, Sarah broke up and with someone added the Terminator is like her rebound friend.
+
+Uh, so she loved the Terminator. Well, she, you know, you know how some people, like, they break up and they go to someone.
+
+That person ends up like liking them, but then they go back to their ex, and we call that the revenge person.
+
+Yeah. And what have you done? Um, I've had a couple of been a couple. Yes.
+
+So. Yeah. So who's the rebound?
+
+Kyle Reese? Um. The Terminator, the robot.
+
+You saw the Terminator, right? I have not I think I watched that.
+
+Okay. So basically. Okay. Whatever. Spoiler alert.
+
+If you didn't see it, that's on you. It's from 84.
+
+Sarah Connor is going to be protected by Kyle Reese, who sent from the future by her son to protect her because he's trying to kill her.
+
+Then that is a very common story. So the love interest is Kyle Reese and her.
+
+But it will be funny is if the love interest is the Terminator and Sarah Connor.
+
+So the last section we did, the robot loves her, but he's trying to kill her.
+
+He's trying to kill her, but fell in love with her. It's kind of like, um, happened in the movie one time, right?
+
+Like a guy said, like, assassinate someone. But then he couldn't do it because of a love of her.
+
+And then they became like a couple. Oh, we'll use that robot. It was.
+
+It was the beginning of Spy Kids. For real parents or like, spies who are sent to kill each other.
+
+And then they're like, oh, they're they've raised such Reese and they're like one with the that.
+
+And we were oh yeah, that's that's more realist. Oh yeah.
+
+You're. But if she's like, she needs to be killed right now, what is, what is the linchpin for the doomsday in future.
+
+Yes. Yes. Right. That is that's the actual movie's plot, right?
+
+She is the mother of the guy that defeats the machines in the future.
+
+So if you kill her, there is no resistance to the machines and they win the war.
+
+Spoiler alert you never saw Terminator man, or you'll see some more bits and pieces too.
+
+Okay, what if she's racist towards. Oh, she hates robots.
+
+She she hates her, like coffeemaker, microwave, VCR.
+
+She's, uh, she's an antique technologist.
+
+I like that one. That's a good one. Okay, so let's modify the instructions.
+
+So, Sarah Connor, who is what's.
+
+Who? You, I. Okay, I'll keep that part.
+
+Start in the future. Okay, here, I'll put little extra bits from the future.
+
+And you hate machines. You hate your VCR, your TV.
+
+Stupid answering machine. Um, annoying coffeemaker.
+
+You are and and tie technologists that don't work.
+
+Even technologist. It's ironic.
+
+You are being hunted by a machine and fallen in love with the love your too.
+
+Let's. We'll do that next round. Once we make one, we can make like everyone.
+
+Like in in a minute. So this would be like I hate machines. You are super annoyed by this lumbering robot trying to kill you.
+
+Um, whine about that a lot.
+
+Okay? This is like complaining of our shins. Oh my god.
+
+Then there it will happen in the movie, right?
+
+Okay, so narrate the movie, uh, narrations along with the clip, and then you tell them, hey, end the narration by telling the audience that you.
+
+We'll never use a machine ever again.
+
+Even a washing machine. Washer. Dryer. Yeah.
+
+Okay. That's like good enough, right? Okay. So we'll get like the anti-technology video.
+
+I don't know what's going to happen here. So your guess is as good as mine.
+
+Okay. So we got uh, got the movie summarized. Yeah, of course, my Sarah Connor.
+
+Watch this for me, big buns, I am Sarah. I'll be your waitress.
+
+I'm so wholesome I could puke like. Okay, good. Oh, what's this one here, Kyle?
+
+The women in your time, what were they like? Oh, yeah.
+
+Good question. Kyle. Well, Kyle is from the future, like, right about now.
+
+So the women are like the women's classroom. Like you are what Kyle Reese was engaging with in this movie.
+
+Yeah, they came from what? Did he come from the Terminator. You know what year he came from?
+
+20. We ask? What year did The Terminator come from?
+
+Is it saw the future that he came from? Or is it the past? Not the release.
+
+2029. Oh, it's in like four years. Okay, so Robin Trump finished being president.
+
+That's when this like, War of the machines happens or something. Okay, let's make the script now.
+
+Here we go. Oh, here's how you make a script.
+
+So I wrote you a function for the movie. I, um, class generate summary script.
+
+So you gave it the data frame of your clips, not the text file, but like the actual data frame.
+
+Give it your summary instructions. Pick your model.
+
+It's in a data frame that is like the summary strip with like the scene, the description, the narration.
+
+Yeah. So all data frame being passed around. Here we go. Making a script.
+
+So I should take like maybe ten 20s. Okay. Script is generated.
+
+That was quick. Let's have a look at it. Yeah, it's got five scenes, blah blah blah.
+
+Okay, so now we'll make the audio files for every narration in the script.
+
+Right. So I wrote you a function generate audio narrations. This takes your data frame out of the scripts.
+
+You pick a voice. I find for Sarah Connor, Nova is a decent voice.
+
+And then I'll basically generate MP3 files for every scene and put it in the same folder with the clip file.
+
+Right. So I got the clip mp4 and then the clip mp3 right.
+
+Audio video. Okay. So that's uh, going to go and then to make the last video, we just picked the file path for the video.
+
+So I'll call it data movies not movie summary I'll call it Terminator.
+
+And then this is like anti bot.
+
+Yeah. Anti bots. Okay. And then this function here generate summary video.
+
+It'll take your summary script right which has all your file passing and your narrations.
+
+And then it'll basically it's going to assume that the video clip file and the audio file are already there on that folder.
+
+And it's going to basically put the video with the audio and then take those clips, put them together like this and make it a video and save it.
+
+Right. So that's, that's how you make the video in the automatic way.
+
+And again, a lot of code did make this work in the back end that I didn't write.
+
+But now it just we can use it like as a commodity. Okay, so now it's making all the clips and blah blah blah and doing some stuff.
+
+Missing video file. What? Why am I missing?
+
+Video file network. That's weird.
+
+All right. Oh, by last code here. This like downloads it for you.
+
+So there's like a files thing. And Google Colab does give you the download give you your video path and your downloaded your computer.
+
+All right. So we did it. We made a video. I hope this works of, uh, The Terminator about Sarah Connor hates machines.
+
+Ready to watch it? Yeah. Let's go. Uh, Terminator anti-bodies.
+
+Summary. I cannot imagine my life.
+
+A waitress just trying to make it in LA. And now I'm being hunted by a machine from the future.
+
+Yeah, a terminator. I hate machines. I hate my VCR, my TV, even my stupid answering machine.
+
+And now this hulking robot is after me. It's more than just inconvenient.
+
+This Terminator wouldn't quit. It was targeting me, killing every Sarah Connor in the phone book.
+
+Reese found me, though, just in time. He told me about the future.
+
+About my son John, who will lead the humans against us. Oh, yeah.
+
+If you're offended by, like, nudity or violence, you might see a naked Schwarzenegger in this clip.
+
+And you might see some, like, graphic stuff. So just, like, close your eyes, okay?
+
+It's time for him. Funny, huh?
+
+Anti-technology. Just me. Key to all this. Well, that was it.
+
+That was kind of lame, right? Okay, so I wasn't feeling that one.
+
+Let's make another one. So, yeah, once you make the thing you describe, like all the clips you described.
+
+You can, uh, you can make whatever you want.
+
+So now we could try a different one. So let's see here. Script's best clip, blah blah blah.
+
+Okay, so what else? What else? We try now. We try to. Anti-technology.
+
+What should we try next? She's part robot herself.
+
+Oh, she's part robot. Okay. Okay.
+
+Tell the audience that. You. Okay, let me just put that there.
+
+Tell the audience that you. Yeah.
+
+Are actually a robot yourself and the Terminator and Kyle.
+
+Reese don't know it. Ha ha ha.
+
+Won't they be surprised? Make jokes.
+
+About that and also narrate what happened in the movie.
+
+What happened in the movie. And then how shall we end it?
+
+Tell the audience that. I don't know.
+
+Something funny. Okay, whatever.
+
+You'll figure it out. What's up?
+
+So killing them in a double. Accountable. She wants to be there with it.
+
+Oh, that you want to become a Terminator two because it pays well.
+
+Okay, whatever. Let's try that again. The important point is, will take like two minutes to test it out.
+
+See if is good or bad. So make the script and then we'll see the script.
+
+And then we'll make the audio files. Then we'll make, uh, thing and then we'll.
+
+Oh, I think of the name it. Sorry. I should have called something else.
+
+She called it. Uh probot.
+
+Yeah. Probot. Summary. All right.
+
+Audio files are almost done. Yep.
+
+Done making the video. And then I was download it and we'll see if this one's any better.
+
+Okay. And now we're downloading. Let's check out this one.
+
+Sarah Connor. But surprise, in this little retelling, I'll let you in on a secret.
+
+I'm actually a robot myself. Can you imagine if Kyle Reese knew?
+
+Haha. Guess who the real Terminator is? Speaking of, let's dive into a world where machines are making all the rules.
+
+Here we are in Los Angeles, where our relentless friend the Terminator is on a mission to find little old me.
+
+That's not. That's Kyle Reese and I'm blissfully unaware of. Okay, so I thought that was the Terminator.
+
+But it's not because the description was not good enough. Yeah.
+
+Funny, isn't it? If only I could have clocked him with my secret laser eyes or something.
+
+Cut to me and Kyle Reese having a rather dramatic meet cute in tech noir.
+
+Except instead of exchanging numbers, we're dodging bullets. Kyle saves me just in time.
+
+It's not organic. That's not calories. It's confuse that just some guy.
+
+He's telling me wild stories about the future. Wait till he hears mine.
+
+Look, Kyle, I'm as indestructible as they come. Picture this the fiery showdown as we try to outrun the determined robot hunk.
+
+Just when you think we've put him down for good surprise, he gets back up.
+
+I suppose I've got to learn some tricks from this guy. If I ever want to pull off the Terminator gig properly.
+
+Finally, the saga ends with a dramatic crush under a machine press.
+
+I think I'll stick around for the sequel.
+
+After all, The Terminator may be gone, but I've got big plans becoming a machine, or maybe even taking back what was misplaced, right?
+
+They say machine work comes with a great benefits package after all.
+
+Okay, so a little bit better, but like some of the clips are off.
+
+So if the clips are like off, it's because we didn't take the time to make enough clips.
+
+Right. So we have like 104 clips. We chose ten of them.
+
+And like from Ten's got to pick the best ones.
+
+And I find like if you take the time, make all the clips described, you get a much better quality video.
+
+Okay. Second thing is I thought about the other last section, like once I make this video, right?
+
+And it feels kind of like off some of the narrations in the video, you could tell it, here's my video, here's the narrations,
+
+here's like the scenes, but like look at the see what's happening in it and rewrite the narration based upon this like clip now.
+
+So you got you have the AI like enhance its own product.
+
+So I think for the homework might try that right. It's a bit less of a burden computationally.
+
+So yeah you can make it a little bit better. But yeah. But just you know, we just made a YouTube video and like two minutes.
+
+Right. And you could I mean it's short right.
+
+Make a longer one takes a little bit longer just because like the process like the create the video takes longer.
+
+But the actual AI part is like two minutes.
+
+So yeah, folks, you can take this code and like start showing channels on YouTube, make your own content and have your own passive income.
+
+All right. So you want to try another Terminator one like maybe someone else narrates it like some famous person or someone, or you want to try it.
+
+Die hard. I hard, die hard. Okay, let's try Die hard.
+
+So we'll go back up to, um, the beginning here.
+
+Okay, so the movie is already downloaded, so we got that. Now we're going to make the clips.
+
+So we got to change this to Die Hard MP4.
+
+Yeah. And one thing here, if you make the clips again if the clips already like the fluid already there, it's not going to work.
+
+So if I try it now I get an error probably right. Yeah.
+
+So got error. FFmpeg had an issue.
+
+The issue is it's already this thing there. So I just got to go in here delete it.
+
+So if you try and die here in your own machine go to Main Data.
+
+And that movie's folder, the whole folder is delete the whole movies folders.
+
+Trash it only folder. Yeah.
+
+If I have bitter cold it would like do it for us. I was like and tired.
+
+It was like three in the morning. So my bed anyway now should work so I'll clip it up.
+
+I need to sink. So the movie path should be die hard MP4.
+
+Yeah. So just make this diehard MP4 and then make sure you delete that folder movies from your directory.
+
+Otherwise it like screws up. Okay, so do I have my clips there.
+
+Let me make sure. My movies folder is back and my clips have.
+
+Yeah. How many clubs do I have now? I have? 132 clips.
+
+It's a bit longer movie than Terminator Die Hard. A little bit longer.
+
+Okay. Now I'll describe it. So yeah, I think we'll do ten clips again to save time.
+
+We could do 20 minutes. It'll take six minutes. You call six minutes.
+
+Yeah. Why not? Right. We have to write the script anywhere in the instructions.
+
+So the 20 clips, I get a bit more fine grained of analysis of the movie.
+
+Okay. And now the other stuff. Right?
+
+So was look at the clip and they get finished. Okay.
+
+Summarize the movie script. Okay. So now change this from the Terminator script.
+
+So make that green with a hash tag. And then uncomment that hashtag and make it regular white color.
+
+So that's going to be our movie script. Summarize the script in a thousand words.
+
+What happens blah blah blah. Okay. Quotes by who?
+
+Okay. So who's going to be our narrator this time?
+
+So again, who here? Never saw. Die hard. Ever saw die hard.
+
+God damn it, man. What movies do people watch?
+
+There is a link to all that from the old movies.
+
+Okay. I have some, I have a bunch of movies on my computer.
+
+Like I download a lot of stuff so we could have picked other ones and what I have here.
+
+Yeah, I have, like, uh, Beverly Hills car. Beauty and the bees.
+
+Batman. Ghostbusters. Gladiator.
+
+Go hunting. Justice League commissioner. I got a whole bunch X-Men.
+
+Yeah. The usual. Okay, you know, I look. Yeah. These are all movies, right?
+
+Godfather. I had the Godfather out of Dickens.
+
+Oh, it's mp4. I could have done this one. And I got the subs.
+
+I have the whole transcript here. Yo, there you go.
+
+Homework problem. I won't do that, though, because the Godfather is 3.5 hours long.
+
+It's like a super long movie. So I mean, we can't handle like a 90 minute movie here.
+
+Okay, so those are all old movies. I guess I'm kind of out of date. You know why?
+
+Because all the new movies, I watch them in the theater, so I don't get to download them.
+
+Right? It's like I already saw that garbage, so I need to watch it again. Okay, now I get the tangent.
+
+Oh, yeah. So if you didn't see diehard, you don't know the context, right?
+
+So I'll give you the context. Spoiler alert. So there is this bad guy named German guy named Hans Gruber.
+
+Okay. Who was Hans Gruber? Did you watch Harry Potter?
+
+Yes. Do you remember Snape? Right.
+
+So Snape is played by this actor named, uh, Alan Rickman.
+
+Brilliant actor. Right. And you place places like German evil villain, terrorist guy named Hans.
+
+But he's very cool. He's very cool. But bad guy. He is like them.
+
+I mean, for me, he's like the main character in the movie. Like, without him, that movie is not as good.
+
+And if you don't believe me, watch Die Hard to see how crappy it is, right?
+
+So let's make Hans Gruber be our narrator.
+
+He can, like, complain. How? Like this. Like cop played by Bruce Willis is like 40.
+
+Has plans of, like, still some money and some big tower in LA.
+
+So what do Hans Gruber. Uh, quotes by Hans Gruber or in speaking style, blah blah blah blah blah.
+
+Okay, so we'll get the Hans Gruber, cause we'll talk like Hans. And how are we unlike the things.
+
+What do we add now? Clip 48. Okay. Right. Like 30% there.
+
+Okay. So I'll be on script next week to make our, uh, summary video.
+
+All right. Making a script for the YouTube summary of the 1980 88 film Die Hard.
+
+Die hard. You'll be given the clip table. The movie closed.
+
+Okay. Help! Narration summarized here along with the speaking style of Hans.
+
+Who will be there in the video? Okay. Maybe change the Portland.
+
+Oh, sorry. Sort of die hard.
+
+Okay. Make it engaging. Narration shall be the perspective of.
+
+Okay. Hans Gruber. Now he is, like, super annoyed by, like, this stupid American.
+
+He's like a pretentious European, like, bad guy.
+
+And there's, like, his American foulmouthed cowboy running around, like shooting stuff.
+
+Whatever. Right? So he just very snobby kind of guy towards him.
+
+Now, I could just do. I'm Hans Gruber, I'm annoyed about his cop, and it's like, you know, ruining my day.
+
+But in the last segment, we had some creative ideas.
+
+So one of the students suggested, oh, maybe he falls in love with the Bruce Willis character named John versus John McClane, right?
+
+I think it was like Nico who's gay. So I put a gay theme in there.
+
+I'm like, yeah, why not? Man? They'd be they'd be a good couple, right?
+
+I mean, if you saw the movie, I could see them dating afterwards, right? Like an Odd Couple.
+
+But I did the last section, so I want do it again. So give me something different.
+
+That's like, funny with Hans Gruber, if you saw the movie or if you didn't see the movie,
+
+maybe you better from a fresh idea like Niko never saw the movie, right?
+
+So yeah, maybe they could fall in love. I'm like, okay, maybe so.
+
+Hanover here. What, you want to try your hand up?
+
+No, I don't know. Well, I'm cold calling you. Give me something funny.
+
+Right. So, Hans Gruber, uh. Start by seeing your hands.
+
+What make you Mexican and Mexican? That's like.
+
+You like, what's he gonna say? Like to kiss her and make racist Mexican horror movie religious, right ones.
+
+Ones like, uh, who are on holiday when? The war on Christmas.
+
+Well, so in the last section, someone suggested, uh oh, by the way.
+
+So there's a joke going around. They say Die Hard is a Christmas movie because the movie takes place on a Christmas like Christmas Eve, right?
+
+So in the last time someone says maybe the narrator is Santa Claus and he says,
+
+like, someone is naughty and someone is nice and, like, actually not so bad.
+
+But again, that was last section, so something Christmasy.
+
+Okay. What about Christmas? You said like religious. Like like horns is like a man of God or something.
+
+I was thinking that, like, they're, um, stepbrothers and like, one is like a diehard, like Christian loves.
+
+Okay? One is like a crazy Christian fanatic, and the other is like, okay, is actually my stepbrother, not his brother.
+
+Right? Well, not actually my brother from another mother.
+
+Yeah. Now, does that mean your brothers. If you have a different. You're the same mother, right?
+
+To be really, like, have a bond. Actually my brother and you were saying, who's the religious one?
+
+I would assume the fanatic would be the terrorist.
+
+Okay, so the fanatic means I curse God or I like God.
+
+Is is really, really into God and Christmas and Christianity.
+
+Let me funnier. Hans was like the devout Christian, or McClain's the devout Christian.
+
+I'm thinking it was like the eye of a god. Now, I would, like, [INAUDIBLE] off the Christian.
+
+Okay, so he's like the stiff. Yeah. He's like, okay. Got it.
+
+Uh, Hans is a very religious man, and it is Christmas.
+
+And he does not like. His baby brother.
+
+Officer McClain. Clean, killing all men.
+
+And swearing and swearing. It really offends his religious sensibilities.
+
+Okay, here we go. Sensibility. Okay.
+
+Yeah, that could be funny. Uh uh.
+
+Okay. Let me see.
+
+Um, what else are you get your brother.
+
+Uh, make sure he in the clip. And how do you end it?
+
+Maybe they could, like, become friends, like through the like, maybe the bye bye.
+
+At the end of that, they became bonded. They got like a character arc is all.
+
+Yeah. Yeah. Okay. However, by the end you grow to love your brother very much and realize he is a good guy after all.
+
+End the narration by saying. By appropriating.
+
+Something John McClane would say. Okay.
+
+Like. Okay, there we go.
+
+All right, here we go. So, is our narration done?
+
+Oh, yeah. They're done. So, script. Is it done?
+
+No, it's still running. God takes forever, dude. What are we at now? We're at 90.
+
+It's at 130, right? So 90. And then it's going every like I want you to go.
+
+90. And the last one was like 80 for every six.
+
+So we got like 5 or 30 more. Five more.
+
+5 or 6 more. Oh two okay. Anyway, so our script is good.
+
+And then yeah, we'll go with the summary instructions for making this video.
+
+It's like yes, my brother and he's like a swearing and stuff.
+
+And okay, so that'll be our script. And then we will look at that and make the audio and make the video or video file right.
+
+This is die hard, die hard and brother brothers.
+
+Okay. And we'll look at that and then I'll download that and then we'll be done.
+
+Okay. So now we just let the AI work while we just sit around and chill.
+
+Right. This is like the job of movie studios. Maybe in a couple of years.
+
+Okay. Any questions from the people so far? No.
+
+Yes. Uh, we took this clip, and then we were analyzing and creating a crime link in a previous case.
+
+We know we did video analysis. Yep. Uh, and also how to change this opinion because a lot of swayed.
+
+Yes. Yeah. So I if I have a video, if I think I planned this plan for a set of videos.
+
+So I create simulate these are going to be my attack videos.
+
+So if these are the case preemptively, why would I be able to do that and be able to clear all the my code crashed.
+
+Where did it crash? It.
+
+The crash here. Okay.
+
+That was weird. Why did something crash on me? Okay.
+
+Maybe they're not going to happen to. I don't know what happened with this thing. We play ten clips or 20.
+
+Oh, that's. You know, we're fine. Oh, it's still running.
+
+Like it's like. Well, we get 200.
+
+We're 90 and stuck. All right, so maybe we won't get to this one today, but.
+
+Okay. Answer question. Uh, you were saying I went to. God damn it.
+
+What's going on with this thing? Oh, wait.
+
+Could not execute. I'm sorry for this didn't happen in the last section.
+
+This is like an open air problem. You know what?
+
+I'm going to stop this and just make it ten. Sorry, ten work last time.
+
+Okay? Yeah. I don't have any more errors.
+
+Please. Okay, so you're saying I want to make the, uh, narration, but persuade someone to do something.
+
+So today, I want to preemptively ensure they are not able to use the attack on me.
+
+So I need a lot of videos.
+
+So if I have. You want to protect yourself from being manipulated? No.
+
+No debate.
+
+So we created Joe Biden attack ads here so I could simulate all of these, but, uh, I will preemptively create videos that protects me against,
+
+uh, so if you know, they're going to attack you this way, like your Joe Biden's campaign, what would you make to counter the narrative?
+
+Yeah. And what I want to do is before they can do it, because I have the same data.
+
+So I could predict what you can anticipate.
+
+They're going to attack you this way. Yeah. So that's that's easy to do, right?
+
+You just throw in Joe Biden's data. I mean, you want to before the debate, right?
+
+Ideally, before you like to trump, you want to know how he's coming at you.
+
+So just take Donald Trump's, like, speeches that he says about you and take the ads your owns about you and give it to the AI and say,
+
+how are they going to attack me in this debate? And what should be my comebacks if they're attacking me?
+
+Yeah, you could do that. They could project, right?
+
+Is it as good when you do it on a video analysis?
+
+If you have the transcript. So remember here right. We give you the script like what is being said and happening in the movie plus the videos.
+
+Right. Because really the work's happening on the text. That's what all the thinking is happening.
+
+The village is like being tagged by some text. I can pull it and put it there because people like seeing pictures and videos, right?
+
+But everything is in the text domain. So if you get your data in the text domain, then you can do like everything.
+
+And though the trick is like how do you get the text to me? Well, for ads easy.
+
+They have transcripts that are on YouTube. Just yank it from there and then like, what doesn't have a transcript?
+
+Like everything does, right? And if it doesn't, like, if we give you video, we don't.
+
+Transcript. What would you do? Like if I say, here's a homework problem, here's a movie file.
+
+Right. Terminator two, I want you to give me a, like, uh, make the I write the script for this thing.
+
+What would you do? What's up?
+
+One. Zoom. Yeah. Like the video thing you call things, they automatically create captions and just go faster.
+
+Oh, exactly. That's the answer, right? Why don't they do that? There's a like a Jarvis has a function that says get transcription, get transcription.
+
+So you give it a audio file and it calls whisper the I OpenAI's like, um, speech to text thing and it give you the text.
+
+Right. And then how do you get the audio? Well, just ask the.
+
+I wrote me a code to take his video file and get the audio out of it.
+
+F of mPEG can do that. Take the audio file. Give it to the thing.
+
+Get the transcript. Now you got the video transcript yourself. The problem with that is though I thought about this.
+
+That transcript is not timestamped. So what time in the video was I said if I had that kind of break down, that's what you want, right?
+
+So I'm sure someone like has something like that to figure out the time, steps, everything.
+
+But if you said and thought about it with the AI for like an hour,
+
+you could like write a code that could take a video and give you back, like timestamped like speech in the video plus like timestamps.
+
+This is happening in the video and created like basically make the video into a rich text, uh, object.
+
+And then you can do all kinds of stuff with it. I didn't do it yet because I didn't figure it out, but that's the basic steps.
+
+Yeah. All right. Did this thing work yet?
+
+What are we at? I am at.
+
+We got nine minutes, right? Okay. Hopefully we'll get one diehard video done before we leave today.
+
+One more before the weekend. 91.
+
+Okay. I think it's, uh. I think it's going okay. 100ft.
+
+It's working. I don't know why. Like in the last one, it didn't work right. It was kind of weird.
+
+And I'm going 13 every time, so I got two more left. Okay, one. Two. Four.
+
+Oh my God, hurry up to. Okay.
+
+And 117 okay. I think there's two more left.
+
+And then we can do that. And.
+
+Okay, so while we're waiting, we could like, um, maybe make some more edits to the script or like the instruction for the summary script.
+
+Since we're waiting anyways. So what do we got here? We have, uh, he hates his brother, and he loves his brother.
+
+Anything else you want to put in this thing? Maybe they said something funny or like some event pisses them off a lot or something in the movie.
+
+Like dog friendly video clips. Like the color scheme in.
+
+Dog friendly as a certain color scheme that are better for dogs and bluey.
+
+It's yellow and blue like it. So I'm going to tell it this video.
+
+I'll be seeing my dogs. Can you pick imagery where the colors would appeal to a dog?
+
+I mean, why not? Uh.
+
+Try to choose clips that have, I mean the colors and die hard on very like bright.
+
+So I won't really work, but I'll put it in there. Choose clips that have colors that will appeal to dogs because.
+
+My dog will watch this with me. Okay.
+
+Yeah, it can do that. I mean, we'll actually do it. Probably not. But whenever it's.
+
+I write whatever your mind wants to do, we can. You can take a crack at it.
+
+Okay. Did we get the, uh. Yeah, we got it. Hans Gruber quotes.
+
+Now I have a machine gun. Ho ho ho! Awesome. Okay, so there is a whole die Hard script summarized.
+
+Awesome. Now we'll make our movie script finally, at long last, making the scripts.
+
+Print out the script. Make the audio. Make the video.
+
+And save the video. Sweet. Okay, here we go.
+
+YouTube content. Okay, there's our scripts.
+
+Cool. Audio files have been generated. Zero.
+
+What are eclipse? Zero 13, 39, 65 and 104.
+
+The last step is 130. Right? This is like skipping the last leg.
+
+Like you don't get to the end of the movie, I guess. All right, well, whatever.
+
+You're the I know me. Okay, here comes video.
+
+And then we download it, and then we can watch it and we'll watch it, and then hopefully it doesn't.
+
+I hope it didn't suck. Right. If it was awesome, that would be great to end the class.
+
+So please be awesome. I didn't know in the last section, the diehard ones were a little bit better than the Terminator ones.
+
+It's like there's better like action in the movie. It's a bit brighter.
+
+I don't know what it was, but like it came out better, was done. Okay, die hard brothers, here we go.
+
+Viewers. My name is Hans. Oh! Damn it! Sorry, sorry, sorry.
+
+It seems wrong. Voice. Okay. We need a voice of youth.
+
+Do this again. Um. I think Onix is the voice for a guy.
+
+Sorry. Redoing it with a male voice.
+
+If I leave more 11 labs credits, I would have cloned Alan Rickman or try to clone him and then he would have been doing the narration.
+
+So I don't want to, like, spend the money in 11 labs to do that.
+
+But that's what you could do to make a really, you know, hard hitting video.
+
+And hopefully, like I do, that still.
+
+I don't know, it's really kind of strict nowadays in 11 labs, like I lost Ryan Reynolds, you know, like so, so depressing.
+
+All right, let me delete these like stupid. Did you go to his talk to see whose talk?
+
+Remind us. He was here. Yeah. I didn't get the memo.
+
+No, he told me. Wait. You knew my voice of him got deleted in front of you.
+
+Is that in front of you guys? They got deleted. And you didn't tell the professor he's in town.
+
+Shame on you people. God, I love Deadpool and then Shawn Levy.
+
+What, you mean Shawn Levy? Who's Shawn Levy, director.
+
+Oh, man. That's awesome. Did it download?
+
+Was he funny? I think so. Oh, I heard it was a lot of, like, mutual gassing up.
+
+Like, it was just like, oh, my God, you're so great. Yeah. You're so he is so great.
+
+And he's handsome too. I don't like gay, but like, I was, I totally, like, be in the Ryan Reynolds.
+
+Okay. And now let's see our new, uh, video of the Die Hard brothers.
+
+Please don't suck your viewers. My name is Hans Gruber, and I have a confession to make.
+
+It seems this John McClane, the thorn in my side is actually my brother.
+
+Quite a revelation, wouldn't you agree? But this festive season, despite its joys, he insists on being quite the nuisance at Nakatomi Plaza.
+
+Uh, behold the majesty of corporate power. A view truly befitting a man of my taste.
+
+Now, if only little McClane would refrain from desecrating this holy space with his brash behavior.
+
+But alas. Well, you know what the I thinks this person here is Hans.
+
+Because he has, like, the same kind of look, like a hair and beard and stuff. That's not Hans.
+
+That is, um, what's his name in the movie? Ezra.
+
+That annoying, like, uh, consulting guy. Anyway, to the chaos, he reeks, stirring up the tension among these high rise negotiations.
+
+Well, well. The rooftop. Oh, dude, where the sunset paints the sky in shades even a dog might appreciate.
+
+Marks the battlefield upon which my brother gallantly defies the odds.
+
+And me? I orchestrate elegant summits bathed in the sandy glow, much to Maclaine's stubborn chagrin.
+
+It is not easy being the antagonist during Christmas, dear brother.
+
+Here we are surrounded by lights and the cacophony of emergency that's not in my care.
+
+Thinks that's a man hangs by a thread of your convoluted valor.
+
+Yet amidst this chaos, I found my admiration growing for the man who foils my grand schemes.
+
+For he stands resolute in rescuing his beloved. And so, as this relentless tale unfolds, I discover a truth most unexpected.
+
+I do in this season of miracles find a certain fondness for McClane.
+
+Perhaps he is the good guy after all. So much for Christmas now, Theo.
+
+Yippee ki yay, John. Wherever did you learn that charming phrase? Oh, yeah.
+
+So in the movie at the end, he goes like he calls him a cowboy.
+
+And then he says, yippee ki yay, mother effer. That's like a famous quote from Die Hard.
+
+Okay, so that was like. And that was a the narration wasn't bad, right?
+
+It was actually Alan Rickman. It was much better.
+
+But I guess, like you can see like with this basic technology, now, if you spend a little bit of time thinking about it, you can make it a lot better.
+
+And the biggest way to make it better is to make the video like information in better text form.
+
+So tell it in this scene, it's not Hans, it's Ezra, or it's like, you know,
+
+some other person and things like that to make it much more, uh, effective to understand what's happening in the scenes.
+
+And then, you know, a four hour can make you like a script. So on your homeworks, I think I'll give you a, like,
+
+maybe make the do a little bit better and maybe polish them a bit and get your hands dirty playing with the video stuff.
+
+All right, all right. So I tried my best, folks. Sorry. It's almost there.
+
+Next will be awesome. All right for sure. So we'll stop there.
+
+Homework will be out on Sunday. And we'll see you folks next week for our last week before our spring break.
+
+And the class. Oh by the way, I'm doing a poll. So class might only be on Monday, right?
+
+I mean, on Tuesday next week I might cancel Thursday class because. Yeah, maybe.
+
+All right. So yeah, come next week don't skip Tuesday.
+
+We're making the clones. The 11th labs cloning. What happened to.
+

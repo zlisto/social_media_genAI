@@ -1,0 +1,1787 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+And group B has a different one. So if you assume they're different, then that's the degree.
+
+Do you see? Like the S's, right. The S's are the empirical certainty, but they'd cancel out.
+
+Seems to get something like that. Yes. You're correct, and I was correct.
+
+I didn't realize it because they're the same. They cancel out and you just get a bunch of N's.
+
+But you're correct. I, I get it. But yeah, that's.
+
+I was doing Walsh's t test. We're just gonna miss it.
+
+All right. I think you're terrible. Yeah. I'll ask about, um, Tulsa this week.
+
+Oh, it's almost five. Yeah. So, no, that's one been just one.
+
+Write it on Sunday night or Friday. Saturday night? Yes. You people, to thank you for the earlier input.
+
+Trying to, you know. So, you know, you can't get a colab in China.
+
+Yeah. So, like, I would like to finish it before.
+
+When's your flight? I was going to stop. You know, you did once.
+
+Yeah. Like. Yeah. You know, know that it's Tuesday or at least, you know, or even read the homework tonight.
+
+No, no, I'm saying, like, if you have to go in like another week.
+
+I posted Saturday night Sunday morning. So you're in China on Thursday?
+
+No, I have not this week. Um, the next week. That's not for me.
+
+Are you leaving early spring break? Yeah. For sure. Oh, so I'm just asking for the next morning.
+
+Like, I realize you just. You're in China the whole time.
+
+Like the whole British out of there for weeks now.
+
+It really is. Can you run Python? Course. Because you can run.
+
+Python can run. Yeah, yeah, yeah, but you can just do it that way and then decide, you know, but I also like.
+
+Okay. So if you do an on your shooter not a story you could run it.
+
+Yeah but I did I mean like in lecture homework Friday.
+
+Saturday. You can do it Monday Tuesday Wednesday.
+
+Just like submit for the year as well. Um, it kind of feels like I was doing that work.
+
+No, no, no classes for ten years. Like I've been busy.
+
+Oh, yeah. Yeah, I know how to write.
+
+Yeah, no, I like. I mean, for someone.
+
+Yeah, yeah, yeah. I guess the Australians at Newcastle.
+
+I don't know, like said, it's definitely I don't know it's an English.
+
+Brain isn't it. It's going to be everything right there.
+
+All right folks, let's get started today. Okay. So.
+
+The homeworks are going to be graded like this week.
+
+That's my bad I just got lazy with like when I was there I got so extra lazy a homeworks I didn't like download them from canvas and like grade them.
+
+I took care of it like tomorrow or something. So my bad on that one that's on me.
+
+Uh, this week's homework, like the one that's going to be created on this like Saturday or Sunday, be kind of a fun one.
+
+So half is going to be about like today's topic is AB testing.
+
+Like basic of stats. The other half will be based on Thursday's class.
+
+So Thursday I was like, because today's class there's no AI today.
+
+Like the whole I checked the code. It's all just like stats, right?
+
+Like the AI is there to like write the Python code, but there's no actual Jarvis queries today, unfortunately.
+
+So I'm like, well, that's not fair, right? The classes gen AI and social media.
+
+So I thought on Thursday we do is you know them videos on YouTube.
+
+It's like movies recap.
+
+You take like a movie like a two hour movie, make it like a 15 minute video show, like video clips from the movie and narrate with an AI voice.
+
+I was like them. Videos get like half a million views sometimes, right?
+
+And they put them out to take a bunch of video files and this like just editing and like put a video up, right?
+
+I'm like, can we make it? I take a video file like The Terminator, right?
+
+And make one of them recap videos, just like hitting a button, right?
+
+Because if we could do that, then we could run our own movie recap channels,
+
+take every movie and every language, Bollywood and Korean dramas and whatever the [INAUDIBLE] you want.
+
+Right? And his make his videos every day, pump them out there and then make money in our sleep.
+
+Yeah. Also, if you could take a video and basically like compress it to like, uh, like a custom cut for an audience, that's kind of cool, right?
+
+So on Thursday we'll do that. Right. Video editing with AI, it should be pretty fun.
+
+It kind of we're going to try it out Sunday with the Terminator movie. So we'll kind of see how it goes.
+
+One caveat there is that the movie files are kind of big, so I can't put them on GitHub,
+
+so I gotta put them somewhere else and connect to them, maybe a Google Drive or something like that.
+
+So we shoot more little things we'll do on Thursday, but we'll be editing videos on Thursday with the AI.
+
+It's kind of cool. Yeah. So that's set me up for like today having no AI, but there is no AI, but there's like some cool like stuff here.
+
+Some of it's like review for you folks. Some of it's going to be new. So the topic is a B testing which is just another fancy word for statistics.
+
+So we're going to learn stats today in 40 minutes lecture 40 minutes and coding like 40 minutes or maybe like 6020 something like that.
+
+But hopefully there should be more of a review for you folks.
+
+A little bit of new stuff. All right.
+
+So the whole goal of this lecture is to look at some data and figure out, like, what kind of stuff makes the content get more clicks.
+
+So here are two tweets from Congresswoman AOC attended Castillo Cortez.
+
+The first tweet got 2290 likes and what to tweet about.
+
+If you only get two recon bills, that's reconciliation bills like an insider American politics thing per year.
+
+And Bebe was supposed to be the second recon of 2021.
+
+Is not, um, Big Baller Brand. It's, um, build back better.
+
+It was Joe Biden's infrastructure bill. If the Debbie bill is blah blah, blah, whatever.
+
+That tweet is something like insider Congress politic stuff, right?
+
+Got 2290 likes. The next tweet got a bit more engagement, so we got 52,380 likes.
+
+And what is it about? There is no reason members of Congress should hold and trade individual stock.
+
+When we write major policy and have access to sensitive information.
+
+Amen, sister. I agree as well. If you're in Congress, you should not be buying stocks.
+
+So that thing resonates and they got a lot more likes. Okay, so you might wonder why do I get more likes right.
+
+There's like a lot of properties that that tweet had that the first one didn't have.
+
+Okay. I was so curious. Like can I test the properties, see which one kind of gave him more likes.
+
+And let's pick one of the properties. Very simple one, right? Congress.
+
+The word Congress is in the tweet okay. So in this example it got more likes.
+
+That's cool. If I check all her tweets than an average Congress tweets an orange here they get uh, yeah.
+
+They get like 24,000 likes on average and no Congress like 18,000.
+
+So the empirical mean right is bigger in her data set for Congress, not Congress.
+
+Right. So you might think like oh, so that means the Congress is going to give you a lift.
+
+So you should always say the word Congress in your tweets.
+
+Congresswoman. Yeah, but that's not true okay.
+
+So what's really happening here? Is.
+
+You could read the tweets that have the word Congress in it like a random variable.
+
+Let's call it x1. But this is like the favorite account.
+
+With Congress. So that's x1 the other column there, the blue one that give me x0, x0 is the same thing.
+
+Favorite count, but without Congress.
+
+Okay, so those are two random variables. When I get those tweets they're like samples of random variables.
+
+And then. What I'm measuring here is the empirical average.
+
+So I'll call that mu zero with a hat.
+
+That means I got it from the data. So with that. What is that? That's like one over the number of tweets in the zero group.
+
+And add up all those like samples zero. I, I is one to end zero.
+
+Right. So that number that number 18,000 I think all the tweets without the word Congress in my data set.
+
+Uh, Adam up there are favorite counts are like counts divided by number of tweets, which was 1042.
+
+And I get a number called mu hat. Right. Mu zero hat.
+
+Okay. And then same thing from mu one hat. Right.
+
+It's going to be the other group. Okay.
+
+So two averages. And from the picture they're right I can look down Q your mu zero hat, which is uh, 18,000 is less than.
+
+Less than mu one hat. So you think, uh, there's an effect, right?
+
+But that's not what you want to check. Which you actually want to check is something else.
+
+So zeros are random variable, which means it's got a distribution and has probably a mean value.
+
+So the expected value which remember my notation from class back in the fall or right probability class.
+
+That average value of x zero is some different number mu zero.
+
+No hat, just mu zero. And then ditto from you for x1.
+
+Okay, so this is Muzero, and this is Muzero hat.
+
+They ain't the same okay. And in fact, mu zero hat.
+
+What it really equals equals mu zero. So that number.
+
+Plus noise. How much noise if you got a lot of data.
+
+Less noise. Remember, like central limit theorem, which we learned about back in the fall.
+
+Right. So the noise is basically a function of essentially n0 how many samples you have.
+
+Right. And then mu one hat is mu one plus the noise.
+
+That's a function of number of samples in that pool. And one. Okay.
+
+So in stats what I really care about is not these things, not the empirical data.
+
+Mu zero hat mu one hat. Because these things are the true number I care about.
+
+Plus the noise I want to like correct for the noise. So I want to actually check is mu zero.
+
+Is that less than mu one question mark right.
+
+So they get those numbers. But the problem is those numbers I don't have them right.
+
+Those numbers are secrets. They come from God. Okay.
+
+So God made these numbers and said, you, AOC, you and you say Congress, you're going to get this many likes on average, right?
+
+Mu one and then if you don't say mu zero, I don't get that.
+
+The closest I get to God is I do some experiment.
+
+Right. That is the religious act. I do experiment and I get these numbers.
+
+I get mu zero hat mu zero one. It's like I'm hearing God plus some like static plus some noise.
+
+Right? That's what I'm getting here. So I got to fail to get the noise out of there to get the real measurement.
+
+What's actually going on? What is God telling me for real? Right. So it's very, like divine kind of thing, right?
+
+Okay. So that is AB testing, right? Can I figure out what God's telling me?
+
+That word Congress really gets you more likes than not having it.
+
+Okay.
+
+So AB testing the general framework is you get two versions of something you want to check out, maybe two versions of a tweet with the word Congress.
+
+Other Congress. Okay. Or maybe it's like a website.
+
+So red homepage, blue homepage. Or maybe it's like, uh, I don't know, uh, a drug.
+
+So here is a drug with, uh, here's a drug, here's a placebo.
+
+Right click on pharmaceutical control trials A and B write to a version of the thing.
+
+I do experiments. So I get people to come out there and take my drug or use my page or see my tweet.
+
+Right. They react to it. I measure the response they had, whether it's like their blood pressure or the drug case, if the blood pressure drug,
+
+whether it's like, you know, did they spend time on the webpage if it's blue or red homepage or they like my tweet.
+
+If I had Congressman on Congress, I get that data from experiment.
+
+And then that data is noisy, right? That data is the truth plus noise.
+
+Then I do a physical test to kind of crack for the noise to figure out really which one is better.
+
+Essentially this question. Right. Who's got the bigger mean in the general case.
+
+Right. So we'll learn those test to figure out how does AB testing.
+
+Okay, so in this class, what are the kind of things we are going to measure, right.
+
+Or actually what kind of features I want to check the effect of maybe care about,
+
+you know, the keyword in a tweet that this word give you more clicks or not?
+
+Uh, maybe it's like, does my image Instagram have a certain feature?
+
+Right? Like, oh, if I post pictures with my kids, if I'm like a mommy influencer, do I get more likes?
+
+Then I have the kid in the picture, right?
+
+Um, maybe it could be like I took my data and I clustered it right the last week, and I say, is this cluster getting more engaged?
+
+And I cluster this cluster maybe maybes about like, cat pictures.
+
+This is like pictures of a concert, right? So that kind of question, uh, the sentiment.
+
+Right. So my angry tweets or my happy tweets, who gets more clicks?
+
+Uh, the user, hey, if, uh, Donald Trump says something or Elon says something, who gets more engagement, right?
+
+That kind of question or time of the day? Day of the week, right?
+
+Are my weekend tweets more salty than my weekday tweets?
+
+Right. So these are the features we can measure now, the AI could play a role here because some of these features,
+
+you can't measure them unless you have AI like sentiment.
+
+Right. How you measure that? You know, I do that. I give it to Jarvis.
+
+Here's a tweet. You mean sentiment or like, you know, an image feature.
+
+So take all my my Instagram pictures or a thousand of them and tag them.
+
+Which ones have a picture of my kid or a cat or a car or something?
+
+Right. So I can like label the data for you like has the property or not.
+
+Right? Once it's the label, then you can apply AB test to figure out if has an effect or not.
+
+The response as you care about in this class. Mostly we care about engagement.
+
+Likes. Retweets. Normalized likes. Like likes a review count which I call engagement.
+
+Right. Things like that. But I care maybe about the sentiment.
+
+Right. So which tweets are more salty. Right. So on a measure the response is sentiment of the tweet.
+
+Or maybe has a keyword one. Do I say the word America my tweets on Wednesdays or on Fridays?
+
+Or you know which pictures have a feature? You know, like my pictures before 2020 and average 2020.
+
+Is the cat frequency higher lower in those two groups.
+
+So like the features could also be like responses in this case.
+
+And again the AI lets you like measure those features for your data then apply AB testing.
+
+So like on the homework this week, maybe I'll give you a bunch of tweets and say calculate some AI based feature about the tweets like,
+
+oh, the tweet is talking about pizza or something, right?
+
+So you take the tweets right, a Jarvis instructions, right?
+
+And send a thousand tweets through the Jarvis and one at a time tag them boom boom, boom boom boom.
+
+Right. Or maybe you can give it all the tweets at once and it can tag them all at once.
+
+I don't know, I'll figure it out. Right.
+
+But like that's how you tag it once your tag is like true false to have the feature not then you can do the AB testing okay.
+
+All right. So that's we're going to do. So what are the tests we're going to use?
+
+So I mean there is like a lot of tests and stats you can use to check.
+
+Are the two groups the same or different. Okay.
+
+So some of the ones that are very basic I'll cover today like the Z test and the t test and the Fisher exact test.
+
+In the coding session we'll try a couple other ones and talk about here that are more there more powerful I think that to use.
+
+But this I want to talk to all them because they have time constraints. Oh just out of curiosity.
+
+So these test here. So I'm guessing the t test you all covered in stats right.
+
+Yes. Okay. So that's going to be review the z test.
+
+Did you cover that in my class. Okay. So z test is also boring.
+
+And then the Fisher exact test that's a new one right. All right.
+
+So one new one today. That's not bad. One out of three is okay okay.
+
+So just to review here right. And all these tests right.
+
+The goal is to um define your null hypothesis.
+
+So if nothing is happening if A and B are the same what the same mean to you usually it's like if they're the same the mean value the same,
+
+the two groups, the mean like counts, whatever. Okay. But other kind of same ways to define it.
+
+Maybe it's not the mean, maybe it's like the median is the same, or maybe it's like, uh, the distribution of the same.
+
+Or maybe it's like the probability this is bigger than that is the same. So there's many like ways to define your null.
+
+Right. But whatever it is you say, nothing's happening. This is what nothing means okay okay.
+
+So once you get your null hypothesis. Then you calculate.
+
+You take your data from your experiment and you calculate some kind of test statistic.
+
+Okay. So that is a number that is derived from your data.
+
+Usually something like uh it's like usually like the means or the two populations subtracted divided by some scaling factor or something like that.
+
+But the other way to get this test is these and you kind of complicated ways.
+
+But the basic property is that this test statistic or whatever it is, is usually like if it's zero, right.
+
+That means nothing's happening. Okay. The same thing. Your null is like true.
+
+If it's something big, like super positive or super negative, something's going on.
+
+These are like different groups. Your null hypothesis, you can reject it.
+
+Yeah. So in stats they're kind of backwards.
+
+So they're very negative people. So like right come from like rejection is a bad thing.
+
+Got rejected by college, by job by girl.
+
+Right. Just like it just rejection is a bad thing. But if you're a statistician, if you can reject the null hypothesis is awesome.
+
+It means, hey, something happened there. That thing you're testing actually actually works.
+
+Your drug cures cancer or something. So we want rejection.
+
+Okay. That's the first weird thing about statisticians. So how do we reject.
+
+The thing they use to measure rejection is what's called the p value, which you've all heard of.
+
+But if you haven't, let's review the p value. What's the probability?
+
+Whatever you measured your data that that's that you measured.
+
+If it's like a if it's like a t test there's a t state calculate the t stat is like seven right.
+
+That's a big value. The p value is you measure to seven.
+
+What are the chance you would have gotten a seven or bigger if nothing's happening.
+
+So if a null is true what is the chance. Do they got a seven.
+
+It's like small. It's like 1 in 1,000,000 right. Very small number. So that means if it's a small number it wouldn't have happened under your null.
+
+Right. Like something else going on. And make it such a big number. It's not that there was nothing happening and you got a lucky.
+
+It's like they're actually different. So that means for p values, uh, a smaller p value is better right.
+
+So right. Come from with like big things right. Big calls big cars big money.
+
+Right. Big time. Right. But instead statistics small is better.
+
+Smaller p value means yo, that thing you saw is not because of, like, dumb luck.
+
+Something's going on. Reject the null. Right. So small p values the rejection.
+
+That's they're all both in statistics. So yeah. So we got to find the p value.
+
+If it's really small we can reject the null and we're good to go okay.
+
+And the trick in stats is like every kind of test you're going to see in the class today and in the coding session has some weird statistic.
+
+Okay. And some statistics somewhere figured out that that's artistic, has some kind of distribution, some funny word distribution.
+
+Whatever. They figure it out, they know how it looks under your null.
+
+So once you get it, you can figure out that p value okay. All right.
+
+So let's start with the easiest one the z test. Right.
+
+This test you could have figured out this test yourself actually with your basic like NBA knowledge of probability.
+
+It's a very simple test. So the uh the assumption here is that I got two of my two groups A and B, right.
+
+So my x your x one. And they have uh mean values that come from God.
+
+They also got something else from God. So they have variances that come from God.
+
+And variance of x1. Right from God.
+
+And for a test, you have to know that number. So if you know that number.
+
+I mean, maybe you do. Maybe you don't. I don't know how you and God, of course you guys are.
+
+But if you know it, you can apply Z test. Okay. What is our null hypothesis here?
+
+The null in a z test. Is that the means? Right. The mean.
+
+So these two numbers are the same right.
+
+And then if something happens crazy. That means you can reject the null which is the same.
+
+Okay. So that's going to be our null. What is our test?
+
+We do. Well, we have two samples or so.
+
+We have Na samples in group A and B in group B right.
+
+That's our two populations. We talked to God.
+
+And God told us that the sigmas are those sigma I guess A and B here in the slide we calculate from the data the sample means.
+
+So we do this calculation right.
+
+Get a data base number and the z stat you take the two means like sample means subtract them and you divide by this weird number here,
+
+which is like your sigmas and your ends in a funny way with a square root.
+
+Okay, so on the top there, I got, uh, sample mean minus a sample mean.
+
+They're independent samples, right? Okay.
+
+And the bottom, I got a number because I know the sigmas from God, and I know the N's because that's my experiment.
+
+So the bottom is a number. So the sample mean has what kind of distribution?
+
+Y'all remember central limit theorem. As you learned a long time ago, it said that the sample mean is a normal.
+
+Yeah it's normal. And that's A. And then for B it's also normal.
+
+And I subtract two normals that are independent. What do I get.
+
+I get a normal again? Yeah. So the top part of that Z thing is a normal.
+
+Right. And the bottom part's a number. If I take a normal and divide it by a number I get a normal again.
+
+Right. Yeah. So the Z stat actually is a normal random variable.
+
+It's a very special normal. It's your standard normal.
+
+So under your null or the same means the z stat is a zero mean unit variance normal random variable.
+
+There you go. Now you got your distribution. Now you do your test.
+
+You get your Z stat. You look up at your normal table numbered tables from like your final exam back in the far right.
+
+Yeah. Look it up there and figure the probability of the tail there. And that's the p value and you're done z.
+
+So that's why I teach z test because it's very easy. It could be like a homework problem in probability back in like the fall okay.
+
+The only problem it has a z test. Right. The only problem is I have to know these numbers.
+
+Okay. And I don't know those numbers. Right. I don't know them.
+
+So most of the time in real life you cannot use a Z test.
+
+So I hopefully never did it. But if you did it, you'd probably do something.
+
+Correct. Okay. But that's okay. We got to fix for it. So before that, just an example of a z test in action.
+
+So here's our tweets for AOC Congress. Now Congress I do the z test.
+
+The z stat is -0.97.
+
+So I'm subtracting the orange from the blue right like a -0.97.
+
+The p value is 33%. So I draw the normal density here.
+
+The little bell curve. You all know that I marked here like -0.97 and positive 0.97.
+
+The two sides and I shaded in and add the red area up is 0.33.
+
+Now maybe you're wondering your professor your Z stat is -0.97.
+
+So it's like it's just over here right. Why are you doing the upper side right.
+
+Like making you're making your p value bigger. Well you don't have to.
+
+Why are you trying to hurt yourself? The answer is the convention stats to be really, like, rigorous.
+
+You want to say I would have got this Z stat or more extreme is a phrase I use.
+
+So extreme means if it's negative 0.97 is negative .97, and all the crap down there, or it's .97, all the crap up here.
+
+They call this a two sided p value. Okay. If you don't like that, right.
+
+If you care more about like not are they not equal. Maybe your null is like they're this one's bigger then one side is fine okay.
+
+But most of the time people the convention is you're doing the null that they're equal.
+
+You need a two sided test, right? If the null is like this one's bigger, like pick your null, then one side is fine.
+
+Well, the two sided here in class because it's what everyone does.
+
+But it depends on you're like null basically what kind of p value you want.
+
+Okay. So no by the way no effect.
+
+Right 33% p value I mean the number I saw the fact they're different.
+
+Those two means the two groups. It could have been just noise.
+
+Right. So there's no okay. There's not no effect.
+
+I cannot reject the null. There could be an effect.
+
+So I can't say there is an effect, but I can say there isn't.
+
+I just cannot reject the null. So it's like oh no. Yeah. So that's what out here I don't know.
+
+And maybe it has an effect. If I add more tweets maybe I get a better measurement.
+
+Right. But the effect is so small that under the current number of samples I got, the noise is like too big, I can't tell.
+
+Yeah. So that's what we got here. Okay, so but then again, this test is incorrect because I don't know the sigmas, right?
+
+I just popped in the numbers from the data and pretended they're actual like numbers from God, but they're not right.
+
+So that thing is not actually the right thing. So the right thing is the t test, which you have all learned about.
+
+So it is relearn it again real quick. Um, oh, we finished at 530.
+
+Right. Okay, cool. Okay, so T-test is like a Z test.
+
+It's just those sigmas. You don't know them, okay?
+
+They're not from God. You. Actually, instead of using Sigma zero from God, you're going to use Sigma zero hat and sigma one hat.
+
+Right. The standard deviation from the data. Right.
+
+All right. So what is the T stat?
+
+And the t test looks just like the Z stat. It's the difference of your two normal to your means and top.
+
+And the bottom is the square root of your standard deviations the divided by the number of samples.
+
+Okay. And the only difference is that the bottom part there, it's not sigma like from God it's sigma hat.
+
+It's like from the data. So I got normals on top right.
+
+And the bottom I got this weird thing from the same data.
+
+So that ratio is no longer normal. It's something else okay.
+
+But don't panic. Right. Like it's not a mystery. Someone figure it out.
+
+So the distribution of that quantity that t stat it's called a student t distribution.
+
+Okay. And you see there student is a capital S because student is a guy.
+
+Okay. And I take it and the I other night his name is not student.
+
+I thought for all these years it's like a guy named like Peter student is like the guy who did it or something like that is not.
+
+It turns out, according to ChatGPT, that it was a guy named William Gosset or something,
+
+that you worked in the Guinness brewery like you work at a beer company and you figured the test out, and then you want to publish it.
+
+But the is like, you can't put your name on a paper. It's our policy here.
+
+So you put a pseudonym student in and it's called student T distribution.
+
+But really they should call it the Guinness distribution or the Gosset Distribution.
+
+But that's why it's called student, because he couldn't publish his name. Case you're wondering.
+
+Yeah. Okay. So that the.
+
+Oh yeah. Question. So we have the speaker.
+
+Oh, is that me? I don't know, something's going on.
+
+So is that. Is it me, Cracklin? Oh, let me turn it off.
+
+Is it me right now? Us. That means you and me.
+
+Is it going to blow up? And maybe you guys like nothing to do.
+
+It's a funny to say. Okay, so I don't know if it's gonna blow up or not.
+
+So I'm just going to keep since I don't affect this thing, I want to put the mike back on.
+
+And maybe this'll protect me from explosion, I don't know. Um, yeah.
+
+It's super annoying. Um, okay. I don't know.
+
+Is it that annoying? Yeah, yeah. So how do we fix that?
+
+Like, how do I edit in this one? Is there a volume thing here?
+
+Source volume. Right.
+
+Kill the sound. I started running.
+
+I saw, like, power down the speaker or something. Yeah.
+
+I don't know how to just, like, stuff you. I mean, you call someone to, uh, pull the plug?
+
+Uh, yeah. This is the OG, the audio system, right?
+
+So just, uh, I just turn up the search volume.
+
+Not. It's not. I've got to unplug the speaker. It. So those are the old tests.
+
+Nothing new there. Let's talk about a brand new test.
+
+The Fisher exact test. Now, this will be a brand new test.
+
+But the structure is exactly the same. I define my null.
+
+I define a step. I find a distribution and a final table.
+
+Right. So let's see how the Fisher test looks, though. Okay.
+
+So Fisher test is one. We care about this kind of question.
+
+So I got two tweets a person A and person B okay.
+
+And I want to see like who says the word America more often.
+
+So has America has mama. Okay I guess for numbers a b c d a first D has America first B as America first name no America person being on ABC.
+
+That's a number of tweets on those properties okay I put them on the table.
+
+It is this is called your contingency table okay.
+
+ABCd the null hypothesis is that the fraction of my tweets first day with America is the same as person B's fraction here.
+
+So I call the par for a probability of having American first day.
+
+And p b is a person b, and those are the same. That's enough right.
+
+You don't say more valuable than me. I love America just as much as you love the pal.
+
+Okay, that kind of. All right. So let's do the test for that kind of hypothesis.
+
+So for our data here, our percent, PBS's well, for AOC who's our first name here.
+
+Uh, par is 5% .052.
+
+And for Elon Musk our person B, it's zero and 100 tweets.
+
+He never said America once. This is a long time before he was like part of the government.
+
+Right. So also it's 100 tweets because I only like that I used to explore and couldn't get the 4000.
+
+It was like what you saw, I got 100. Okay. Anyway, zero out of 157 out of 1042.
+
+So, uh, let's see now the test, what it says. Because from the raw data, right.
+
+PA is much bigger than PB. AOC loves America more Musk.
+
+She says it a lot more. Yeah. So the Fisher exact test, the the test you're going to the touristic I mean as it was define it for the easy to define.
+
+Is it just the letter A's. Okay. So the number of tweets by AOC America that number is a set.
+
+Not exactly. It's like that.
+
+That's that a given a plus B given c plus B and given a plus c and given b plus these like fixed the some of the rows and some of the columns.
+
+Right. Fix those numbers and even A's state.
+
+So when you fix those and the songs the A's and the distribution are not offices and
+
+all being the same frequency and a distribution called hypergeometric distribution.
+
+Okay, what is that? I kind of forgot. I did some point. It says something like this.
+
+Yeah, it has a distribution. Fisher figured it out, but now you know right.
+
+So under the null A will be like uh hypergeometric.
+
+So you figure out which you measure from your data and that's over here and figure out that probability and that probability and actually you know.
+
+All right. So let's play the Fisher exact test for like the frequency of the word America.
+
+Ready. Two people. Let's see who loves America more okay.
+
+The p value is after doing a test which is one line of Python code 0.012.
+
+So it's 1.2%.
+
+So that means that actually if my level is 1% through checks of right to say like something's happening, I cannot reject the null at a 1% level.
+
+So maybe AOC loves a very good word, Elon Musk. But my data says I cannot tell if the p value is to be same as you know.
+
+I mean, basically because he's only got 100 tweets, if he had like 500 tweets,
+
+that would be a much smaller p value I see or not see in effect, but only sampled 100, so I can't.
+
+Um, okay, so that's Fisher's test. Okay.
+
+So the other tests out there and statistics have the same kind of flavor to find, you know, then you have the Python effect of feedback, right.
+
+And they're kind of cool like and all of the, you know the partially. So the first one there's the man with the new test.
+
+Okay. What is this test null. The null is that you've got your two populations.
+
+And you pick a random person from a random tweet from A, random from B,
+
+and then tell me the probability that a Bernoulli right under the null which be the same.
+
+The chance your better than me is 50%. Okay, so that's the null for that.
+
+So the next one is the Wilcoxon signed rank test or that test.
+
+No it's not. The means are equal. It's not the medians or the gain.
+
+You know what I mean is right. Median is like you take the data and you rank it up like this lowest the highest and take the middle one.
+
+So like the data is 1 to 3, the median is two and a B is two.
+
+Yeah. But that is 1 to 1 million right.
+
+Then the median is two but the mean is 330,000.
+
+So like it's robust outliers means so yeah.
+
+So if you care about the median of data then Wilcoxon signed rank test is you know.
+
+If it is categorical, it's like, you know, uh, some my data, someone has this property category A,
+
+B, C or whatever, and we'll see those categories say probabilities.
+
+You do a chi square test or Pearson's chi square test.
+
+You can have that as the last one there. The code won't graph should.
+
+You're not with us because we have baskets. So here the null is like A and B are two populations.
+
+They are the random variables. Uh, X is right. And he's actually had distributions.
+
+Right. So our spread from null is that the distribution that the AP stuff and the V stuff is the same distribution.
+
+Right. What a weird null. It's not like the V or the median or something.
+
+It's like the shape of the whole curve is like the same.
+
+Okay. Now the first test error them that would need to test.
+
+And obviously the second test there's the right test. And the final one, they're the collection of tests.
+
+Those tests are called nonparametric tests because they don't care about the mean like on your data.
+
+You only care about variances on like that essentially like look, your data come in a bracket and look at properties there.
+
+So those kind of tests are not there's no parameters there. There's no like meaning of the data.
+
+We'll find those tests. Um, those test let a lot of things clear.
+
+Right. But you can get small p values for the same data for a non-parametric test and a permanent test.
+
+I will see that in concert. Right. But again, those are all the kind of things out there that's like a semester of stats and like one slide basically.
+
+Yeah. Okay. So again, all these functions here, this this test, it's one line of Python code.
+
+We'll try a couple of them today in the coding session okay.
+
+So now before we go on any questions about individual tests.
+
+Nope. All right, so now we'll do something different.
+
+We'll do multiple tests. Okay. So one thing we care about in the past is trying all of our holy sessions and projects.
+
+And it is like I got, you know, someone's tweets, and I wondered, like, what words give them a lift on their right.
+
+So I'll try a word like America or word like when I hear Congress fight Trump.
+
+Right? I'll try a bunch of words and then do like a, like a t test and see like which ones got a good idea.
+
+So I'll take his words here. Do like three different t tests.
+
+If Congress fight and Trump and I get £0.03 values 3319 003 okay, so it goes through stupid.
+
+I like, you know, one at a 1% low. Which p value or which the word has an effect.
+
+It's the word uh fights. Yeah. If you say fight you're going to get uh, more clicks, no less clicks.
+
+In the picture it's less the green one. Looks like you get less.
+
+And that's a real effect. So don't say fight, okay. But there's something wrong here.
+
+Like I'm doing something kind of sketchy, some kind of sus. Right?
+
+So I did three tests at £0.03 values. And one of them was small.
+
+And I'm like, that is because something happens. And I'm like, I got an effect.
+
+But, um, what if that was the case?
+
+What if actually, in other words, in any effect. So for everyone, checking the null hypothesis is true.
+
+Okay, I know why. Let's say the 100 of the chicken, 100 words.
+
+Right? 100 word hundred t tests. If nothing is happening, if the null is true, what percent of my p values are going to be significant?
+
+I didn't blow 1%. If you kind of think about it like the p value is probability, I saw something like this or worse if those happen.
+
+So, um, 1% of my p values will be below 1%.
+
+Over a hundred tests. By dumb luck, on average, one of them is going to be like loose.
+
+Yeah, that's what I kind of said. Or not. Sorry. Yeah. 1% of my tests.
+
+I have 10,000 tests and 100. Well, how about a small 12%?
+
+Just probably. Come on a little bit higher, a little lower, but my dumb luck is on my test.
+
+And like, small feedbacks. So think about it like maybe your job is like figure A, find some word right for your client.
+
+Like get some engagement, right? When to give them like yo, you should do this for your content.
+
+It gets more clicks and you check ten words.
+
+Nothing. Words. Take 100 words, right? It's like a thousand word at some point.
+
+Checking off words by dumb luck. One of the values is more percent in like go check it out.
+
+Like this one is good, right? Say the word dog and you're going to get like an effective right.
+
+You have to because it's a null and you get a like a noise.
+
+Right. So that's a problem, right? That you know, the 1% level, 1% of your p value or your tests are going to be significant.
+
+But that's difficult. So we got to fix that problem. Yeah.
+
+So that's called P. Yaki he is.
+
+I just keep, like, trying stuff until something hits, right.
+
+It's going to hit eventually. I actually got an effect. Right. So it feels like that.
+
+Is that right? We shouldn't be doing that. But the fix it.
+
+It's like I got a lot of p-values right on 1% significance, right?
+
+Like if I took my p values, rank them lowest to highest.
+
+I take my data and decided to rank it right, small as the highest.
+
+And maybe he's like a kids right? And like I have like the smartest kid and at least the next smartest kid, next smart, the next smartest way.
+
+Remember that, right? Like the test is different for each kid, right?
+
+So like the smallest p value, like the smartest kid should have a very, very strict partial.
+
+So a very small p value. Now the whole family be like 1% okay.
+
+There should be a more threshold. So not 1% maybe like one over ten.
+
+It's 10% is what kind of offices right. Real small.
+
+If you're below that number then you're okay because you're the smartest one, right?
+
+You're a small student like you got to go to jail or is not okay, right?
+
+But the next kid. Right? The next thing you're checking what the higher p value like you're not sure.
+
+Brother and sister. Right. So you you go to Cornell. I saw the profile like there.
+
+So or we saw that. Yeah.
+
+Marvel and. Cornell.
+
+Right. Well, this move is easier because I got a lot easier.
+
+So I think it's still Ivy. Yeah, boy. Yeah, a little bit higher.
+
+And the next kid, like, he's got to go to, like, what's the next guy to solve next?
+
+You can't. Yeah, you can't. Here. No.
+
+Okay. You got. Yeah. You guys a little bit higher and next kid, uh, you just like.
+
+God. Uh, I don't know. It doesn't hurt.
+
+So. Right. I like high speed, high force. So I feel like what I should do is make directional difference for like on p values.
+
+And then I want the medication I'm like taking with.
+
+So that is the approach, right? So first I'll define what I mean by an error.
+
+In this case, if it was one test, the error was a false positive.
+
+You thought something happens. It didn't happen, right? If I have a lot of tests, all the fine is called the family wise error.
+
+That's w e r. That means I have, like, these things here.
+
+Okay. And I think these, uh, things are significant.
+
+These keywords have an effect. Okay. Let's say there's like ten of them out of my hundred, right?
+
+Okay. Whatever you're doing. Right. Make sure the test you're using makes it.
+
+If you're under the null chance that you're ten, like, true positive for positive things.
+
+Uh, the chance any of them are, like false positive is 1% or lower.
+
+So that's very strict. Think about the rate at ten feet.
+
+I think these these are good. These are fine. Right.
+
+You're looking. So 1% are means that none of those things are going to break.
+
+1% chance. If I like ten cities, like, not so hard, you know, 100 things like, like 100 grenades and another.
+
+Good. The pins are all the grenades. You're fine. Safer than go, right.
+
+You want like. No, I want every grenade. So anyone is like going to love it less than 10%.
+
+So it means like the individual grenade got a very very helpful.
+
+Right. Like if you have like a thousand grenades I think has to be less than 1 in 10,000 100,000 chance of like being erroneous, like you say.
+
+So it's a very strict measure, but it means like of the whole family. Anybody being a false positive 1%.
+
+Okay, okay. So that's the goal, right.
+
+And what about this testing what is like the test to make sure you protect that rate.
+
+Your grenades don't blow up in your hands okay.
+
+So the first approach was like an important for me I forgot this girl's name.
+
+I think it's two hours. So born to run. Yeah.
+
+He said here's what we're going to do, you guys m things you're checking right?
+
+Your m keywords. So take, uh, your thresholds have alpha squads have 1% chance that nobody blows up in your face.
+
+Right? The threshold for all your values is alpha over.
+
+Right. So if you got 100 test, it's alpha over 100.
+
+So they got a 1% significance. You have a p value of 1% divided by 100.
+
+So .0001 right is going to give you all that I want you everybody.
+
+So it's very like strict running tests. But that's how it does it. If you do that the anybody gets through the F2 b r is going to be 1%.
+
+Let's try it out here. Right. So here's some p values for my data okay I apply Bonferroni method.
+
+So the threshold here is um 1% if I do have five hypotheses.
+
+So 002 is the threshold. So the first £0.02 values are kind of small.
+
+They make the cut. They're good. Those effects are real effects I can reject the null right.
+
+But the next three they're all above the threshold but they're below 1% 003006009.
+
+Right. They're above 1%. Um, second, five things.
+
+I'm the five things I kind of like, maybe a stricter criterion.
+
+So then I make the range. So that's how the test works. Okay.
+
+Uh, there is a fancier one than Bonferroni. It's called Sidek.
+
+So it's just like a different equation for the threshold. So, uh, Bonferroni was alpha over.
+
+Um. Okay. And side that is one minus one minus alpha zero.
+
+Um, right. I think it's a little bit more powerful test the Bonferroni.
+
+But the thing is like for like small alpha, alpha is 1% this number, this number about the same.
+
+So it's like the same test. Well, whatever side that will give you some love you have to maintain and stuff.
+
+Right. But yeah it's same test basically. But it's one thing for everybody right.
+
+This is the line for the Yale kid. And, uh, you can't get right this one.
+
+Throw something. It's a bit too straight to me. Like I a little bit too much, right?
+
+Well, let's try to, like, chill things out a bit. Oh, yeah.
+
+For side effect. Same exact same kind of plot. So side dag Bonferroni.
+
+It's like a fixed threshold. Okay. So again as I said, right.
+
+The problem of fixed threshold is it's like you took your p values and then you actually did something to them.
+
+Like they're not a random p values a random order. Something sortable.
+
+So you're actually putting some information in the data. So if you put information in there your threshold should also be informed by the information.
+
+Right. So maybe like some kind of adaptive or like varying thresholds might work better.
+
+Okay. So here's one approach that someone figured out. So this is the home Bonferroni method.
+
+Home is I go home is I always picture Holly Holm as a fighter.
+
+And I have it here at home. So the Holly mom's Bonferroni method.
+
+But the procedure is take your p values from your 100 test right.
+
+And rank of smallest size. Right. Okay.
+
+Then you pick your system is there right. Alpha which is 1% right.
+
+The threshold is the lowest one. It's alpha over x so it's alpha over 100.
+
+Okay. Next one. Alpha over 99.
+
+Next to alpha over 98, 97, 96.
+
+Then your biggest develop your most special child potential is Alpha 1%.
+
+It looks like that's the interest. And then the trick is it's called a step up procedure.
+
+You start at the bottom with the most, you die. You go. Are you going to do job?
+
+Yes, I am, if you can. You're good.
+
+I'm good. Dad. Okay. You're going to go now. And you, son, are you good?
+
+Now I'll go. My threshold. Uh, you can go there.
+
+You come, and then the rest of y'all. I don't even check below your finger call Nautilus.
+
+Right. So it's very strict. It's like one. The first one.
+
+I break the rule. You stop there. Everybody else is like.
+
+Which is no good. The null hypothesis cannot be rejected.
+
+Don't do anything. Okay. Step up. Procedure. So step up procedure look kind of like this.
+
+So here's an example. So the dots are my p values right.
+
+Plotted in like ascending order smallest to highest. The black line there.
+
+That is the whole Bonferroni threshold. That's the you know alpha over 109 and 90 or whatever.
+
+Right. And then the dot color is like which ones do I reject the null I mean, something happening, which one do I accept the null.
+
+So the first guy's cool. It's below. Yeah. Second one's cool. There one's cool.
+
+Fourth one looks kind of close, but if you look at the actual number, it's actually cool.
+
+It's below the thing. Number five there.
+
+It's actually above the line. Oops. Right.
+
+So then the rule says you you you guys start out.
+
+But you know what? You're going to college. You're good. And the rest of y'all cannot go y'all to an orange and I cannot.
+
+Exactly. So that is the whole bonfire is a little bit different from the whole procedure.
+
+Almost like I got one flat line here. And anybody above that is up.
+
+Right. So like the five I would have rejected like the top only to the first two problem.
+
+But home on Friday keeps like a top five. So it's more chill right.
+
+More chill. Same alpha. It's like just as good as like the other kind of test.
+
+But it's like more, uh, leads. Right. But still, like playing by the rules, right?
+
+Alpha is going to be preserved. Okay, so that's s w e r m d wise error.
+
+I mean, if you remember dates and November.
+
+Okay. So that condition, it's very strict okay.
+
+But it was like that they did it for like 100 years and it was cool.
+
+Right. But then people are like, you know what man?
+
+Don't you forget about that score that scored. Uh, making my the difference.
+
+Why? I don't know, because I'm doing a lot of tests. I'm doing like, 10,000 tests.
+
+Oh, who are you? Oh, I'm like Pfizer or Moderna or like, uh, Johnson Johnson.
+
+I'm a pharmacology. I'm testing many, many drugs. Proteins.
+
+Like, I got a lot of tests. Okay.
+
+And if you could, like, did my test significance, I could make a drug and sell it and in money or like the SVR, like 10,000 units.
+
+But anyone anybody goes off comes less than 2%.
+
+The variation that does 1 in 1,000,000 is good. Like a really, really high quality review.
+
+Right? Really like something in effect. Like, okay, so you don't have to score.
+
+Like after your scoring is like, not your next game.
+
+Yeah. Give sucks. Okay. Let's give you a new score to play by.
+
+How about, uh, false discovery rates? What's that?
+
+Okay, so you got 180. Think you're, like, good stuff, right?
+
+Let's make a test so that. Less than 1% of them are like doubles.
+
+It's not the chance anyone more than 1%, a percent of them are bad.
+
+They're going to go up. It's much more. So much more so right.
+
+Maybe 100 per day. So all of these are grenades going to be like, you know, like not like super good but like good.
+
+But making the grenades and nobody goes up with one more chance. You got to be like perfect grenades.
+
+So FDR is much more chill, right.
+
+And so if we agree that's the rule of play about that. FDR is right.
+
+Metric resistance. Right? After that, we will play the game fairly.
+
+If it to us we got to agree that's the actual that's the right score.
+
+So that is the resistance right. It was an art to take your score. Once you give up on score then science and stuff notes okay.
+
+So the foreign companies needed like a test that helps them get their drugs through.
+
+Right. So Benjamin and Hochberg showed up and they're like, we got a test for you.
+
+I'll make sure your FDR is preserved as some of Alpha. Right?
+
+I will get all your stuff through and their procedure works like this.
+
+It's kind of like home Bonferroni. So you take the p values and you line them up small as the highest.
+
+Right? And then the threshold is not going to be like that.
+
+One was like alpha times alpha divided by like m minus k this one article.
+
+Right. So threshold is alpha over m times k.
+
+So the first guy your threshold alpha over 100.
+
+Then your next one is alpha times two over 103 over 100 is like a line right home my friends, are kind of like a curvy thing.
+
+And this is like a line. Okay. And this procedure that the main difference is forget the version.
+
+What's the worst part? The main part is it's a step down procedure.
+
+So a vote on Friday come with the lowest one to go up.
+
+And you stop and check the rest first on the top here take your biggest p value and say are you less than alpha?
+
+And you're like, no, sorry. Okay. Keep going, I can't.
+
+Your null is aren't the next one. Are you cool you potential for not okay.
+
+We got you. I got you Carl. And you like boys are so I am I am below threshold.
+
+Okay, stop. And everybody else down here.
+
+All y'all are okay, I think.
+
+Recheck all your notes. Y'all have an effect. These drugs are going to cure cancer.
+
+Oh, but, yeah, I'm gonna go over there, so. Okay. What does it matter?
+
+It's a step down procedure. So just kind of like go down the second some kid is the kid and all the younger kids are you.
+
+Right? That's how it works. So you know graphically right.
+
+This p value I start off the top here and I come down.
+
+So the first p values to big. So I can can I reject the null.
+
+Sorry pal. The next one is cool. It's below threshold and everybody else cool.
+
+You know in the last the first couple of p values above the y, right?
+
+Doesn't matter. The procedure says to do it this way and do this way.
+
+Your FDR is going to be alpha. So this is like totally correct.
+
+That kind of feels weird, right? Feel like it's cheating or something, right?
+
+But it's not cheating. It just is a it's the proper test to get this kind of like false.
+
+However, once you agree FDR is the right metric. That's the way to do it.
+
+Okay. All right. So yeah, I feel like trying to compare the test, right.
+
+Benjamin Hochberg is much more chill. The home Bonferroni.
+
+So you want to get your, you know, drugs out. In fact, Cambridge keywords have an effect.
+
+Something like that. I'd recommend use the Benjamin Hoffman procedure and tell them I'm using the FDR and blah blah blah.
+
+You'll see I'm very intelligent, right? You get more things through the gates and they'll think you're like, super awesome.
+
+So just do it that way. All right.
+
+So there are multiple hypothesis testing approaches.
+
+We got Bonferroni Sidek whole month Virani gentlemanly Hochberg all these things just like one line, one Python function.
+
+Right. And just change that method to like those four methods.
+
+So the reason using Python okay. All right.
+
+So now we will call these up and try them out in our practice.
+
+So let's take oh it's like 5 or 9.
+
+All right let's take a minute chill then look back in a minute. Load up our notebooks and like have at it.
+
+Yeah I mean it's like nothing right.
+
+Basically have at it. So let's have at it.
+
+Okay. Um. Yeah.
+
+I'm gonna take a minute to sleep. I chill for a bit, kind of get focused.
+
+Is there any questions about this stuff before we start coding it up? No.
+
+Okay. Yeah. I mean, it's an important topic, right? It's not fancy, I.
+
+Some things are kind of like forever, you know? All right.
+
+All right, so while we're chilling, if you want to get the notebook open, it's the one here called a forward slash B testing.
+
+So pop it open. Get this thing higher up.
+
+Oh my mike off is the y'all Muted me.
+
+Hey yo 80 people. Mike is not doing nothing though. All right all right.
+
+So yeah let's uh let's get started. All right so here's a notebook today.
+
+So what it happened today is we're going to basically take, uh,
+
+one person's tweets and see what keywords have an effect on their life, likes his thoughts.
+
+Then we'll take two people and compare them and see, like, you know who uses the word.
+
+We're also looking for engagement and who gets more information for a given keyword.
+
+So very basic stuff. So you can do cloning installing importing like I started there.
+
+Yeah. Clone. It's cool. Uh, installs.
+
+Cool. Imports. Cool. Oh, by the way, on the homework I think from like this week then that like delete those parts in the homework template.
+
+So I make it copy and paste. Yeah. It gets harder as we get through the semester.
+
+Right. Okay. So let that load up.
+
+So this is because this is like a very old school notebook. There is a lot of JavaScript to import child here.
+
+So yeah no need to have a like a key for the notebook.
+
+It's like this class two years ago. All right.
+
+So while I was doing that I tell you about the first data set. So our first data set is going to be Donald J.
+
+Trump's tweets. So I found the website has like all of his tweets from like his first term and before starting to giant file.
+
+So the files called tweets Trump one eight 2021.
+
+So this is loaded up to a data frame. And then print out how big it is and stuff like that.
+
+All right, so loading up my data frame I have 56,571 tweets.
+
+So this guy tweets a lot. And like what are the data covers.
+
+Let me just show the data frame DF. I also like the head and the tail together.
+
+So let's see here. The first tweet is uh 2009.
+
+And it says be sure to tune in and watch Donald Trump on David Letterman as he presents.
+
+Top ten list. Oh, David Letterman, remember him, right?
+
+Maybe you forgot him. He was a big late night host. And the last tweet here is on January 8th, 2021 at 3:44 p.m.
+
+Uh, England time. So that's like 110 in the morning over here.
+
+To all of those who have asked, I will not be going to inauguration on January 1st.
+
+That's the last. Okay. So that was like his last tweet before they kicked him off on Twitter.
+
+So that's the basic covers. And we have for the data set, we have the texts and we have favorites and retweets.
+
+So we'll check favorites or analyze data for this data set. This is a vision for my then tweets for Lee.
+
+So this is a it's a different place. So I to kind of put in like it's not favorite account.
+
+It's favorites right. Just the different time data frame. All right, first up, uh, we'll look at keywords, right?
+
+Which keyword gets Donald Trump? More favorites. So I got some keywords in the list here.
+
+I picked Trump, Biden, America, MAGA.
+
+So why don't you all give me like three more, right? Just for fun.
+
+So what word you want to check? It has an effect on Donald Trump's favorites.
+
+Diet Coke, diet Coke.
+
+Okay. Like that. An apprentice, uh, apprentice.
+
+And one more ice cream. Ice? Is that a one word or two words to let's ice cream?
+
+Okay, so the code here basically goes to the date, goes to each key or one at a time and adds a comma.
+
+The data frame called keyword underscore the keyword which is before a thing in the first coding session.
+
+It's going to be like a binary column. True, false. So let's just make those keywords and print out how many tweets for each keyword.
+
+All right. So I got 18,000 of Trump's 1000.
+
+Biden's 5000. America's 800 phone magazines seven Diet Coke.
+
+So he said seven times 1417 apprentice school and three ice cream.
+
+Okay, so my guess is the p value for ice cream and Diet Coke would be like pretty big.
+
+Not because they have no effect. It's just like a couple of tweets there. So that's kind of lame.
+
+Pick two more good ones. But he actually says these tweets women what women.
+
+Women are woman. Thriller singular plural women okay.
+
+And one more. What Joe Biden Joe Biden already wants.
+
+Reference. What's up guys? Immigrant's immigrant of a singular.
+
+I'll catch the floor. Okay, immigrants. Read it again.
+
+Okay. Uh, Whitman is in 392 tweets, so it seems like quite a bit.
+
+And I got a meeting in 15 minutes, if that's okay.
+
+And immigrant 107 times. All right. Maybe we'll do something here.
+
+Next up, uh, let's just plot like, the, uh, favorite count with the cure.
+
+Without it for each cure, just to kind of see visually the empirical means.
+
+Right. Okay.
+
+So let's see here. Uh, Trump uh, Trump gets less clicks than like not Trump.
+
+Don't tell him that. I hope you upset. And Biden gets more clicks than not Biden.
+
+Oh, I don't know. Definitely. America's a little bit higher.
+
+MAGA is higher. Diet Coke is higher.
+
+But there's a big error bar because none of samples, uh, apprentice actually lower.
+
+Don't tell them that. Ice cream is also very, very low.
+
+And women. Hey, women is higher. See? He's not a sexist pig.
+
+Immigrants are hired to see immigrants get higher clicks. This guy is all about the people and the immigrants.
+
+Okay. And now we'll do the testing. Okay.
+
+So let's pick one of the words. Um, I picked America, but I'm curious about immigrants.
+
+So I'm going to change the immigrants. Immigrants.
+
+Okay, you pick whatever you want.
+
+We'll create the x0, x1 the samples of the favorite counts with the keyword sorry, without the keyword and with the keyword.
+
+So create the XX1. And now we'll apply test.
+
+So we'll apply first the t test. So the way you do it if you say alpha is 0.01.
+
+That is like you're self is the only one to hit. And then the syntax is stats dot.
+
+And then your function name your test name. So for t test it's t test underscore end meaning independent samples that are independent X0X1.
+
+Giving your two data sets equal var is false.
+
+Yeah this is important. So the two different groups of tweets I remember they come from God right.
+
+Mu zero mu one, sigma zero sigma one I don't know if these sigma are the same or the different okay I don't know that they could be this.
+
+They could be different. So I got to tell this thing that I don't know they're probably different.
+
+So put false omit the Nans and alternative.
+
+Right. This is like what is your null hypothesis. Right. So the null is like they're equal.
+
+Then the alternative is two sided. It's like a p value here p value.
+
+They're the two tails. So they're a two sided test. Okay.
+
+That's it. That's the whole test. We got a T stat!
+
+We'll get the p value. That's all we care about. I'll print out the p value and see if it's, like, small enough for immigrant.
+
+Okay. So the t test -2.1.
+
+The p value is three times ten to the minus two. So it's 3%.
+
+So it's not sufficient at a 1% level. Sorry immigrants.
+
+The difference is not actually a thing. It could be just noise.
+
+All right. But that's a parameter. Let's try a nonparametric test. Let's try the man Whitney test.
+
+So same syntax. It's just stats dot man.
+
+Whitney, use the function. Right. Remember, the null here is that the probability that the one's being the other is 50%.
+
+Um, so that is do x0 x1 nan policy, a mid two sided thing.
+
+I get a u stat so it gets back the u stat and the p value.
+
+So I run it. Let's see what we got here for the Mann-whitney test use.
+
+That is uh, 2,303,000.
+
+That's a big number. Weird test. Look at the p value 1.9 times ten to the minus five.
+
+Nice. So yes, that is significant at a 1% level.
+
+So you see nonparametric test right.
+
+Much much more effective than the stupid t test t test man.
+
+That sucks. Let's try another, um, nonparametric test.
+
+Let's try our friends Kolmogorov and Smirnoff. So it stats dot CSS two Samp.
+
+Uh, two champions, two samples. So you have, like, sample a sample B, right.
+
+Just like a terminology. And we run that. Oh and the statistic is called a CSS stat.
+
+That's the name of the commercial graph. We narcissistic run that.
+
+And I get that the CSS that is 232 million or something p value 1.875 times ten to the minus eight.
+
+Awesome. Significant. That difference is significant.
+
+So you can reject the null. Awesome, right?
+
+So that's why I like these nonparametric tests. They're much more like robust.
+
+And um, they're much more chill. Yeah. So chill test.
+
+Okay, now we'll do multiple tests, right?
+
+So now we'll make all our keywords. Um, we will create zero as another keyword in a for loop.
+
+Okay. We will apply the test. I'm going to take the man.
+
+Wouldn't you test? I like that test nonparametric gives me from the p values.
+
+I will say the p values to a list p values. Right. So I run that code to get your p values.
+
+I'll load it up. And now we'll apply the multiple test procedure.
+
+So a picker alpha? Uh, I pick 1%. We pick our method.
+
+So here you get to pick, right? Bonferroni. It's sidek, it's home.
+
+That's home. Bonferroni. Right. And it's fdr b h so false discovery rate.
+
+Benjamin hochberg uh, I'll take Bonferroni first.
+
+And the way you apply it is you just say multiple tests is the function.
+
+Okay. You gave the p values first. Give it your alpha number.
+
+Right. You're like 1% thing. Pick your method right.
+
+What contest you want to do Benjamin Hochberg or whatever is sorted are the p values.
+
+You're give me sort of the lowest. The highest. No I'm lazy so false.
+
+And do you want them back to you sorted when I correct them.
+
+No. Leave them. Match up the same one. Right. False. Okay.
+
+So it gives you back a rejects. This is going to be like a binary.
+
+It's like true or false. Can I reject the null or not true. False.
+
+It gives you back the corrected p values. So basically it takes the threshold.
+
+It kind of like divides it or something by the p value. But if you like the effective p value the threshold new count.
+
+So there were the correct p values. 1% is like the threshold because it's like corrected for the for the test you're applying.
+
+We'll put that stuff in a data frame and print it out. So let's see here with my Bonferroni test.
+
+Uh, which nulls can I reject? Trump, America, MAGA apprentice, women and immigrant.
+
+Right. All are fine. So that's Bonferroni.
+
+That's like two strict. Now let's try to chill one. Let's try.
+
+Benjamin Hochberg. So change the method to F.
+
+Dr. Uh, Benjamin and Hochberg do it again.
+
+And I can reject Trump. Biden. Oh, now Biden is cool.
+
+See that? So I made it a Benjamin Hochberg. No, Biden doesn't affect America.
+
+MAGA. Apprentice women and immigrant.
+
+So you see, you change your test type and you get like new things that are significant, right?
+
+Just change the goalpost. All you have to do. All right.
+
+Yeah. I'm kidding. That's a true right. Like, all I did was change the goalposts and suddenly things are okay.
+
+So, I mean, know that book by Mark, like Mark Twain quote liars.
+
+Liars and there's damn liars and statisticians. Yeah, I think that's what he meant.
+
+Okay. Next up we're going to compare some users. So I'm going to compare Joe Biden and Kamala Harris right.
+
+I mean they both ran against Trump and Joe Biden for a while.
+
+Then they kicked him out and Kamala Harris and she lost. And, you know, maybe they should have kept Biden in.
+
+Right. Let's go find out. Sort of. So I got two files here for Kamala and Joe Biden and then twice from folder.
+
+So you load them up and then I'm going to add a column, a data frame called a username that says Kamala Harris or Joe Biden.
+
+So the code here does that stuff. How does it do it? I don't know it like did it for me.
+
+So yeah. So we got username and the text right.
+
+We got also we got favorite count. We got that. You count.
+
+Remember this is twice or at least I got a view counts and the favorite count and it's called favorite count right.
+
+Not favorites. Okay, so first up, language, right.
+
+Let's do a Fisher test to see, like, uh, if they're these same kind of words.
+
+So I'll make the word be America. Um, I put a capital T there because I was lazy, but, like, the test makes the case false.
+
+So I like to make it lowercase matching. So first make the column keyword underscore America.
+
+And then to make the table the ABCd. I use pd cross tab.
+
+This function here you give it like the username column and the keyword column.
+
+And it gives you ABCd. So run that code to make your table.
+
+Yeah. Here's my table usernames and uh, has the keyword true false.
+
+Right there is the four numbers ABCd. All right.
+
+So looking to this, it's like Joe Biden says America 300 times out of a thousand.
+
+And Kamala says it like 246 out of a thousand.
+
+So I feel like maybe Joe Biden says America more than Kamala Harris, right?
+
+Well, let's see. Or I don't know, that's just like, uh, that's kind of from noise.
+
+So a Fisher test. So the Fisher test is, uh, pick your alpha, and then the test is test that Fisher exact.
+
+And what do you give it? Just give it the table.
+
+And I forgot the alpha somewhere. I think I put table.
+
+Sorry. Alpha equals alpha. Yeah.
+
+Okay. Sorry, I have a typo. I do have a typo.
+
+Damn it! Okay? Yeah.
+
+You know what? Let's just leave it like that, and then I'll fix it later on. Because I don't want.
+
+We have no time to fix it. So I think the default alpha is like a percent in this thing.
+
+So, uh, the odds ratio.
+
+Okay, so, like the the stat for the Fisher test, the real star is not a it's actually called the odds ratio.
+
+It's like a divided by some other stuff there. So that number is 0.69.
+
+But the p value is 1.973.
+
+Yeah. So uh, very very small p value.
+
+Yeah. That's why Alpha's on your card. Because I don't care about alpha. I care about the p value.
+
+And I'll check out my alpha. So. Yeah. Joe Biden says America more Kamala Harris.
+
+Right. And that is like, uh, reject the null. Other equal. So yeah, he loves America more people.
+
+He says a more right. Why did you kick him out? Next up, let's look at their engagement.
+
+Right. Like who on someone says something who gets more clicks.
+
+So I'll make the engagement column here. Favorite kind of review. Count low that up.
+
+Well plot them. It's like see what's the raw numbers. So there are odd numbers.
+
+Joe Biden gets a lot more engaged with Kamala Harris. So maybe should have cast him in Democrats, right?
+
+Look how engaging is. Let's do a t test.
+
+Right. So, uh, do a t test.
+
+X0 x1. These are like the engagements with, uh, the two users.
+
+Um, do a t test here. Print it out. So the t-test says that the p value is 1.0 times ten to the -20.
+
+So that difference you see there is significant. Joe Biden gets more engagement in general.
+
+Okay. But this is an election. So maybe like certain words are more important.
+
+So maybe it's that you get more engagement. But maybe you talk about America, you get more engagement.
+
+Let's check that out. So let's pick some keywords and check which keywords.
+
+Does Joe Biden's engagement and Kamala's engagement like different.
+
+Okay. So I got here. Trump, Biden, Harris, America.
+
+MAGA gave me like three more we can test out.
+
+Write a word that you want to see your candidate resonating with the voter.
+
+What should we check out? Economy. Economy. Right.
+
+Talk about the economy. Economy? Yeah. Inflation.
+
+Are you going to address the egg problem and Georgia Wharf work?
+
+Jobs or war jobs? Fine.
+
+Okay, I heard one more over there. So this good?
+
+All right. He's a good student. Loans. Student loans.
+
+Okay, so the code here, I'll basically, like, find the p value for the.
+
+T test or t test or refine t test,
+
+do a t test and actually create some like save the engagement numbers for each category to make a data frame where I can plot these.
+
+So a lot of code here I wrote for me just like running the keywords.
+
+Okay so there is our p value. Everyone will get that later. This code here makes a bar plot of that data with like, you know, a nice way to read it.
+
+So it's like. Yeah. So like, which words do, like, uh, where's Joe Biden?
+
+Have an edge. Student loans. He has a big edge, right?
+
+He's the orange bar here. And just student.
+
+Oh and Harris. Yeah. So he says her name. He gives some more lift and he says student loans.
+
+All right, so everything else, everything else. Kamala Harris has an edge in Biden, right.
+
+Talk about Trump. Talk about Biden. Talk about America, the economy, inflation while everything else.
+
+Kamala was a winner or was she right?
+
+Let's do a test. Uh, how much time you got left?
+
+Two minutes. So we'll just do the easy one. FDR b h.
+
+Right. We'll take those p values. Now put them through the Bonferroni or the Benjamin Hawk procedure on how we're going to see which keywords.
+
+Is Kamala Harris really better than Biden on. Right. Okay.
+
+So write down code here. Okay, so I can reject the null.
+
+Where? America. And America.
+
+So you see, the plot here says, like every keyword, Kamala Harris gets more engagement in Joe Biden.
+
+But the test says, actually the only place there's like a real difference is the word America over here in the middle.
+
+And I guess that's fine, because she's running to be the president of America. So maybe that was a good thing.
+
+But the other words, she has no actual difference than Joe Biden, at least I can't tell is dating here.
+
+Okay, so I guess maybe it was okay to switch. I don't know. You mean it matters?
+
+Knows it didn't matter, right? I mean, they weren't going to be Trump this time around, so it's okay.
+
+All right. So that is it for stats. So, um, next time we're gonna make some YouTube videos, have some fun with that.
+
+Do some actually, I next time in class. So I'll see you folks in. Any room or.
+
