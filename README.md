@@ -19,6 +19,8 @@ Repository for course on generative AI and social media
 
 - A/B Testing: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_11_AB_Testing.pdf)
 
+-Conversational AI Agents: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_13_AI_Conversational_Agents.pdf)
+
 
 
 
@@ -43,6 +45,9 @@ Repository for course on generative AI and social media
 - A/B Testing: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_11_ABTesting.ipynb)
 
 - Video Analysis: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_12_VideoAnalysis.ipynb)
+
+- Conversational AI Agents: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zlisto/social_media_genAI/blob/main/main/Lecture_13_ConversationalAIAgents.ipynb)
+
 
 
 
