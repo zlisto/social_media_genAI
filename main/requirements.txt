@@ -24,4 +24,5 @@ bs4
 youtube-transcript-api
 tqdm
 ffmpeg-python
+youtube-transcript-api  #for downloading YouTube transcripts
 
