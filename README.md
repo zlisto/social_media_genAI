@@ -19,7 +19,7 @@ Repository for course on generative AI and social media
 
 - A/B Testing: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_11_AB_Testing.pdf)
 
--Conversational AI Agents: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_13_AI_Conversational_Agents.pdf)
+- Conversational AI Agents: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_13_AI_Conversational_Agents.pdf)
 
 
 
