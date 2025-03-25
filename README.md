@@ -21,6 +21,8 @@ Repository for course on generative AI and social media
 
 - Conversational AI Agents: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_13_AI_Conversational_Agents.pdf)
 
+- Building Apps with AI: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_14_Building_Apps_With_AI.pdf)
+
 
 
 
