@@ -23,7 +23,7 @@ Repository for course on generative AI and social media
 
 - Building Apps with AI: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_14_Building_Apps_With_AI.pdf)
 
-- Building Apps with AI 2.0: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_14_Building_Apps_With_AI_2.0.pdf)
+- Building Apps with AI 2.0: [PDF](https://github.com/zlisto/social_media_genAI/blob/main/slides/Lecture_15_Building_Apps_With_AI_2.0.pdf)
 
 
 
